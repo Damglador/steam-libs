@@ -4,7 +4,7 @@ set -e
 
 cd "$(dirname "$0")"
 
-[ ! -d build/ ] || echo "No build/ directory" && exit 1
+[ ! -d build/ ] && echo "No build/ directory" && exit 1
 arch=x86_64
 find \
     build/ \
