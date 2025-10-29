@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+set -e
+
+cd "$(dirname "$0")"
+find \
+    build/ \
+    -maxdepth 2 \
+    -name "*-x86_64.pkg.tar.zst" \
+    -exec cp {} x86_64/ \;
