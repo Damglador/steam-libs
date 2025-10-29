@@ -32,5 +32,7 @@ for package in "${packages[@]}"; do
     else
         (cd "$package" && git pull)
     fi
-    (cd "$package" && makepkg -si --noconfirm --needed) || continue # --rmdeps
+    (cd "$package" && makepkg -si --noconfirm --needed) || \
+    echo "[$(date +"%F %T")] Failed to build «$package»" >> ../../build.log && \
+    continue # --rmdeps
 done
