@@ -9,6 +9,7 @@ packages=(
     libgcrypt15
     libidn11
     libpng12
+    librtmp0
     libtiff4
     libudev0-shim
     libvpx1.3
