@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+find \
+    build/ \
+    -maxdepth 2 \
+    -name "*.pkg.tar.zst" \
+    -exec rm {} \;
+
+for d in build/*; do
+    rm -rf "$d/src"
+    rm -rf "$d/pkg"
+done
