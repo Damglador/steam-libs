@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -e
+set -euo pipefail
 # makedeps=(git base-devel)
 packages=(
     steam-native-runtime
