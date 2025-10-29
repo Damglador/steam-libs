@@ -8,7 +8,9 @@ find \
     -name "*.pkg.tar.zst" \
     -exec rm {} \;
 
-for d in build/*; do
-    rm -rf "$d/src"
-    rm -rf "$d/pkg"
-done
+if [ "$1" == "-f" ]; then
+    for d in build/*; do
+        rm -rf "$d/src"
+        rm -rf "$d/pkg"
+    done
+fi
