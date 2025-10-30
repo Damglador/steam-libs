@@ -17,3 +17,6 @@ repo-add \
     --remove \
     $arch/steam-libs.db.tar.gz \
     $arch/*.pkg.tar.zst
+
+git add $arch/
+git commit -m "Update $arch repo"
