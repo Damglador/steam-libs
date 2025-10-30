@@ -2,13 +2,15 @@
 
 set -euo pipefail
 
+opt=${1:-""}
+
 find \
     build/ \
     -maxdepth 2 \
     -name "*.pkg.tar.zst" \
     -exec rm {} \;
 
-if [ "$1" == "-f" ]; then
+if [ "$opt" == "-f" ]; then
     for d in build/*; do
         rm -rf "$d/src"
         rm -rf "$d/pkg"
