@@ -3,6 +3,7 @@
 set -euo pipefail
 # makedeps=(git base-devel)
 packages=(
+    # steam-native-runtime libs
     glew1.10
     gtk2
     libjpeg6-turbo
@@ -25,6 +26,9 @@ packages=(
     lib32-libvpx1.3
     lib32-libjpeg6-turbo
     steam-native-runtime
+    # Libs for games
+    openssl-1.0
+    lib32-openssl-1.0
 )
 mkdir -p "$(dirname "$0")"/build
 cd "$(dirname "$0")"/build
