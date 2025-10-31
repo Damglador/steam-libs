@@ -1,4 +1,4 @@
-To use the repo, add 
+To use the repo, add
 ```
 [steam-libs]
 SigLevel = Optional DatabaseOptional

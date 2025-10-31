@@ -1,0 +1,968 @@
+Cloning into 'libgcrypt15'...
+Already up to date.
+==> Making package: libgcrypt15 1.5.6-7 (Fri Oct 31 21:06:59 2025)
+==> Checking runtime dependencies...
+==> Checking buildtime dependencies...
+==> Retrieving sources...
+  -> Cloning libgcrypt git repo...
+Cloning into bare repository '/workspace/build/libgcrypt15/libgcrypt'...
+==> Validating source files with b2sums...
+    libgcrypt ... Skipped
+==> Extracting sources...
+  -> Creating working copy of libgcrypt git repo...
+Cloning into 'libgcrypt'...
+done.
+Switched to a new branch 'makepkg'
+==> Starting prepare()...
+Auto-merging configure.ac
+autoreconf: export WARNINGS=
+autoreconf: Entering directory '.'
+autoreconf: configure.ac: not using Gettext
+autoreconf: running: aclocal --force -I m4
+autoreconf: configure.ac: tracing
+autoreconf: running: libtoolize --copy --force
+libtoolize: putting auxiliary files in '.'.
+libtoolize: copying file './ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'm4'.
+libtoolize: copying file 'm4/libtool.m4'
+libtoolize: copying file 'm4/ltoptions.m4'
+libtoolize: copying file 'm4/ltsugar.m4'
+libtoolize: copying file 'm4/ltversion.m4'
+libtoolize: copying file 'm4/lt~obsolete.m4'
+autoreconf: configure.ac: not using Intltool
+autoreconf: configure.ac: not using Gtkdoc
+autoreconf: running: aclocal --force -I m4
+autoreconf: running: /usr/bin/autoconf --force
+configure.ac:152: warning: The macro 'AC_ISC_POSIX' is obsolete.
+configure.ac:152: You should run autoupdate.
+./lib/autoconf/specific.m4:732: AC_ISC_POSIX is expanded from...
+configure.ac:152: the top level
+configure.ac:156: warning: The macro 'AC_GNU_SOURCE' is obsolete.
+configure.ac:156: You should run autoupdate.
+./lib/autoconf/specific.m4:489: AC_GNU_SOURCE is expanded from...
+configure.ac:156: the top level
+configure.ac:156: warning: AC_LINK_IFELSE was called before AC_USE_SYSTEM_EXTENSIONS
+./lib/autoconf/specific.m4:489: AC_GNU_SOURCE is expanded from...
+configure.ac:156: the top level
+configure.ac:310: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:310: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:310: the top level
+configure.ac:359: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:359: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:359: the top level
+configure.ac:379: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:379: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:379: the top level
+configure.ac:399: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:399: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:399: the top level
+configure.ac:419: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:419: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:419: the top level
+configure.ac:453: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:453: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:453: the top level
+configure.ac:468: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:468: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:468: the top level
+configure.ac:477: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:477: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:477: the top level
+configure.ac:489: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:489: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:489: the top level
+configure.ac:497: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:497: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:497: the top level
+configure.ac:511: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:511: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:511: the top level
+configure.ac:523: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:523: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:523: the top level
+configure.ac:535: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:535: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:535: the top level
+configure.ac:559: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:559: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:559: the top level
+configure.ac:579: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:579: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+m4/gpg-error.m4:16: AM_PATH_GPG_ERROR is expanded from...
+configure.ac:579: the top level
+configure.ac:593: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:593: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:593: the top level
+configure.ac:637: warning: The macro 'AC_HEADER_STDC' is obsolete.
+configure.ac:637: You should run autoupdate.
+./lib/autoconf/headers.m4:663: AC_HEADER_STDC is expanded from...
+configure.ac:637: the top level
+configure.ac:654: warning: The macro 'AC_TYPE_SIGNAL' is obsolete.
+configure.ac:654: You should run autoupdate.
+./lib/autoconf/types.m4:805: AC_TYPE_SIGNAL is expanded from...
+configure.ac:654: the top level
+configure.ac:655: warning: The macro 'AC_DECL_SYS_SIGLIST' is obsolete.
+configure.ac:655: You should run autoupdate.
+./lib/autoconf/specific.m4:40: AC_DECL_SYS_SIGLIST is expanded from...
+configure.ac:655: the top level
+configure.ac:658: warning: The macro 'AC_TRY_COMPILE' is obsolete.
+configure.ac:658: You should run autoupdate.
+./lib/autoconf/general.m4:2845: AC_TRY_COMPILE is expanded from...
+lib/m4sugar/m4sh.m4:690: _AS_IF_ELSE is expanded from...
+lib/m4sugar/m4sh.m4:697: AS_IF is expanded from...
+./lib/autoconf/general.m4:2249: AC_CACHE_VAL is expanded from...
+acinclude.m4:31: GNUPG_CHECK_TYPEDEF is expanded from...
+configure.ac:658: the top level
+configure.ac:659: warning: The macro 'AC_TRY_COMPILE' is obsolete.
+configure.ac:659: You should run autoupdate.
+./lib/autoconf/general.m4:2845: AC_TRY_COMPILE is expanded from...
+lib/m4sugar/m4sh.m4:690: _AS_IF_ELSE is expanded from...
+lib/m4sugar/m4sh.m4:697: AS_IF is expanded from...
+./lib/autoconf/general.m4:2249: AC_CACHE_VAL is expanded from...
+acinclude.m4:31: GNUPG_CHECK_TYPEDEF is expanded from...
+configure.ac:659: the top level
+configure.ac:660: warning: The macro 'AC_TRY_COMPILE' is obsolete.
+configure.ac:660: You should run autoupdate.
+./lib/autoconf/general.m4:2845: AC_TRY_COMPILE is expanded from...
+lib/m4sugar/m4sh.m4:690: _AS_IF_ELSE is expanded from...
+lib/m4sugar/m4sh.m4:697: AS_IF is expanded from...
+./lib/autoconf/general.m4:2249: AC_CACHE_VAL is expanded from...
+acinclude.m4:31: GNUPG_CHECK_TYPEDEF is expanded from...
+configure.ac:660: the top level
+configure.ac:661: warning: The macro 'AC_TRY_COMPILE' is obsolete.
+configure.ac:661: You should run autoupdate.
+./lib/autoconf/general.m4:2845: AC_TRY_COMPILE is expanded from...
+lib/m4sugar/m4sh.m4:690: _AS_IF_ELSE is expanded from...
+lib/m4sugar/m4sh.m4:697: AS_IF is expanded from...
+./lib/autoconf/general.m4:2249: AC_CACHE_VAL is expanded from...
+acinclude.m4:31: GNUPG_CHECK_TYPEDEF is expanded from...
+configure.ac:661: the top level
+configure.ac:662: warning: The macro 'AC_TRY_COMPILE' is obsolete.
+configure.ac:662: You should run autoupdate.
+./lib/autoconf/general.m4:2845: AC_TRY_COMPILE is expanded from...
+lib/m4sugar/m4sh.m4:690: _AS_IF_ELSE is expanded from...
+lib/m4sugar/m4sh.m4:697: AS_IF is expanded from...
+./lib/autoconf/general.m4:2249: AC_CACHE_VAL is expanded from...
+acinclude.m4:31: GNUPG_CHECK_TYPEDEF is expanded from...
+configure.ac:662: the top level
+configure.ac:664: warning: The macro 'AC_FOREACH' is obsolete.
+configure.ac:664: You should run autoupdate.
+./lib/autoconf/general.m4:191: AC_FOREACH is expanded from...
+m4/onceonly.m4:32: AC_CHECK_HEADERS_ONCE is expanded from...
+m4/sys_socket_h.m4:9: gl_HEADER_SYS_SOCKET is expanded from...
+m4/socklen.m4:18: gl_TYPE_SOCKLEN_T is expanded from...
+configure.ac:664: the top level
+configure.ac:664: warning: The macro 'AC_TRY_COMPILE' is obsolete.
+configure.ac:664: You should run autoupdate.
+./lib/autoconf/general.m4:2845: AC_TRY_COMPILE is expanded from...
+lib/m4sugar/m4sh.m4:690: _AS_IF_ELSE is expanded from...
+lib/m4sugar/m4sh.m4:697: AS_IF is expanded from...
+./lib/autoconf/general.m4:2249: AC_CACHE_VAL is expanded from...
+lib/m4sugar/m4sh.m4:690: _AS_IF_ELSE is expanded from...
+lib/m4sugar/m4sh.m4:697: AS_IF is expanded from...
+./lib/autoconf/types.m4:149: _AC_CHECK_TYPE_NEW is expanded from...
+./lib/autoconf/types.m4:233: AC_CHECK_TYPE is expanded from...
+m4/socklen.m4:18: gl_TYPE_SOCKLEN_T is expanded from...
+configure.ac:664: the top level
+configure.ac:768: warning: The macro 'AC_FOREACH' is obsolete.
+configure.ac:768: You should run autoupdate.
+./lib/autoconf/general.m4:191: AC_FOREACH is expanded from...
+m4/onceonly.m4:46: AC_CHECK_FUNCS_ONCE is expanded from...
+./lib/autoconf/functions.m4:2052: AC_FUNC_VPRINTF is expanded from...
+configure.ac:768: the top level
+configure.ac:778: warning: The macro 'AC_TRY_LINK' is obsolete.
+configure.ac:778: You should run autoupdate.
+./lib/autoconf/general.m4:2918: AC_TRY_LINK is expanded from...
+lib/m4sugar/m4sh.m4:690: _AS_IF_ELSE is expanded from...
+lib/m4sugar/m4sh.m4:697: AS_IF is expanded from...
+./lib/autoconf/general.m4:2249: AC_CACHE_VAL is expanded from...
+./lib/autoconf/general.m4:2270: AC_CACHE_CHECK is expanded from...
+configure.ac:778: the top level
+configure.ac:778: warning: The macro 'AC_TRY_RUN' is obsolete.
+configure.ac:778: You should run autoupdate.
+./lib/autoconf/general.m4:2995: AC_TRY_RUN is expanded from...
+configure.ac:778: the top level
+configure.ac:881: warning: The macro 'AC_FD_CC' is obsolete.
+configure.ac:881: You should run autoupdate.
+./lib/autoconf/general.m4:399: AC_FD_CC is expanded from...
+lib/m4sugar/m4sh.m4:690: _AS_IF_ELSE is expanded from...
+lib/m4sugar/m4sh.m4:697: AS_IF is expanded from...
+./lib/autoconf/general.m4:2249: AC_CACHE_VAL is expanded from...
+acinclude.m4:70: GNUPG_SYS_SYMBOL_UNDERSCORE is expanded from...
+configure.ac:881: the top level
+configure.ac:883: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:883: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:883: the top level
+configure.ac:930: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:930: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:930: the top level
+configure.ac:974: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:974: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+m4/noexecstack.m4:22: CL_AS_NOEXECSTACK is expanded from...
+configure.ac:974: the top level
+configure.ac:1208: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:1208: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:1208: the top level
+autoreconf: running: /usr/bin/autoheader --force
+autoreconf: running: automake --add-missing --copy --force-missing
+configure.ac:148: installing './compile'
+configure.ac:74: installing './missing'
+cipher/Makefile.am: installing './depcomp'
+autoreconf: Leaving directory '.'
+==> Starting build()...
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/sbin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '1000' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking whether make sets $(MAKE)... (cached) yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of gcc... gcc3
+checking how to run the C preprocessor... gcc -E
+checking dependency style of gcc... gcc3
+checking for library containing strerror... none required
+checking for gawk... (cached) gawk
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/sbin/sed
+checking for grep that handles long lines and -e... /usr/sbin/grep
+checking for egrep... /usr/sbin/grep -E
+checking for fgrep... /usr/sbin/grep -F
+checking for ld used by gcc... /usr/sbin/ld
+checking if the linker (/usr/sbin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/sbin/nm -B
+checking the name lister (/usr/sbin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/sbin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ranlib... ranlib
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking command to parse /usr/sbin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/sbin/dd
+checking how to truncate binary pipes... /usr/sbin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking which variant of shared library versioning to provide... (default) aix
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/sbin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for windres... no
+checking whether byte ordering is bigendian... no
+checking size of unsigned short... 2
+checking size of unsigned int... 4
+checking size of unsigned long... 8
+checking size of unsigned long long... 8
+checking for uintptr_t... yes
+checking which symmetric ciphers to include... arcfour blowfish cast5 des aes twofish serpent rfc2268 seed camellia idea
+checking which public-key ciphers to include... dsa elgamal rsa ecc
+checking which message digests to include... crc md4 md5 rmd160 sha1 sha256 sha512 tiger whirlpool
+checking which random module to use... default
+checking whether use of /dev/random is requested... yes
+checking whether the experimental random daemon is requested... no
+checking whether MPI assembler modules are requested... yes
+checking whether memory guard is requested... no
+checking whether use of capabilities is requested... no
+checking whether a HMAC binary check is requested... no
+checking whether padlock support is requested... no
+checking whether AESNI support is requested... yes
+checking whether a -O flag munging is requested... yes
+checking for gpgrt-config... /usr/sbin/gpgrt-config
+checking for GPG Error - version >= 1.8... yes (1.56-unknown)
+checking for library containing setsockopt... none required
+checking for library containing setsockopt... (cached) none required
+checking for egrep... (cached) /usr/sbin/grep -E
+checking for unistd.h... (cached) yes
+checking for sys/select.h... yes
+checking for sys/msg.h... yes
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking for size_t... yes
+checking return type of signal handlers... void
+checking for gcc options needed to detect all undeclared functions... none needed
+checking whether sys_siglist is declared... no
+checking for pid_t... yes
+checking for byte typedef... no
+checking for ushort typedef... yes
+checking for ulong typedef... yes
+checking for u16 typedef... no
+checking for u32 typedef... no
+checking for sys/socket.h... yes
+checking for socklen_t... yes
+checking whether the visibility attribute is supported... yes
+checking for broken visibility attribute... no
+checking for broken alias attribute... no
+checking if gcc supports -fvisibility=hidden... yes
+checking for vprintf... yes
+checking for stpcpy... yes
+checking for strcasecmp... yes
+checking for strtoul... yes
+checking for memmove... yes
+checking for stricmp... no
+checking for atexit... yes
+checking for raise... yes
+checking for strerror... yes
+checking for rand... yes
+checking for mmap... yes
+checking for getpagesize... yes
+checking for sysconf... yes
+checking for waitpid... yes
+checking for wait4... yes
+checking for gettimeofday... yes
+checking for getrusage... yes
+checking for gethrtime... no
+checking for clock_gettime... yes
+checking for syslog... yes
+checking for fcntl... yes
+checking for ftruncate... yes
+checking for mlock... yes
+checking for sysconf... (cached) yes
+checking for getpagesize... (cached) yes
+checking whether mlock is broken... no
+checking for getpid... yes
+checking for clock... yes
+checking for random device... yes
+checking for _ prefix in compiled symbols... egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+no
+checking for mpi assembler functions... done
+checking whether non excutable stack support is requested... yes
+checking whether assembler supports --noexecstack option... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating m4/Makefile
+config.status: creating compat/Makefile
+config.status: creating mpi/Makefile
+config.status: creating cipher/Makefile
+config.status: creating random/Makefile
+config.status: creating src/Makefile
+config.status: creating src/gcrypt.h
+config.status: creating src/libgcrypt-config
+config.status: creating src/versioninfo.rc
+config.status: creating tests/Makefile
+config.status: creating config.h
+config.status: linking mpi/amd64/mpih-add1.S to mpi/mpih-add1-asm.S
+config.status: linking mpi/amd64/mpih-sub1.S to mpi/mpih-sub1-asm.S
+config.status: linking mpi/amd64/mpih-mul1.S to mpi/mpih-mul1-asm.S
+config.status: linking mpi/amd64/mpih-mul2.S to mpi/mpih-mul2-asm.S
+config.status: linking mpi/amd64/mpih-mul3.S to mpi/mpih-mul3-asm.S
+config.status: linking mpi/amd64/mpih-lshift.S to mpi/mpih-lshift-asm.S
+config.status: linking mpi/amd64/mpih-rshift.S to mpi/mpih-rshift-asm.S
+config.status: linking mpi/amd64/mpi-asm-defs.h to mpi/mpi-asm-defs.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing gcrypt-conf commands
+
+        Libgcrypt v1.5.6 has been configured as follows:
+
+        Revision:                  6e481d6b  (28232)
+        Platform:                  GNU/Linux (x86_64-pc-linux-gnu)
+        Enabled cipher algorithms: arcfour blowfish cast5 des aes twofish serpent rfc2268 seed camellia idea
+        Enabled digest algorithms: crc md4 md5 rmd160 sha1 sha256 sha512 tiger whirlpool
+        Enabled pubkey algorithms: dsa elgamal rsa ecc
+        Random number generator:   default
+        Using linux capabilities:  no
+        Try using Padlock crypto:  no
+        Try using AES-NI crypto:   yes
+
+make  all-recursive
+make[1]: Entering directory '/workspace/build/libgcrypt15/src/libgcrypt'
+Making all in compat
+make[2]: Entering directory '/workspace/build/libgcrypt15/src/libgcrypt/compat'
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src    -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT compat.lo -MD -MP -MF .deps/compat.Tpo -c -o compat.lo compat.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT compat.lo -MD -MP -MF .deps/compat.Tpo -c compat.c  -fPIC -DPIC -o .libs/compat.o
+mv -f .deps/compat.Tpo .deps/compat.Plo
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall  -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -o libcompat.la  compat.lo  
+libtool: link: ar cr .libs/libcompat.a .libs/compat.o 
+libtool: link: ranlib .libs/libcompat.a
+libtool: link: ( cd ".libs" && rm -f "libcompat.la" && ln -s "../libcompat.la" "libcompat.la" )
+make[2]: Leaving directory '/workspace/build/libgcrypt15/src/libgcrypt/compat'
+Making all in mpi
+make[2]: Entering directory '/workspace/build/libgcrypt15/src/libgcrypt/mpi'
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT mpi-add.lo -MD -MP -MF .deps/mpi-add.Tpo -c -o mpi-add.lo mpi-add.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT mpi-add.lo -MD -MP -MF .deps/mpi-add.Tpo -c mpi-add.c  -fPIC -DPIC -o .libs/mpi-add.o
+mv -f .deps/mpi-add.Tpo .deps/mpi-add.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT mpi-bit.lo -MD -MP -MF .deps/mpi-bit.Tpo -c -o mpi-bit.lo mpi-bit.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT mpi-bit.lo -MD -MP -MF .deps/mpi-bit.Tpo -c mpi-bit.c  -fPIC -DPIC -o .libs/mpi-bit.o
+mv -f .deps/mpi-bit.Tpo .deps/mpi-bit.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT mpi-cmp.lo -MD -MP -MF .deps/mpi-cmp.Tpo -c -o mpi-cmp.lo mpi-cmp.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT mpi-cmp.lo -MD -MP -MF .deps/mpi-cmp.Tpo -c mpi-cmp.c  -fPIC -DPIC -o .libs/mpi-cmp.o
+mv -f .deps/mpi-cmp.Tpo .deps/mpi-cmp.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT mpi-div.lo -MD -MP -MF .deps/mpi-div.Tpo -c -o mpi-div.lo mpi-div.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT mpi-div.lo -MD -MP -MF .deps/mpi-div.Tpo -c mpi-div.c  -fPIC -DPIC -o .libs/mpi-div.o
+mv -f .deps/mpi-div.Tpo .deps/mpi-div.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT mpi-gcd.lo -MD -MP -MF .deps/mpi-gcd.Tpo -c -o mpi-gcd.lo mpi-gcd.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT mpi-gcd.lo -MD -MP -MF .deps/mpi-gcd.Tpo -c mpi-gcd.c  -fPIC -DPIC -o .libs/mpi-gcd.o
+mv -f .deps/mpi-gcd.Tpo .deps/mpi-gcd.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT mpi-inline.lo -MD -MP -MF .deps/mpi-inline.Tpo -c -o mpi-inline.lo mpi-inline.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT mpi-inline.lo -MD -MP -MF .deps/mpi-inline.Tpo -c mpi-inline.c  -fPIC -DPIC -o .libs/mpi-inline.o
+mv -f .deps/mpi-inline.Tpo .deps/mpi-inline.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT mpi-inv.lo -MD -MP -MF .deps/mpi-inv.Tpo -c -o mpi-inv.lo mpi-inv.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT mpi-inv.lo -MD -MP -MF .deps/mpi-inv.Tpo -c mpi-inv.c  -fPIC -DPIC -o .libs/mpi-inv.o
+mv -f .deps/mpi-inv.Tpo .deps/mpi-inv.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT mpi-mul.lo -MD -MP -MF .deps/mpi-mul.Tpo -c -o mpi-mul.lo mpi-mul.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT mpi-mul.lo -MD -MP -MF .deps/mpi-mul.Tpo -c mpi-mul.c  -fPIC -DPIC -o .libs/mpi-mul.o
+mv -f .deps/mpi-mul.Tpo .deps/mpi-mul.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT mpi-mod.lo -MD -MP -MF .deps/mpi-mod.Tpo -c -o mpi-mod.lo mpi-mod.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT mpi-mod.lo -MD -MP -MF .deps/mpi-mod.Tpo -c mpi-mod.c  -fPIC -DPIC -o .libs/mpi-mod.o
+mv -f .deps/mpi-mod.Tpo .deps/mpi-mod.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT mpi-pow.lo -MD -MP -MF .deps/mpi-pow.Tpo -c -o mpi-pow.lo mpi-pow.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT mpi-pow.lo -MD -MP -MF .deps/mpi-pow.Tpo -c mpi-pow.c  -fPIC -DPIC -o .libs/mpi-pow.o
+mv -f .deps/mpi-pow.Tpo .deps/mpi-pow.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT mpi-mpow.lo -MD -MP -MF .deps/mpi-mpow.Tpo -c -o mpi-mpow.lo mpi-mpow.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT mpi-mpow.lo -MD -MP -MF .deps/mpi-mpow.Tpo -c mpi-mpow.c  -fPIC -DPIC -o .libs/mpi-mpow.o
+mv -f .deps/mpi-mpow.Tpo .deps/mpi-mpow.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT mpi-scan.lo -MD -MP -MF .deps/mpi-scan.Tpo -c -o mpi-scan.lo mpi-scan.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT mpi-scan.lo -MD -MP -MF .deps/mpi-scan.Tpo -c mpi-scan.c  -fPIC -DPIC -o .libs/mpi-scan.o
+mv -f .deps/mpi-scan.Tpo .deps/mpi-scan.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT mpicoder.lo -MD -MP -MF .deps/mpicoder.Tpo -c -o mpicoder.lo mpicoder.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT mpicoder.lo -MD -MP -MF .deps/mpicoder.Tpo -c mpicoder.c  -fPIC -DPIC -o .libs/mpicoder.o
+mv -f .deps/mpicoder.Tpo .deps/mpicoder.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT mpih-div.lo -MD -MP -MF .deps/mpih-div.Tpo -c -o mpih-div.lo mpih-div.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT mpih-div.lo -MD -MP -MF .deps/mpih-div.Tpo -c mpih-div.c  -fPIC -DPIC -o .libs/mpih-div.o
+In file included from mpih-div.c:31:
+mpih-div.c: In function '_gcry_mpih_mod_1':
+mpi-internal.h:148:24: warning: variable '_ql' set but not used [-Wunused-but-set-variable]
+  148 |         mpi_limb_t _q, _ql, _r;                                     \
+      |                        ^~~
+mpih-div.c:98:17: note: in expansion of macro 'UDIV_QRNND_PREINV'
+   98 |                 UDIV_QRNND_PREINV(dummy, r, r,
+      |                 ^~~~~~~~~~~~~~~~~
+mpi-internal.h:148:24: warning: variable '_ql' set but not used [-Wunused-but-set-variable]
+  148 |         mpi_limb_t _q, _ql, _r;                                     \
+      |                        ^~~
+mpih-div.c:104:13: note: in expansion of macro 'UDIV_QRNND_PREINV'
+  104 |             UDIV_QRNND_PREINV(dummy, r, r,
+      |             ^~~~~~~~~~~~~~~~~
+mpi-internal.h:148:24: warning: variable '_ql' set but not used [-Wunused-but-set-variable]
+  148 |         mpi_limb_t _q, _ql, _r;                                     \
+      |                        ^~~
+mpih-div.c:134:17: note: in expansion of macro 'UDIV_QRNND_PREINV'
+  134 |                 UDIV_QRNND_PREINV(dummy, r, r,
+      |                 ^~~~~~~~~~~~~~~~~
+mpih-div.c:51:9: warning: variable 'dummy' set but not used [-Wunused-but-set-variable]
+   51 |     int dummy;
+      |         ^~~~~
+mpih-div.c: In function '_gcry_mpih_divmod_1':
+mpi-internal.h:148:24: warning: variable '_ql' set but not used [-Wunused-but-set-variable]
+  148 |         mpi_limb_t _q, _ql, _r;                                     \
+      |                        ^~~
+mpih-div.c:444:17: note: in expansion of macro 'UDIV_QRNND_PREINV'
+  444 |                 UDIV_QRNND_PREINV( quot_ptr[i + 1], r, r,
+      |                 ^~~~~~~~~~~~~~~~~
+mpi-internal.h:148:24: warning: variable '_ql' set but not used [-Wunused-but-set-variable]
+  148 |         mpi_limb_t _q, _ql, _r;                                     \
+      |                        ^~~
+mpih-div.c:450:13: note: in expansion of macro 'UDIV_QRNND_PREINV'
+  450 |             UDIV_QRNND_PREINV( quot_ptr[0], r, r,
+      |             ^~~~~~~~~~~~~~~~~
+mpi-internal.h:148:24: warning: variable '_ql' set but not used [-Wunused-but-set-variable]
+  148 |         mpi_limb_t _q, _ql, _r;                                     \
+      |                        ^~~
+mpih-div.c:479:17: note: in expansion of macro 'UDIV_QRNND_PREINV'
+  479 |                 UDIV_QRNND_PREINV( quot_ptr[i], r, r,
+      |                 ^~~~~~~~~~~~~~~~~
+mpih-div.c:399:9: warning: variable 'dummy' set but not used [-Wunused-but-set-variable]
+  399 |     int dummy;
+      |         ^~~~~
+mv -f .deps/mpih-div.Tpo .deps/mpih-div.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT mpih-mul.lo -MD -MP -MF .deps/mpih-mul.Tpo -c -o mpih-mul.lo mpih-mul.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT mpih-mul.lo -MD -MP -MF .deps/mpih-mul.Tpo -c mpih-mul.c  -fPIC -DPIC -o .libs/mpih-mul.o
+mv -f .deps/mpih-mul.Tpo .deps/mpih-mul.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT mpiutil.lo -MD -MP -MF .deps/mpiutil.Tpo -c -o mpiutil.lo mpiutil.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT mpiutil.lo -MD -MP -MF .deps/mpiutil.Tpo -c mpiutil.c  -fPIC -DPIC -o .libs/mpiutil.o
+mv -f .deps/mpiutil.Tpo .deps/mpiutil.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT ec.lo -MD -MP -MF .deps/ec.Tpo -c -o ec.lo ec.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT ec.lo -MD -MP -MF .deps/ec.Tpo -c ec.c  -fPIC -DPIC -o .libs/ec.o
+mv -f .deps/ec.Tpo .deps/ec.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src  -Wa,--noexecstack -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -MT mpih-add1-asm.lo -MD -MP -MF .deps/mpih-add1-asm.Tpo -c -o mpih-add1-asm.lo mpih-add1-asm.S
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -Wa,--noexecstack -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -MT mpih-add1-asm.lo -MD -MP -MF .deps/mpih-add1-asm.Tpo -c mpih-add1-asm.S  -fPIC -DPIC -o .libs/mpih-add1-asm.o
+mv -f .deps/mpih-add1-asm.Tpo .deps/mpih-add1-asm.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src  -Wa,--noexecstack -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -MT mpih-sub1-asm.lo -MD -MP -MF .deps/mpih-sub1-asm.Tpo -c -o mpih-sub1-asm.lo mpih-sub1-asm.S
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -Wa,--noexecstack -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -MT mpih-sub1-asm.lo -MD -MP -MF .deps/mpih-sub1-asm.Tpo -c mpih-sub1-asm.S  -fPIC -DPIC -o .libs/mpih-sub1-asm.o
+mv -f .deps/mpih-sub1-asm.Tpo .deps/mpih-sub1-asm.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src  -Wa,--noexecstack -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -MT mpih-mul1-asm.lo -MD -MP -MF .deps/mpih-mul1-asm.Tpo -c -o mpih-mul1-asm.lo mpih-mul1-asm.S
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -Wa,--noexecstack -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -MT mpih-mul1-asm.lo -MD -MP -MF .deps/mpih-mul1-asm.Tpo -c mpih-mul1-asm.S  -fPIC -DPIC -o .libs/mpih-mul1-asm.o
+mv -f .deps/mpih-mul1-asm.Tpo .deps/mpih-mul1-asm.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src  -Wa,--noexecstack -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -MT mpih-mul2-asm.lo -MD -MP -MF .deps/mpih-mul2-asm.Tpo -c -o mpih-mul2-asm.lo mpih-mul2-asm.S
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -Wa,--noexecstack -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -MT mpih-mul2-asm.lo -MD -MP -MF .deps/mpih-mul2-asm.Tpo -c mpih-mul2-asm.S  -fPIC -DPIC -o .libs/mpih-mul2-asm.o
+mv -f .deps/mpih-mul2-asm.Tpo .deps/mpih-mul2-asm.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src  -Wa,--noexecstack -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -MT mpih-mul3-asm.lo -MD -MP -MF .deps/mpih-mul3-asm.Tpo -c -o mpih-mul3-asm.lo mpih-mul3-asm.S
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -Wa,--noexecstack -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -MT mpih-mul3-asm.lo -MD -MP -MF .deps/mpih-mul3-asm.Tpo -c mpih-mul3-asm.S  -fPIC -DPIC -o .libs/mpih-mul3-asm.o
+mv -f .deps/mpih-mul3-asm.Tpo .deps/mpih-mul3-asm.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src  -Wa,--noexecstack -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -MT mpih-lshift-asm.lo -MD -MP -MF .deps/mpih-lshift-asm.Tpo -c -o mpih-lshift-asm.lo mpih-lshift-asm.S
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -Wa,--noexecstack -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -MT mpih-lshift-asm.lo -MD -MP -MF .deps/mpih-lshift-asm.Tpo -c mpih-lshift-asm.S  -fPIC -DPIC -o .libs/mpih-lshift-asm.o
+mv -f .deps/mpih-lshift-asm.Tpo .deps/mpih-lshift-asm.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src  -Wa,--noexecstack -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -MT mpih-rshift-asm.lo -MD -MP -MF .deps/mpih-rshift-asm.Tpo -c -o mpih-rshift-asm.lo mpih-rshift-asm.S
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -Wa,--noexecstack -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -MT mpih-rshift-asm.lo -MD -MP -MF .deps/mpih-rshift-asm.Tpo -c mpih-rshift-asm.S  -fPIC -DPIC -o .libs/mpih-rshift-asm.o
+mv -f .deps/mpih-rshift-asm.Tpo .deps/mpih-rshift-asm.Plo
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall  -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -o libmpi.la  mpi-add.lo mpi-bit.lo mpi-cmp.lo mpi-div.lo mpi-gcd.lo mpi-inline.lo mpi-inv.lo mpi-mul.lo mpi-mod.lo mpi-pow.lo mpi-mpow.lo mpi-scan.lo mpicoder.lo mpih-div.lo mpih-mul.lo mpiutil.lo ec.lo mpih-add1-asm.lo mpih-sub1-asm.lo mpih-mul1-asm.lo mpih-mul2-asm.lo mpih-mul3-asm.lo mpih-lshift-asm.lo mpih-rshift-asm.lo    
+libtool: link: ar cr .libs/libmpi.a .libs/mpi-add.o .libs/mpi-bit.o .libs/mpi-cmp.o .libs/mpi-div.o .libs/mpi-gcd.o .libs/mpi-inline.o .libs/mpi-inv.o .libs/mpi-mul.o .libs/mpi-mod.o .libs/mpi-pow.o .libs/mpi-mpow.o .libs/mpi-scan.o .libs/mpicoder.o .libs/mpih-div.o .libs/mpih-mul.o .libs/mpiutil.o .libs/ec.o .libs/mpih-add1-asm.o .libs/mpih-sub1-asm.o .libs/mpih-mul1-asm.o .libs/mpih-mul2-asm.o .libs/mpih-mul3-asm.o .libs/mpih-lshift-asm.o .libs/mpih-rshift-asm.o 
+libtool: link: ranlib .libs/libmpi.a
+libtool: link: ( cd ".libs" && rm -f "libmpi.la" && ln -s "../libmpi.la" "libmpi.la" )
+make[2]: Leaving directory '/workspace/build/libgcrypt15/src/libgcrypt/mpi'
+Making all in cipher
+make[2]: Entering directory '/workspace/build/libgcrypt15/src/libgcrypt/cipher'
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT cipher.lo -MD -MP -MF .deps/cipher.Tpo -c -o cipher.lo cipher.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT cipher.lo -MD -MP -MF .deps/cipher.Tpo -c cipher.c  -fPIC -DPIC -o .libs/cipher.o
+mv -f .deps/cipher.Tpo .deps/cipher.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT pubkey.lo -MD -MP -MF .deps/pubkey.Tpo -c -o pubkey.lo pubkey.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT pubkey.lo -MD -MP -MF .deps/pubkey.Tpo -c pubkey.c  -fPIC -DPIC -o .libs/pubkey.o
+mv -f .deps/pubkey.Tpo .deps/pubkey.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT ac.lo -MD -MP -MF .deps/ac.Tpo -c -o ac.lo ac.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT ac.lo -MD -MP -MF .deps/ac.Tpo -c ac.c  -fPIC -DPIC -o .libs/ac.o
+mv -f .deps/ac.Tpo .deps/ac.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT md.lo -MD -MP -MF .deps/md.Tpo -c -o md.lo md.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT md.lo -MD -MP -MF .deps/md.Tpo -c md.c  -fPIC -DPIC -o .libs/md.o
+mv -f .deps/md.Tpo .deps/md.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT kdf.lo -MD -MP -MF .deps/kdf.Tpo -c -o kdf.lo kdf.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT kdf.lo -MD -MP -MF .deps/kdf.Tpo -c kdf.c  -fPIC -DPIC -o .libs/kdf.o
+mv -f .deps/kdf.Tpo .deps/kdf.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT hmac-tests.lo -MD -MP -MF .deps/hmac-tests.Tpo -c -o hmac-tests.lo hmac-tests.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT hmac-tests.lo -MD -MP -MF .deps/hmac-tests.Tpo -c hmac-tests.c  -fPIC -DPIC -o .libs/hmac-tests.o
+mv -f .deps/hmac-tests.Tpo .deps/hmac-tests.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT primegen.lo -MD -MP -MF .deps/primegen.Tpo -c -o primegen.lo primegen.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT primegen.lo -MD -MP -MF .deps/primegen.Tpo -c primegen.c  -fPIC -DPIC -o .libs/primegen.o
+mv -f .deps/primegen.Tpo .deps/primegen.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT hash-common.lo -MD -MP -MF .deps/hash-common.Tpo -c -o hash-common.lo hash-common.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT hash-common.lo -MD -MP -MF .deps/hash-common.Tpo -c hash-common.c  -fPIC -DPIC -o .libs/hash-common.o
+mv -f .deps/hash-common.Tpo .deps/hash-common.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT arcfour.lo -MD -MP -MF .deps/arcfour.Tpo -c -o arcfour.lo arcfour.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT arcfour.lo -MD -MP -MF .deps/arcfour.Tpo -c arcfour.c  -fPIC -DPIC -o .libs/arcfour.o
+mv -f .deps/arcfour.Tpo .deps/arcfour.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT blowfish.lo -MD -MP -MF .deps/blowfish.Tpo -c -o blowfish.lo blowfish.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT blowfish.lo -MD -MP -MF .deps/blowfish.Tpo -c blowfish.c  -fPIC -DPIC -o .libs/blowfish.o
+mv -f .deps/blowfish.Tpo .deps/blowfish.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT cast5.lo -MD -MP -MF .deps/cast5.Tpo -c -o cast5.lo cast5.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT cast5.lo -MD -MP -MF .deps/cast5.Tpo -c cast5.c  -fPIC -DPIC -o .libs/cast5.o
+mv -f .deps/cast5.Tpo .deps/cast5.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT des.lo -MD -MP -MF .deps/des.Tpo -c -o des.lo des.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT des.lo -MD -MP -MF .deps/des.Tpo -c des.c  -fPIC -DPIC -o .libs/des.o
+mv -f .deps/des.Tpo .deps/des.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT rijndael.lo -MD -MP -MF .deps/rijndael.Tpo -c -o rijndael.lo rijndael.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT rijndael.lo -MD -MP -MF .deps/rijndael.Tpo -c rijndael.c  -fPIC -DPIC -o .libs/rijndael.o
+mv -f .deps/rijndael.Tpo .deps/rijndael.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT twofish.lo -MD -MP -MF .deps/twofish.Tpo -c -o twofish.lo twofish.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT twofish.lo -MD -MP -MF .deps/twofish.Tpo -c twofish.c  -fPIC -DPIC -o .libs/twofish.o
+mv -f .deps/twofish.Tpo .deps/twofish.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT serpent.lo -MD -MP -MF .deps/serpent.Tpo -c -o serpent.lo serpent.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT serpent.lo -MD -MP -MF .deps/serpent.Tpo -c serpent.c  -fPIC -DPIC -o .libs/serpent.o
+mv -f .deps/serpent.Tpo .deps/serpent.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT rfc2268.lo -MD -MP -MF .deps/rfc2268.Tpo -c -o rfc2268.lo rfc2268.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT rfc2268.lo -MD -MP -MF .deps/rfc2268.Tpo -c rfc2268.c  -fPIC -DPIC -o .libs/rfc2268.o
+mv -f .deps/rfc2268.Tpo .deps/rfc2268.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT seed.lo -MD -MP -MF .deps/seed.Tpo -c -o seed.lo seed.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT seed.lo -MD -MP -MF .deps/seed.Tpo -c seed.c  -fPIC -DPIC -o .libs/seed.o
+mv -f .deps/seed.Tpo .deps/seed.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT camellia.lo -MD -MP -MF .deps/camellia.Tpo -c -o camellia.lo camellia.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT camellia.lo -MD -MP -MF .deps/camellia.Tpo -c camellia.c  -fPIC -DPIC -o .libs/camellia.o
+mv -f .deps/camellia.Tpo .deps/camellia.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT camellia-glue.lo -MD -MP -MF .deps/camellia-glue.Tpo -c -o camellia-glue.lo camellia-glue.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT camellia-glue.lo -MD -MP -MF .deps/camellia-glue.Tpo -c camellia-glue.c  -fPIC -DPIC -o .libs/camellia-glue.o
+mv -f .deps/camellia-glue.Tpo .deps/camellia-glue.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT idea.lo -MD -MP -MF .deps/idea.Tpo -c -o idea.lo idea.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT idea.lo -MD -MP -MF .deps/idea.Tpo -c idea.c  -fPIC -DPIC -o .libs/idea.o
+mv -f .deps/idea.Tpo .deps/idea.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT dsa.lo -MD -MP -MF .deps/dsa.Tpo -c -o dsa.lo dsa.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT dsa.lo -MD -MP -MF .deps/dsa.Tpo -c dsa.c  -fPIC -DPIC -o .libs/dsa.o
+mv -f .deps/dsa.Tpo .deps/dsa.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT rsa.lo -MD -MP -MF .deps/rsa.Tpo -c -o rsa.lo rsa.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT rsa.lo -MD -MP -MF .deps/rsa.Tpo -c rsa.c  -fPIC -DPIC -o .libs/rsa.o
+mv -f .deps/rsa.Tpo .deps/rsa.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT elgamal.lo -MD -MP -MF .deps/elgamal.Tpo -c -o elgamal.lo elgamal.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT elgamal.lo -MD -MP -MF .deps/elgamal.Tpo -c elgamal.c  -fPIC -DPIC -o .libs/elgamal.o
+mv -f .deps/elgamal.Tpo .deps/elgamal.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT ecc.lo -MD -MP -MF .deps/ecc.Tpo -c -o ecc.lo ecc.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT ecc.lo -MD -MP -MF .deps/ecc.Tpo -c ecc.c  -fPIC -DPIC -o .libs/ecc.o
+mv -f .deps/ecc.Tpo .deps/ecc.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT crc.lo -MD -MP -MF .deps/crc.Tpo -c -o crc.lo crc.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT crc.lo -MD -MP -MF .deps/crc.Tpo -c crc.c  -fPIC -DPIC -o .libs/crc.o
+mv -f .deps/crc.Tpo .deps/crc.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT md4.lo -MD -MP -MF .deps/md4.Tpo -c -o md4.lo md4.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT md4.lo -MD -MP -MF .deps/md4.Tpo -c md4.c  -fPIC -DPIC -o .libs/md4.o
+mv -f .deps/md4.Tpo .deps/md4.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT md5.lo -MD -MP -MF .deps/md5.Tpo -c -o md5.lo md5.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT md5.lo -MD -MP -MF .deps/md5.Tpo -c md5.c  -fPIC -DPIC -o .libs/md5.o
+mv -f .deps/md5.Tpo .deps/md5.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT sha256.lo -MD -MP -MF .deps/sha256.Tpo -c -o sha256.lo sha256.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT sha256.lo -MD -MP -MF .deps/sha256.Tpo -c sha256.c  -fPIC -DPIC -o .libs/sha256.o
+mv -f .deps/sha256.Tpo .deps/sha256.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT sha512.lo -MD -MP -MF .deps/sha512.Tpo -c -o sha512.lo sha512.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT sha512.lo -MD -MP -MF .deps/sha512.Tpo -c sha512.c  -fPIC -DPIC -o .libs/sha512.o
+mv -f .deps/sha512.Tpo .deps/sha512.Plo
+`echo /bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -c ./tiger.c | sed -e 's/-O\([2-9s][2-9s]*\)/-O1/' -e 's/-Ofast/-O1/g' `
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O1 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -c ./tiger.c  -fPIC -DPIC -o .libs/tiger.o
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT whirlpool.lo -MD -MP -MF .deps/whirlpool.Tpo -c -o whirlpool.lo whirlpool.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT whirlpool.lo -MD -MP -MF .deps/whirlpool.Tpo -c whirlpool.c  -fPIC -DPIC -o .libs/whirlpool.o
+mv -f .deps/whirlpool.Tpo .deps/whirlpool.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT rmd160.lo -MD -MP -MF .deps/rmd160.Tpo -c -o rmd160.lo rmd160.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT rmd160.lo -MD -MP -MF .deps/rmd160.Tpo -c rmd160.c  -fPIC -DPIC -o .libs/rmd160.o
+mv -f .deps/rmd160.Tpo .deps/rmd160.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT sha1.lo -MD -MP -MF .deps/sha1.Tpo -c -o sha1.lo sha1.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT sha1.lo -MD -MP -MF .deps/sha1.Tpo -c sha1.c  -fPIC -DPIC -o .libs/sha1.o
+mv -f .deps/sha1.Tpo .deps/sha1.Plo
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall  -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -o libcipher.la  cipher.lo pubkey.lo ac.lo md.lo kdf.lo hmac-tests.lo primegen.lo hash-common.lo arcfour.lo blowfish.lo cast5.lo des.lo rijndael.lo twofish.lo serpent.lo rfc2268.lo seed.lo camellia.lo camellia-glue.lo idea.lo  dsa.lo rsa.lo elgamal.lo ecc.lo  crc.lo md4.lo md5.lo sha256.lo sha512.lo tiger.lo whirlpool.lo rmd160.lo sha1.lo 
+libtool: link: ar cr .libs/libcipher.a .libs/cipher.o .libs/pubkey.o .libs/ac.o .libs/md.o .libs/kdf.o .libs/hmac-tests.o .libs/primegen.o .libs/hash-common.o .libs/arcfour.o .libs/blowfish.o .libs/cast5.o .libs/des.o .libs/rijndael.o .libs/twofish.o .libs/serpent.o .libs/rfc2268.o .libs/seed.o .libs/camellia.o .libs/camellia-glue.o .libs/idea.o .libs/dsa.o .libs/rsa.o .libs/elgamal.o .libs/ecc.o .libs/crc.o .libs/md4.o .libs/md5.o .libs/sha256.o .libs/sha512.o .libs/tiger.o .libs/whirlpool.o .libs/rmd160.o .libs/sha1.o 
+libtool: link: ranlib .libs/libcipher.a
+libtool: link: ( cd ".libs" && rm -f "libcipher.la" && ln -s "../libcipher.la" "libcipher.la" )
+make[2]: Leaving directory '/workspace/build/libgcrypt15/src/libgcrypt/cipher'
+Making all in random
+make[2]: Entering directory '/workspace/build/libgcrypt15/src/libgcrypt/random'
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT random.lo -MD -MP -MF .deps/random.Tpo -c -o random.lo random.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT random.lo -MD -MP -MF .deps/random.Tpo -c random.c  -fPIC -DPIC -o .libs/random.o
+mv -f .deps/random.Tpo .deps/random.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT random-csprng.lo -MD -MP -MF .deps/random-csprng.Tpo -c -o random-csprng.lo random-csprng.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT random-csprng.lo -MD -MP -MF .deps/random-csprng.Tpo -c random-csprng.c  -fPIC -DPIC -o .libs/random-csprng.o
+mv -f .deps/random-csprng.Tpo .deps/random-csprng.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT random-fips.lo -MD -MP -MF .deps/random-fips.Tpo -c -o random-fips.lo random-fips.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT random-fips.lo -MD -MP -MF .deps/random-fips.Tpo -c random-fips.c  -fPIC -DPIC -o .libs/random-fips.o
+mv -f .deps/random-fips.Tpo .deps/random-fips.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT rndhw.lo -MD -MP -MF .deps/rndhw.Tpo -c -o rndhw.lo rndhw.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT rndhw.lo -MD -MP -MF .deps/rndhw.Tpo -c rndhw.c  -fPIC -DPIC -o .libs/rndhw.o
+mv -f .deps/rndhw.Tpo .deps/rndhw.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT rndlinux.lo -MD -MP -MF .deps/rndlinux.Tpo -c -o rndlinux.lo rndlinux.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I../src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT rndlinux.lo -MD -MP -MF .deps/rndlinux.Tpo -c rndlinux.c  -fPIC -DPIC -o .libs/rndlinux.o
+mv -f .deps/rndlinux.Tpo .deps/rndlinux.Plo
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall  -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -o librandom.la  random.lo random-csprng.lo random-fips.lo rndhw.lo  rndlinux.lo 
+libtool: link: ar cr .libs/librandom.a .libs/random.o .libs/random-csprng.o .libs/random-fips.o .libs/rndhw.o .libs/rndlinux.o 
+libtool: link: ranlib .libs/librandom.a
+libtool: link: ( cd ".libs" && rm -f "librandom.la" && ln -s "../librandom.la" "librandom.la" )
+make[2]: Leaving directory '/workspace/build/libgcrypt15/src/libgcrypt/random'
+Making all in src
+make[2]: Entering directory '/workspace/build/libgcrypt15/src/libgcrypt/src'
+gcc -DHAVE_CONFIG_H -I. -I..     -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT dumpsexp-dumpsexp.o -MD -MP -MF .deps/dumpsexp-dumpsexp.Tpo -c -o dumpsexp-dumpsexp.o `test -f 'dumpsexp.c' || echo './'`dumpsexp.c
+mv -f .deps/dumpsexp-dumpsexp.Tpo .deps/dumpsexp-dumpsexp.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall  -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -o dumpsexp dumpsexp-dumpsexp.o  
+libtool: link: gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto -o dumpsexp dumpsexp-dumpsexp.o  -Wl,--as-needed
+gcc -DHAVE_CONFIG_H -I. -I..    -DSTANDALONE  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT hmac256-hmac256.o -MD -MP -MF .deps/hmac256-hmac256.Tpo -c -o hmac256-hmac256.o `test -f 'hmac256.c' || echo './'`hmac256.c
+mv -f .deps/hmac256-hmac256.Tpo .deps/hmac256-hmac256.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -DSTANDALONE  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall  -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -o hmac256 hmac256-hmac256.o  
+libtool: link: gcc -DSTANDALONE -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto -o hmac256 hmac256-hmac256.o  -Wl,--as-needed
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..     -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT libgcrypt_la-visibility.lo -MD -MP -MF .deps/libgcrypt_la-visibility.Tpo -c -o libgcrypt_la-visibility.lo `test -f 'visibility.c' || echo './'`visibility.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT libgcrypt_la-visibility.lo -MD -MP -MF .deps/libgcrypt_la-visibility.Tpo -c visibility.c  -fPIC -DPIC -o .libs/libgcrypt_la-visibility.o
+mv -f .deps/libgcrypt_la-visibility.Tpo .deps/libgcrypt_la-visibility.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..     -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT libgcrypt_la-misc.lo -MD -MP -MF .deps/libgcrypt_la-misc.Tpo -c -o libgcrypt_la-misc.lo `test -f 'misc.c' || echo './'`misc.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT libgcrypt_la-misc.lo -MD -MP -MF .deps/libgcrypt_la-misc.Tpo -c misc.c  -fPIC -DPIC -o .libs/libgcrypt_la-misc.o
+mv -f .deps/libgcrypt_la-misc.Tpo .deps/libgcrypt_la-misc.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..     -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT libgcrypt_la-global.lo -MD -MP -MF .deps/libgcrypt_la-global.Tpo -c -o libgcrypt_la-global.lo `test -f 'global.c' || echo './'`global.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT libgcrypt_la-global.lo -MD -MP -MF .deps/libgcrypt_la-global.Tpo -c global.c  -fPIC -DPIC -o .libs/libgcrypt_la-global.o
+mv -f .deps/libgcrypt_la-global.Tpo .deps/libgcrypt_la-global.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..     -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT libgcrypt_la-sexp.lo -MD -MP -MF .deps/libgcrypt_la-sexp.Tpo -c -o libgcrypt_la-sexp.lo `test -f 'sexp.c' || echo './'`sexp.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT libgcrypt_la-sexp.lo -MD -MP -MF .deps/libgcrypt_la-sexp.Tpo -c sexp.c  -fPIC -DPIC -o .libs/libgcrypt_la-sexp.o
+mv -f .deps/libgcrypt_la-sexp.Tpo .deps/libgcrypt_la-sexp.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..     -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT libgcrypt_la-hwfeatures.lo -MD -MP -MF .deps/libgcrypt_la-hwfeatures.Tpo -c -o libgcrypt_la-hwfeatures.lo `test -f 'hwfeatures.c' || echo './'`hwfeatures.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT libgcrypt_la-hwfeatures.lo -MD -MP -MF .deps/libgcrypt_la-hwfeatures.Tpo -c hwfeatures.c  -fPIC -DPIC -o .libs/libgcrypt_la-hwfeatures.o
+mv -f .deps/libgcrypt_la-hwfeatures.Tpo .deps/libgcrypt_la-hwfeatures.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..     -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT libgcrypt_la-stdmem.lo -MD -MP -MF .deps/libgcrypt_la-stdmem.Tpo -c -o libgcrypt_la-stdmem.lo `test -f 'stdmem.c' || echo './'`stdmem.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT libgcrypt_la-stdmem.lo -MD -MP -MF .deps/libgcrypt_la-stdmem.Tpo -c stdmem.c  -fPIC -DPIC -o .libs/libgcrypt_la-stdmem.o
+mv -f .deps/libgcrypt_la-stdmem.Tpo .deps/libgcrypt_la-stdmem.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..     -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT libgcrypt_la-secmem.lo -MD -MP -MF .deps/libgcrypt_la-secmem.Tpo -c -o libgcrypt_la-secmem.lo `test -f 'secmem.c' || echo './'`secmem.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT libgcrypt_la-secmem.lo -MD -MP -MF .deps/libgcrypt_la-secmem.Tpo -c secmem.c  -fPIC -DPIC -o .libs/libgcrypt_la-secmem.o
+mv -f .deps/libgcrypt_la-secmem.Tpo .deps/libgcrypt_la-secmem.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..     -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT libgcrypt_la-missing-string.lo -MD -MP -MF .deps/libgcrypt_la-missing-string.Tpo -c -o libgcrypt_la-missing-string.lo `test -f 'missing-string.c' || echo './'`missing-string.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT libgcrypt_la-missing-string.lo -MD -MP -MF .deps/libgcrypt_la-missing-string.Tpo -c missing-string.c  -fPIC -DPIC -o .libs/libgcrypt_la-missing-string.o
+mv -f .deps/libgcrypt_la-missing-string.Tpo .deps/libgcrypt_la-missing-string.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..     -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT libgcrypt_la-module.lo -MD -MP -MF .deps/libgcrypt_la-module.Tpo -c -o libgcrypt_la-module.lo `test -f 'module.c' || echo './'`module.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT libgcrypt_la-module.lo -MD -MP -MF .deps/libgcrypt_la-module.Tpo -c module.c  -fPIC -DPIC -o .libs/libgcrypt_la-module.o
+mv -f .deps/libgcrypt_la-module.Tpo .deps/libgcrypt_la-module.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..     -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT libgcrypt_la-fips.lo -MD -MP -MF .deps/libgcrypt_la-fips.Tpo -c -o libgcrypt_la-fips.lo `test -f 'fips.c' || echo './'`fips.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT libgcrypt_la-fips.lo -MD -MP -MF .deps/libgcrypt_la-fips.Tpo -c fips.c  -fPIC -DPIC -o .libs/libgcrypt_la-fips.o
+mv -f .deps/libgcrypt_la-fips.Tpo .deps/libgcrypt_la-fips.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..     -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT libgcrypt_la-hmac256.lo -MD -MP -MF .deps/libgcrypt_la-hmac256.Tpo -c -o libgcrypt_la-hmac256.lo `test -f 'hmac256.c' || echo './'`hmac256.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT libgcrypt_la-hmac256.lo -MD -MP -MF .deps/libgcrypt_la-hmac256.Tpo -c hmac256.c  -fPIC -DPIC -o .libs/libgcrypt_la-hmac256.o
+mv -f .deps/libgcrypt_la-hmac256.Tpo .deps/libgcrypt_la-hmac256.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..     -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT libgcrypt_la-ath.lo -MD -MP -MF .deps/libgcrypt_la-ath.Tpo -c -o libgcrypt_la-ath.lo `test -f 'ath.c' || echo './'`ath.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT libgcrypt_la-ath.lo -MD -MP -MF .deps/libgcrypt_la-ath.Tpo -c ath.c  -fPIC -DPIC -o .libs/libgcrypt_la-ath.o
+mv -f .deps/libgcrypt_la-ath.Tpo .deps/libgcrypt_la-ath.Plo
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall   -Wl,--version-script=./libgcrypt.vers -version-info 19:5:8 -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -o libgcrypt.la -rpath /usr/lib libgcrypt_la-visibility.lo libgcrypt_la-misc.lo libgcrypt_la-global.lo libgcrypt_la-sexp.lo libgcrypt_la-hwfeatures.lo libgcrypt_la-stdmem.lo libgcrypt_la-secmem.lo libgcrypt_la-missing-string.lo libgcrypt_la-module.lo libgcrypt_la-fips.lo libgcrypt_la-hmac256.lo libgcrypt_la-ath.lo  ../cipher/libcipher.la ../random/librandom.la ../mpi/libmpi.la ../compat/libcompat.la  -lgpg-error 
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/libgcrypt_la-visibility.o .libs/libgcrypt_la-misc.o .libs/libgcrypt_la-global.o .libs/libgcrypt_la-sexp.o .libs/libgcrypt_la-hwfeatures.o .libs/libgcrypt_la-stdmem.o .libs/libgcrypt_la-secmem.o .libs/libgcrypt_la-missing-string.o .libs/libgcrypt_la-module.o .libs/libgcrypt_la-fips.o .libs/libgcrypt_la-hmac256.o .libs/libgcrypt_la-ath.o  -Wl,--whole-archive ../cipher/.libs/libcipher.a ../random/.libs/librandom.a ../mpi/.libs/libmpi.a ../compat/.libs/libcompat.a -Wl,--no-whole-archive  -Wl,--as-needed -lgpg-error  -march=x86-64 -mtune=generic -O2 -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -Wall -Wl,--version-script=./libgcrypt.vers -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto   -Wl,-soname -Wl,libgcrypt.so.11 -o .libs/libgcrypt.so.11.8.5
+libtool: link: (cd ".libs" && rm -f "libgcrypt.so.11" && ln -s "libgcrypt.so.11.8.5" "libgcrypt.so.11")
+libtool: link: (cd ".libs" && rm -f "libgcrypt.so" && ln -s "libgcrypt.so.11.8.5" "libgcrypt.so")
+libtool: link: ( cd ".libs" && rm -f "libgcrypt.la" && ln -s "../libgcrypt.la" "libgcrypt.la" )
+make[2]: Leaving directory '/workspace/build/libgcrypt15/src/libgcrypt/src'
+Making all in tests
+make[2]: Entering directory '/workspace/build/libgcrypt15/src/libgcrypt/tests'
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT version.o -MD -MP -MF .deps/version.Tpo -c -o version.o version.c
+mv -f .deps/version.Tpo .deps/version.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall  -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -o version version.o ../src/libgcrypt.la  ../compat/libcompat.la -lgpg-error 
+libtool: link: gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto -o .libs/version version.o  -Wl,--as-needed ../src/.libs/libgcrypt.so ../compat/.libs/libcompat.a -lgpg-error
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT t-mpi-bit.o -MD -MP -MF .deps/t-mpi-bit.Tpo -c -o t-mpi-bit.o t-mpi-bit.c
+mv -f .deps/t-mpi-bit.Tpo .deps/t-mpi-bit.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall  -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -o t-mpi-bit t-mpi-bit.o ../src/libgcrypt.la  ../compat/libcompat.la -lgpg-error 
+libtool: link: gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto -o .libs/t-mpi-bit t-mpi-bit.o  -Wl,--as-needed ../src/.libs/libgcrypt.so ../compat/.libs/libcompat.a -lgpg-error
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT prime.o -MD -MP -MF .deps/prime.Tpo -c -o prime.o prime.c
+mv -f .deps/prime.Tpo .deps/prime.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall  -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -o prime prime.o ../src/libgcrypt.la  ../compat/libcompat.la -lgpg-error 
+libtool: link: gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto -o .libs/prime prime.o  -Wl,--as-needed ../src/.libs/libgcrypt.so ../compat/.libs/libcompat.a -lgpg-error
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT register.o -MD -MP -MF .deps/register.Tpo -c -o register.o register.c
+mv -f .deps/register.Tpo .deps/register.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall  -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -o register register.o ../src/libgcrypt.la  ../compat/libcompat.la -lgpg-error 
+libtool: link: gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto -o .libs/register register.o  -Wl,--as-needed ../src/.libs/libgcrypt.so ../compat/.libs/libcompat.a -lgpg-error
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT ac.o -MD -MP -MF .deps/ac.Tpo -c -o ac.o ac.c
+mv -f .deps/ac.Tpo .deps/ac.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall  -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -o ac ac.o ../src/libgcrypt.la  ../compat/libcompat.la -lgpg-error 
+libtool: link: gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto -o .libs/ac ac.o  -Wl,--as-needed ../src/.libs/libgcrypt.so ../compat/.libs/libcompat.a -lgpg-error
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT ac-schemes.o -MD -MP -MF .deps/ac-schemes.Tpo -c -o ac-schemes.o ac-schemes.c
+mv -f .deps/ac-schemes.Tpo .deps/ac-schemes.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall  -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -o ac-schemes ac-schemes.o ../src/libgcrypt.la  ../compat/libcompat.la -lgpg-error 
+libtool: link: gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto -o .libs/ac-schemes ac-schemes.o  -Wl,--as-needed ../src/.libs/libgcrypt.so ../compat/.libs/libcompat.a -lgpg-error
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT ac-data.o -MD -MP -MF .deps/ac-data.Tpo -c -o ac-data.o ac-data.c
+mv -f .deps/ac-data.Tpo .deps/ac-data.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall  -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -o ac-data ac-data.o ../src/libgcrypt.la  ../compat/libcompat.la -lgpg-error 
+libtool: link: gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto -o .libs/ac-data ac-data.o  -Wl,--as-needed ../src/.libs/libgcrypt.so ../compat/.libs/libcompat.a -lgpg-error
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT basic.o -MD -MP -MF .deps/basic.Tpo -c -o basic.o basic.c
+mv -f .deps/basic.Tpo .deps/basic.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall  -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -o basic basic.o ../src/libgcrypt.la  ../compat/libcompat.la -lgpg-error 
+libtool: link: gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto -o .libs/basic basic.o  -Wl,--as-needed ../src/.libs/libgcrypt.so ../compat/.libs/libcompat.a -lgpg-error
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT mpitests.o -MD -MP -MF .deps/mpitests.Tpo -c -o mpitests.o mpitests.c
+mv -f .deps/mpitests.Tpo .deps/mpitests.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall  -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -o mpitests mpitests.o ../src/libgcrypt.la  ../compat/libcompat.la -lgpg-error 
+libtool: link: gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto -o .libs/mpitests mpitests.o  -Wl,--as-needed ../src/.libs/libgcrypt.so ../compat/.libs/libcompat.a -lgpg-error
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT tsexp.o -MD -MP -MF .deps/tsexp.Tpo -c -o tsexp.o tsexp.c
+mv -f .deps/tsexp.Tpo .deps/tsexp.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall  -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -o tsexp tsexp.o ../src/libgcrypt.la  ../compat/libcompat.la -lgpg-error 
+libtool: link: gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto -o .libs/tsexp tsexp.o  -Wl,--as-needed ../src/.libs/libgcrypt.so ../compat/.libs/libcompat.a -lgpg-error
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT keygen.o -MD -MP -MF .deps/keygen.Tpo -c -o keygen.o keygen.c
+mv -f .deps/keygen.Tpo .deps/keygen.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall  -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -o keygen keygen.o ../src/libgcrypt.la  ../compat/libcompat.la -lgpg-error 
+libtool: link: gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto -o .libs/keygen keygen.o  -Wl,--as-needed ../src/.libs/libgcrypt.so ../compat/.libs/libcompat.a -lgpg-error
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT pubkey.o -MD -MP -MF .deps/pubkey.Tpo -c -o pubkey.o pubkey.c
+mv -f .deps/pubkey.Tpo .deps/pubkey.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall  -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -o pubkey pubkey.o ../src/libgcrypt.la  ../compat/libcompat.la -lgpg-error 
+libtool: link: gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto -o .libs/pubkey pubkey.o  -Wl,--as-needed ../src/.libs/libgcrypt.so ../compat/.libs/libcompat.a -lgpg-error
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT hmac.o -MD -MP -MF .deps/hmac.Tpo -c -o hmac.o hmac.c
+mv -f .deps/hmac.Tpo .deps/hmac.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall  -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -o hmac hmac.o ../src/libgcrypt.la  ../compat/libcompat.la -lgpg-error 
+libtool: link: gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto -o .libs/hmac hmac.o  -Wl,--as-needed ../src/.libs/libgcrypt.so ../compat/.libs/libcompat.a -lgpg-error
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT keygrip.o -MD -MP -MF .deps/keygrip.Tpo -c -o keygrip.o keygrip.c
+mv -f .deps/keygrip.Tpo .deps/keygrip.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall  -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -o keygrip keygrip.o ../src/libgcrypt.la  ../compat/libcompat.la -lgpg-error 
+libtool: link: gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto -o .libs/keygrip keygrip.o  -Wl,--as-needed ../src/.libs/libgcrypt.so ../compat/.libs/libcompat.a -lgpg-error
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT fips186-dsa.o -MD -MP -MF .deps/fips186-dsa.Tpo -c -o fips186-dsa.o fips186-dsa.c
+mv -f .deps/fips186-dsa.Tpo .deps/fips186-dsa.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall  -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -o fips186-dsa fips186-dsa.o ../src/libgcrypt.la  ../compat/libcompat.la -lgpg-error 
+libtool: link: gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto -o .libs/fips186-dsa fips186-dsa.o  -Wl,--as-needed ../src/.libs/libgcrypt.so ../compat/.libs/libcompat.a -lgpg-error
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT aeswrap.o -MD -MP -MF .deps/aeswrap.Tpo -c -o aeswrap.o aeswrap.c
+mv -f .deps/aeswrap.Tpo .deps/aeswrap.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall  -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -o aeswrap aeswrap.o ../src/libgcrypt.la  ../compat/libcompat.la -lgpg-error 
+libtool: link: gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto -o .libs/aeswrap aeswrap.o  -Wl,--as-needed ../src/.libs/libgcrypt.so ../compat/.libs/libcompat.a -lgpg-error
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT curves.o -MD -MP -MF .deps/curves.Tpo -c -o curves.o curves.c
+mv -f .deps/curves.Tpo .deps/curves.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall  -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -o curves curves.o ../src/libgcrypt.la  ../compat/libcompat.la -lgpg-error 
+libtool: link: gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto -o .libs/curves curves.o  -Wl,--as-needed ../src/.libs/libgcrypt.so ../compat/.libs/libcompat.a -lgpg-error
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT t-kdf.o -MD -MP -MF .deps/t-kdf.Tpo -c -o t-kdf.o t-kdf.c
+mv -f .deps/t-kdf.Tpo .deps/t-kdf.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall  -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -o t-kdf t-kdf.o ../src/libgcrypt.la  ../compat/libcompat.la -lgpg-error 
+libtool: link: gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto -o .libs/t-kdf t-kdf.o  -Wl,--as-needed ../src/.libs/libgcrypt.so ../compat/.libs/libcompat.a -lgpg-error
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT pkcs1v2.o -MD -MP -MF .deps/pkcs1v2.Tpo -c -o pkcs1v2.o pkcs1v2.c
+mv -f .deps/pkcs1v2.Tpo .deps/pkcs1v2.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall  -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -o pkcs1v2 pkcs1v2.o ../src/libgcrypt.la  ../compat/libcompat.la -lgpg-error 
+libtool: link: gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto -o .libs/pkcs1v2 pkcs1v2.o  -Wl,--as-needed ../src/.libs/libgcrypt.so ../compat/.libs/libcompat.a -lgpg-error
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT random.o -MD -MP -MF .deps/random.Tpo -c -o random.o random.c
+mv -f .deps/random.Tpo .deps/random.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall  -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -o random random.o ../src/libgcrypt.la  ../compat/libcompat.la -lgpg-error 
+libtool: link: gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto -o .libs/random random.o  -Wl,--as-needed ../src/.libs/libgcrypt.so ../compat/.libs/libcompat.a -lgpg-error
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT benchmark.o -MD -MP -MF .deps/benchmark.Tpo -c -o benchmark.o benchmark.c
+mv -f .deps/benchmark.Tpo .deps/benchmark.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall  -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -o benchmark benchmark.o ../src/libgcrypt.la  ../compat/libcompat.la -lgpg-error 
+libtool: link: gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto -o .libs/benchmark benchmark.o  -Wl,--as-needed ../src/.libs/libgcrypt.so ../compat/.libs/libcompat.a -lgpg-error
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT fipsdrv.o -MD -MP -MF .deps/fipsdrv.Tpo -c -o fipsdrv.o fipsdrv.c
+mv -f .deps/fipsdrv.Tpo .deps/fipsdrv.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall  -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -o fipsdrv fipsdrv.o ../src/libgcrypt.la  ../compat/libcompat.la -lgpg-error 
+libtool: link: gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto -o .libs/fipsdrv fipsdrv.o  -Wl,--as-needed ../src/.libs/libgcrypt.so ../compat/.libs/libcompat.a -lgpg-error
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT rsacvt.o -MD -MP -MF .deps/rsacvt.Tpo -c -o rsacvt.o rsacvt.c
+mv -f .deps/rsacvt.Tpo .deps/rsacvt.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall  -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -o rsacvt rsacvt.o ../src/libgcrypt.la  ../compat/libcompat.la -lgpg-error 
+libtool: link: gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto -o .libs/rsacvt rsacvt.o  -Wl,--as-needed ../src/.libs/libgcrypt.so ../compat/.libs/libcompat.a -lgpg-error
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -MT bench-slope.o -MD -MP -MF .deps/bench-slope.Tpo -c -o bench-slope.o bench-slope.c
+mv -f .deps/bench-slope.Tpo .deps/bench-slope.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall  -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -o bench-slope bench-slope.o ../src/libgcrypt.la  ../compat/libcompat.la -lgpg-error 
+libtool: link: gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/libgcrypt15/src=/usr/src/debug/libgcrypt15 -flto=auto -fvisibility=hidden -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto -o .libs/bench-slope bench-slope.o  -Wl,--as-needed ../src/.libs/libgcrypt.so ../compat/.libs/libcompat.a -lgpg-error
+make[2]: Leaving directory '/workspace/build/libgcrypt15/src/libgcrypt/tests'
+make[2]: Entering directory '/workspace/build/libgcrypt15/src/libgcrypt'
+make[2]: Leaving directory '/workspace/build/libgcrypt15/src/libgcrypt'
+make[1]: Leaving directory '/workspace/build/libgcrypt15/src/libgcrypt'
+==> Entering fakeroot environment...
+==> Starting package()...
+make: Entering directory '/workspace/build/libgcrypt15/src/libgcrypt'
+Making install in compat
+make[1]: Entering directory '/workspace/build/libgcrypt15/src/libgcrypt/compat'
+make[2]: Entering directory '/workspace/build/libgcrypt15/src/libgcrypt/compat'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/workspace/build/libgcrypt15/src/libgcrypt/compat'
+make[1]: Leaving directory '/workspace/build/libgcrypt15/src/libgcrypt/compat'
+Making install in mpi
+make[1]: Entering directory '/workspace/build/libgcrypt15/src/libgcrypt/mpi'
+make[2]: Entering directory '/workspace/build/libgcrypt15/src/libgcrypt/mpi'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/workspace/build/libgcrypt15/src/libgcrypt/mpi'
+make[1]: Leaving directory '/workspace/build/libgcrypt15/src/libgcrypt/mpi'
+Making install in cipher
+make[1]: Entering directory '/workspace/build/libgcrypt15/src/libgcrypt/cipher'
+make[2]: Entering directory '/workspace/build/libgcrypt15/src/libgcrypt/cipher'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/workspace/build/libgcrypt15/src/libgcrypt/cipher'
+make[1]: Leaving directory '/workspace/build/libgcrypt15/src/libgcrypt/cipher'
+Making install in random
+make[1]: Entering directory '/workspace/build/libgcrypt15/src/libgcrypt/random'
+make[2]: Entering directory '/workspace/build/libgcrypt15/src/libgcrypt/random'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/workspace/build/libgcrypt15/src/libgcrypt/random'
+make[1]: Leaving directory '/workspace/build/libgcrypt15/src/libgcrypt/random'
+Making install in src
+make[1]: Entering directory '/workspace/build/libgcrypt15/src/libgcrypt/src'
+make[2]: Entering directory '/workspace/build/libgcrypt15/src/libgcrypt/src'
+ /usr/sbin/mkdir -p '/workspace/build/libgcrypt15/pkg/libgcrypt15/usr/lib'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libgcrypt.la '/workspace/build/libgcrypt15/pkg/libgcrypt15/usr/lib'
+libtool: install: /usr/bin/install -c .libs/libgcrypt.so.11.8.5 /workspace/build/libgcrypt15/pkg/libgcrypt15/usr/lib/libgcrypt.so.11.8.5
+libtool: install: (cd /workspace/build/libgcrypt15/pkg/libgcrypt15/usr/lib && { ln -s -f libgcrypt.so.11.8.5 libgcrypt.so.11 || { rm -f libgcrypt.so.11 && ln -s libgcrypt.so.11.8.5 libgcrypt.so.11; }; })
+libtool: install: (cd /workspace/build/libgcrypt15/pkg/libgcrypt15/usr/lib && { ln -s -f libgcrypt.so.11.8.5 libgcrypt.so || { rm -f libgcrypt.so && ln -s libgcrypt.so.11.8.5 libgcrypt.so; }; })
+libtool: install: /usr/bin/install -c .libs/libgcrypt.lai /workspace/build/libgcrypt15/pkg/libgcrypt15/usr/lib/libgcrypt.la
+libtool: warning: remember to run 'libtool --finish /usr/lib'
+ /usr/sbin/mkdir -p '/workspace/build/libgcrypt15/pkg/libgcrypt15/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c dumpsexp hmac256 '/workspace/build/libgcrypt15/pkg/libgcrypt15/usr/bin'
+libtool: install: /usr/bin/install -c dumpsexp /workspace/build/libgcrypt15/pkg/libgcrypt15/usr/bin/dumpsexp
+libtool: install: /usr/bin/install -c hmac256 /workspace/build/libgcrypt15/pkg/libgcrypt15/usr/bin/hmac256
+ /usr/sbin/mkdir -p '/workspace/build/libgcrypt15/pkg/libgcrypt15/usr/bin'
+ /usr/bin/install -c libgcrypt-config '/workspace/build/libgcrypt15/pkg/libgcrypt15/usr/bin'
+ /usr/sbin/mkdir -p '/workspace/build/libgcrypt15/pkg/libgcrypt15/usr/include'
+ /usr/bin/install -c -m 644 gcrypt.h gcrypt-module.h '/workspace/build/libgcrypt15/pkg/libgcrypt15/usr/include'
+ /usr/sbin/mkdir -p '/workspace/build/libgcrypt15/pkg/libgcrypt15/usr/share/aclocal'
+ /usr/bin/install -c -m 644 libgcrypt.m4 '/workspace/build/libgcrypt15/pkg/libgcrypt15/usr/share/aclocal'
+make[2]: Leaving directory '/workspace/build/libgcrypt15/src/libgcrypt/src'
+make[1]: Leaving directory '/workspace/build/libgcrypt15/src/libgcrypt/src'
+Making install in tests
+make[1]: Entering directory '/workspace/build/libgcrypt15/src/libgcrypt/tests'
+make[2]: Entering directory '/workspace/build/libgcrypt15/src/libgcrypt/tests'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/workspace/build/libgcrypt15/src/libgcrypt/tests'
+make[1]: Leaving directory '/workspace/build/libgcrypt15/src/libgcrypt/tests'
+make[1]: Entering directory '/workspace/build/libgcrypt15/src/libgcrypt'
+make[2]: Entering directory '/workspace/build/libgcrypt15/src/libgcrypt'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/workspace/build/libgcrypt15/src/libgcrypt'
+make[1]: Leaving directory '/workspace/build/libgcrypt15/src/libgcrypt'
+make: Leaving directory '/workspace/build/libgcrypt15/src/libgcrypt'
+==> Tidying install...
+  -> Removing libtool files...
+  -> Purging unwanted files...
+  -> Removing static library files...
+  -> Stripping unneeded symbols from binaries and libraries...
+  -> Compressing man and info pages...
+==> Checking for packaging issues...
+libfakeroot internal error: payload not recognized!
+==> Creating package "libgcrypt15"...
+  -> Generating .PKGINFO file...
+  -> Generating .BUILDINFO file...
+  -> Generating .MTREE file...
+  -> Compressing package...
+==> Creating package "libgcrypt15-debug"...
+  -> Generating .PKGINFO file...
+  -> Generating .BUILDINFO file...
+  -> Generating .MTREE file...
+  -> Compressing package...
+==> Leaving fakeroot environment.
+==> Finished making: libgcrypt15 1.5.6-7 (Fri Oct 31 21:07:37 2025)
+==> Installing package libgcrypt15 with pacman -U...
+loading packages...
+resolving dependencies...
+looking for conflicting packages...
+
+Package (2)        New Version  Net Change
+
+libgcrypt15        1.5.6-7        0.52 MiB
+libgcrypt15-debug  1.5.6-7        3.73 MiB
+
+Total Installed Size:  4.25 MiB
+
+:: Proceed with installation? [Y/n] 
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+:: Processing package changes...
+installing libgcrypt15...
+installing libgcrypt15-debug...
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...

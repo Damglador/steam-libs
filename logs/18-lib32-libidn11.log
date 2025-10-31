@@ -1,0 +1,978 @@
+Cloning into 'lib32-libidn11'...
+Already up to date.
+gpg: key 0664A76954265E8C: 9 duplicate signatures removed
+gpg: key 0664A76954265E8C: "Simon Josefsson <simon@josefsson.org>" not changed
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+==> Making package: lib32-libidn11 1.33-3 (Fri Oct 31 21:24:45 2025)
+==> Checking runtime dependencies...
+==> Checking buildtime dependencies...
+==> Retrieving sources...
+  -> Cloning libidn git repo...
+Cloning into bare repository '/workspace/build/lib32-libidn11/libidn'...
+  -> Found libidn11-subdirs.patch
+==> Validating source files with sha256sums...
+    libidn ... Passed
+    libidn11-subdirs.patch ... Passed
+==> Verifying source file signatures with gpg...
+    libidn git repo ... Passed (WARNING: the key has expired.)
+==> WARNING: Warnings have occurred while verifying the signatures.
+    Please make sure you really trust them.
+==> Extracting sources...
+  -> Creating working copy of libidn git repo...
+Cloning into 'libidn'...
+done.
+Switched to a new branch 'makepkg'
+==> Starting prepare()...
+patching file .git/FETCH_HEAD
+patching file Makefile.am
+printf "gdoc_MANS =\ngdoc_TEXINFOS =\n" > doc/Makefile.gdoc
+for f in po/*.po.in; do \
+	cp $f `echo $f | sed 's/.in//'`; \
+done
+touch ChangeLog
+mv build-aux/config.rpath build-aux/config.rpath-
+test -f ./configure || autoreconf --install
+Copying file ABOUT-NLS
+Copying file build-aux/config.rpath
+Copying file m4/codeset.m4
+Copying file m4/extern-inline.m4
+Copying file m4/fcntl-o.m4
+Copying file m4/gettext.m4
+Copying file m4/glibc2.m4
+Copying file m4/glibc21.m4
+Copying file m4/iconv.m4
+Copying file m4/intdiv0.m4
+Copying file m4/intl.m4
+Copying file m4/intldir.m4
+Copying file m4/intlmacosx.m4
+Copying file m4/intmax.m4
+Copying file m4/inttypes-pri.m4
+Copying file m4/inttypes_h.m4
+Copying file m4/lcmessage.m4
+Copying file m4/lib-ld.m4
+Copying file m4/lib-link.m4
+Copying file m4/lib-prefix.m4
+Copying file m4/lock.m4
+Copying file m4/longlong.m4
+Copying file m4/nls.m4
+Copying file m4/po.m4
+Copying file m4/printf-posix.m4
+Copying file m4/progtest.m4
+Copying file m4/size_max.m4
+Copying file m4/stdint_h.m4
+Copying file m4/threadlib.m4
+Copying file m4/uintmax_t.m4
+Copying file m4/visibility.m4
+Copying file m4/wchar_t.m4
+Copying file m4/wint_t.m4
+Copying file m4/xsize.m4
+Copying file po/Makefile.in.in
+Copying file po/Makevars.template
+Copying file po/Rules-quot
+Copying file po/boldquot.sed
+Copying file po/en@boldquot.header
+Copying file po/en@quot.header
+Copying file po/insert-header.sin
+Copying file po/quot.sed
+Copying file po/remove-potcdate.sin
+libtoolize: putting auxiliary files in AC_CONFIG_AUX_DIR, 'build-aux'.
+libtoolize: copying file 'build-aux/ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'm4'.
+libtoolize: copying file 'm4/libtool.m4'
+libtoolize: copying file 'm4/ltoptions.m4'
+libtoolize: copying file 'm4/ltsugar.m4'
+libtoolize: copying file 'm4/ltversion.m4'
+libtoolize: copying file 'm4/lt~obsolete.m4'
+configure.ac:37: warning: The macro 'AC_GNU_SOURCE' is obsolete.
+configure.ac:37: You should run autoupdate.
+./lib/autoconf/specific.m4:489: AC_GNU_SOURCE is expanded from...
+gl/m4/gnulib-comp.m4:34: gl_EARLY is expanded from...
+configure.ac:37: the top level
+configure.ac:37: warning: The macro 'AC_PROG_CC_STDC' is obsolete.
+configure.ac:37: You should run autoupdate.
+./lib/autoconf/c.m4:1669: AC_PROG_CC_STDC is expanded from...
+gl/m4/gnulib-common.m4:239: gl_PROG_CC_C99 is expanded from...
+gl/m4/gnulib-comp.m4:34: gl_EARLY is expanded from...
+configure.ac:37: the top level
+configure.ac:38: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:38: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+m4/threadlib.m4:36: gl_THREADLIB_EARLY_BODY is expanded from...
+m4/threadlib.m4:29: gl_THREADLIB_EARLY is expanded from...
+lib/gl/m4/gnulib-comp.m4:34: lgl_EARLY is expanded from...
+configure.ac:38: the top level
+configure.ac:69: warning: The macro 'AC_HEADER_STDC' is obsolete.
+configure.ac:69: You should run autoupdate.
+./lib/autoconf/headers.m4:663: AC_HEADER_STDC is expanded from...
+configure.ac:69: the top level
+configure.ac:72: warning: $as_echo_n is obsolete; use AS_ECHO_N(["message"]) instead
+gl/m4/gnulib-common.m4:396: gl_CACHE_VAL_SILENT is expanded from...
+gl/m4/stdarg.m4:10: gl_STDARG_H is expanded from...
+gl/m4/gnulib-comp.m4:183: gl_INIT is expanded from...
+configure.ac:72: the top level
+configure.ac:79: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:79: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:79: the top level
+configure.ac:92: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:92: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:92: the top level
+configure.ac:37: installing 'build-aux/ar-lib'
+configure.ac:36: installing 'build-aux/compile'
+configure.ac:37: installing 'build-aux/config.guess'
+configure.ac:37: installing 'build-aux/config.sub'
+configure.ac:25: installing 'build-aux/install-sh'
+configure.ac:25: installing 'build-aux/missing'
+Makefile.am: installing './INSTALL'
+doc/Makefile.am:27: installing 'build-aux/mdate-sh'
+doc/Makefile.am:27: installing 'build-aux/texinfo.tex'
+examples/Makefile.am: installing 'build-aux/depcomp'
+parallel-tests: installing 'build-aux/test-driver'
+mv build-aux/config.rpath- build-aux/config.rpath
+==> Starting build()...
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/sbin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '1000' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking for gcc... gcc -m32
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc -m32 accepts -g... yes
+checking for gcc -m32 option to enable C11 features... none needed
+checking whether gcc -m32 understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of gcc -m32... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for getopt.h... yes
+checking for wchar.h... yes
+checking for sys/socket.h... yes
+checking for sys/time.h... yes
+checking for sys/param.h... yes
+checking for features.h... yes
+checking for iconv.h... yes
+checking for langinfo.h... yes
+checking for xlocale.h... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking how to run the C preprocessor... gcc -m32 -E
+checking for egrep -e... /usr/sbin/grep -E
+checking for Minix Amsterdam compiler... no
+checking for ar... ar
+checking the archiver (ar) interface... ar
+checking for ar... (cached) ar
+checking for ranlib... ranlib
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking for gcc -m32 option to enable large file support... -D_FILE_OFFSET_BITS=64
+configure: autobuild project... GNU Libidn
+configure: autobuild revision... 1.33
+./configure: line 7211: hostname: command not found
+configure: autobuild timestamp... 20251031T212505Z
+checking the archiver (ar) interface... (cached) ar
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/sbin/sed
+checking for grep that handles long lines and -e... /usr/sbin/grep
+checking for egrep... /usr/sbin/grep -E
+checking for fgrep... /usr/sbin/grep -F
+checking for ld used by gcc -m32... /usr/sbin/ld
+checking if the linker (/usr/sbin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/sbin/nm -B
+checking the name lister (/usr/sbin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert i686-pc-linux-gnu file names to i686-pc-linux-gnu format... func_convert_file_noop
+checking how to convert i686-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/sbin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking command to parse /usr/sbin/nm -B output from gcc -m32 object... ok
+checking for sysroot... no
+checking for a working dd... /usr/sbin/dd
+checking how to truncate binary pipes... /usr/sbin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking which variant of shared library versioning to provide... (default) aix
+checking for objdir... .libs
+checking if gcc -m32 supports -fno-rtti -fno-exceptions... no
+checking for gcc -m32 option to produce PIC... -fPIC -DPIC
+checking if gcc -m32 PIC flag -fPIC -DPIC works... yes
+checking if gcc -m32 static flag -static works... yes
+checking if gcc -m32 supports -c -o file.o... yes
+checking if gcc -m32 supports -c -o file.o... (cached) yes
+checking whether the gcc -m32 linker (/usr/sbin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking whether NLS is requested... no
+checking for msgfmt... /usr/sbin/msgfmt
+checking for gmsgfmt... /usr/sbin/msgfmt
+checking for xgettext... /usr/sbin/xgettext
+checking for msgmerge... /usr/sbin/msgmerge
+checking for ld used by gcc -m32... /usr/sbin/ld
+checking if the linker (/usr/sbin/ld) is GNU ld... yes
+checking for shared library run path origin... done
+./configure: line 17436: cd: /lib/../lib32/: No such file or directory
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking whether to use NLS... no
+checking for iconv... yes
+checking for working iconv... yes
+checking for iconv declaration... 
+         extern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+checking for emacs... no
+checking for xemacs... no
+checking where .elc files should go... ${datadir}/emacs/site-lisp
+checking for egrep... (cached) /usr/sbin/grep -E
+checking for preferred C# implementation... any
+checking for C# compiler... no
+checking whether the preprocessor supports include_next... yes
+checking whether system header files limit the line length... no
+checking for complete errno.h... yes
+checking for gcc -m32 options needed to detect all undeclared functions... none needed
+checking whether strerror_r is declared... yes
+checking whether strerror_r returns char *... yes
+checking whether getdelim is declared... yes
+checking for getdelim... yes
+checking for _set_invalid_parameter_handler... no
+checking for symlink... yes
+checking for getdtablesize... yes
+checking for gettimeofday... yes
+checking for lstat... yes
+checking for setenv... yes
+checking for newlocale... yes
+checking whether getline is declared... yes
+checking for getopt.h... (cached) yes
+checking for getopt_long_only... yes
+checking whether getopt is POSIX compatible... yes
+checking for working GNU getopt function... yes
+checking for working GNU getopt_long function... yes
+checking whether getenv is declared... yes
+checking whether malloc, realloc, calloc are POSIX compliant... yes
+checking for wchar_t... yes
+checking for unsigned long long int... yes
+checking for long long int... yes
+checking whether stdint.h conforms to C99... yes
+checking whether stdint.h predates C++11... no
+checking whether strerror(0) succeeds... yes
+checking for C/C++ restrict keyword... __restrict
+checking whether ffsl is declared without a macro... yes
+checking whether ffsll is declared without a macro... yes
+checking whether memmem is declared without a macro... yes
+checking whether mempcpy is declared without a macro... yes
+checking whether memrchr is declared without a macro... yes
+checking whether rawmemchr is declared without a macro... yes
+checking whether stpcpy is declared without a macro... yes
+checking whether stpncpy is declared without a macro... yes
+checking whether strchrnul is declared without a macro... yes
+checking whether strdup is declared without a macro... yes
+checking whether strncat is declared without a macro... yes
+checking whether strndup is declared without a macro... yes
+checking whether strnlen is declared without a macro... yes
+checking whether strpbrk is declared without a macro... yes
+checking whether strsep is declared without a macro... yes
+checking whether strcasestr is declared without a macro... yes
+checking whether strtok_r is declared without a macro... yes
+checking whether strerror_r is declared without a macro... yes
+checking whether strsignal is declared without a macro... yes
+checking whether strverscmp is declared without a macro... yes
+checking for pid_t... yes
+checking for mode_t... yes
+checking for size_t... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking if environ is properly declared... yes
+checking for working fcntl.h... yes
+checking whether stat file-mode macros are broken... no
+checking for nlink_t... yes
+checking whether fchmodat is declared without a macro... yes
+checking whether fstat is declared without a macro... yes
+checking whether fstatat is declared without a macro... yes
+checking whether futimens is declared without a macro... yes
+checking whether lchmod is declared without a macro... yes
+checking whether lstat is declared without a macro... yes
+checking whether mkdirat is declared without a macro... yes
+checking whether mkfifo is declared without a macro... yes
+checking whether mkfifoat is declared without a macro... yes
+checking whether mknod is declared without a macro... yes
+checking whether mknodat is declared without a macro... yes
+checking whether stat is declared without a macro... yes
+checking whether utimensat is declared without a macro... yes
+checking whether getcwd (NULL, 0) allocates memory for result... no
+checking for getcwd with POSIX signature... yes
+checking whether getdtablesize is declared... yes
+checking for struct timeval... yes
+checking for wide-enough struct timeval.tv_sec member... yes
+checking whether gettimeofday is declared without a macro... yes
+checking whether imaxabs is declared without a macro... yes
+checking whether imaxdiv is declared without a macro... yes
+checking whether strtoimax is declared without a macro... yes
+checking whether strtoumax is declared without a macro... yes
+checking for inttypes.h... (cached) yes
+checking whether the inttypes.h PRIxNN macros are broken... no
+checking whether lstat correctly handles trailing slash... yes
+checking for GNU libc compatible malloc... yes
+checking for promoted mode_t type... mode_t
+checking whether setenv is declared... yes
+checking for search.h... yes
+checking for tsearch... yes
+checking for stdbool.h that conforms to C99... no
+checking for _Bool... yes
+checking for wint_t... yes
+checking for struct timespec in <time.h>... yes
+checking whether unsetenv is declared... yes
+checking whether <wchar.h> uses 'inline' correctly... yes
+checking for error_at_line... yes
+checking for working getdelim function... yes
+checking for getline... yes
+checking for working getline function... yes
+checking for pmccabe... false
+checking whether program_invocation_name is declared... yes
+checking whether program_invocation_short_name is declared... yes
+checking for ssize_t... yes
+checking for va_copy... yes
+checking for max_align_t... yes
+checking whether NULL can be used in arbitrary expressions... yes
+checking which flavor of printf attribute matches inttypes macros... system
+checking whether dprintf is declared without a macro... yes
+checking whether fpurge is declared without a macro... no
+checking whether fseeko is declared without a macro... yes
+checking whether ftello is declared without a macro... yes
+checking whether getdelim is declared without a macro... yes
+checking whether getline is declared without a macro... yes
+checking whether gets is declared without a macro... no
+checking whether pclose is declared without a macro... yes
+checking whether popen is declared without a macro... yes
+checking whether renameat is declared without a macro... yes
+checking whether snprintf is declared without a macro... yes
+checking whether tmpfile is declared without a macro... yes
+checking whether vdprintf is declared without a macro... yes
+checking whether vsnprintf is declared without a macro... yes
+checking whether _Exit is declared without a macro... yes
+checking whether atoll is declared without a macro... yes
+checking whether canonicalize_file_name is declared without a macro... yes
+checking whether getloadavg is declared without a macro... yes
+checking whether getsubopt is declared without a macro... yes
+checking whether grantpt is declared without a macro... yes
+checking whether initstate is declared without a macro... yes
+checking whether initstate_r is declared without a macro... yes
+checking whether mkdtemp is declared without a macro... yes
+checking whether mkostemp is declared without a macro... yes
+checking whether mkostemps is declared without a macro... yes
+checking whether mkstemp is declared without a macro... yes
+checking whether mkstemps is declared without a macro... yes
+checking whether posix_openpt is declared without a macro... yes
+checking whether ptsname is declared without a macro... yes
+checking whether ptsname_r is declared without a macro... yes
+checking whether random is declared without a macro... yes
+checking whether random_r is declared without a macro... yes
+checking whether realpath is declared without a macro... yes
+checking whether rpmatch is declared without a macro... yes
+checking whether secure_getenv is declared without a macro... yes
+checking whether setenv is declared without a macro... yes
+checking whether setstate is declared without a macro... yes
+checking whether setstate_r is declared without a macro... yes
+checking whether srandom is declared without a macro... yes
+checking whether srandom_r is declared without a macro... yes
+checking whether strtod is declared without a macro... yes
+checking whether strtoll is declared without a macro... yes
+checking whether strtoull is declared without a macro... yes
+checking whether unlockpt is declared without a macro... yes
+checking whether unsetenv is declared without a macro... yes
+checking for working strerror function... yes
+checking whether chdir is declared without a macro... yes
+checking whether chown is declared without a macro... yes
+checking whether dup is declared without a macro... yes
+checking whether dup2 is declared without a macro... yes
+checking whether dup3 is declared without a macro... yes
+checking whether environ is declared without a macro... yes
+checking whether euidaccess is declared without a macro... yes
+checking whether faccessat is declared without a macro... yes
+checking whether fchdir is declared without a macro... yes
+checking whether fchownat is declared without a macro... yes
+checking whether fdatasync is declared without a macro... yes
+checking whether fsync is declared without a macro... yes
+checking whether ftruncate is declared without a macro... yes
+checking whether getcwd is declared without a macro... yes
+checking whether getdomainname is declared without a macro... yes
+checking whether getdtablesize is declared without a macro... yes
+checking whether getgroups is declared without a macro... yes
+checking whether gethostname is declared without a macro... yes
+checking whether getlogin is declared without a macro... yes
+checking whether getlogin_r is declared without a macro... yes
+checking whether getpagesize is declared without a macro... yes
+checking whether getusershell is declared without a macro... yes
+checking whether setusershell is declared without a macro... yes
+checking whether endusershell is declared without a macro... yes
+checking whether group_member is declared without a macro... yes
+checking whether isatty is declared without a macro... yes
+checking whether lchown is declared without a macro... yes
+checking whether link is declared without a macro... yes
+checking whether linkat is declared without a macro... yes
+checking whether lseek is declared without a macro... yes
+checking whether pipe is declared without a macro... yes
+checking whether pipe2 is declared without a macro... yes
+checking whether pread is declared without a macro... yes
+checking whether pwrite is declared without a macro... yes
+checking whether readlink is declared without a macro... yes
+checking whether readlinkat is declared without a macro... yes
+checking whether rmdir is declared without a macro... yes
+checking whether sethostname is declared without a macro... yes
+checking whether sleep is declared without a macro... yes
+checking whether symlink is declared without a macro... yes
+checking whether symlinkat is declared without a macro... yes
+checking whether ttyname_r is declared without a macro... yes
+checking whether unlink is declared without a macro... yes
+checking whether unlinkat is declared without a macro... yes
+checking whether usleep is declared without a macro... yes
+checking for valgrind... valgrind
+checking whether self tests are run under valgrind... no
+checking for alloca as a compiler built-in... yes
+checking whether dup2 works... yes
+checking whether fcntl is declared without a macro... yes
+checking whether openat is declared without a macro... yes
+checking whether fdopen sets errno... yes
+checking whether getdtablesize works... yes
+checking whether gettimeofday clobbers localtime buffer... no
+checking for gettimeofday with POSIX signature... yes
+checking whether INT32_MAX < INTMAX_MAX... yes
+checking whether INT64_MAX == LONG_MAX... no
+checking whether UINT32_MAX < UINTMAX_MAX... yes
+checking whether UINT64_MAX == ULONG_MAX... no
+checking whether open recognizes a trailing slash... yes
+checking for putenv compatible with GNU and SVID... yes
+checking whether setenv validates arguments... yes
+checking whether stat handles trailing slashes on directories... yes
+checking whether stat handles trailing slashes on files... yes
+checking for working stdalign.h... yes
+checking whether symlink handles trailing slash correctly... yes
+checking for nlink_t... (cached) yes
+checking whether fchmodat is declared without a macro... (cached) yes
+checking whether fstat is declared without a macro... (cached) yes
+checking whether fstatat is declared without a macro... (cached) yes
+checking whether futimens is declared without a macro... (cached) yes
+checking whether lchmod is declared without a macro... (cached) yes
+checking whether lstat is declared without a macro... (cached) yes
+checking whether mkdirat is declared without a macro... (cached) yes
+checking whether mkfifo is declared without a macro... (cached) yes
+checking whether mkfifoat is declared without a macro... (cached) yes
+checking whether mknod is declared without a macro... (cached) yes
+checking whether mknodat is declared without a macro... (cached) yes
+checking whether stat is declared without a macro... (cached) yes
+checking whether utimensat is declared without a macro... (cached) yes
+checking for unsetenv... yes
+checking for unsetenv() return type... int
+checking whether unsetenv obeys POSIX... yes
+checking for valgrind... (cached) valgrind
+checking whether self tests are run under valgrind... no
+checking whether btowc is declared without a macro... yes
+checking whether wctob is declared without a macro... yes
+checking whether mbsinit is declared without a macro... yes
+checking whether mbrtowc is declared without a macro... yes
+checking whether mbrlen is declared without a macro... yes
+checking whether mbsrtowcs is declared without a macro... yes
+checking whether mbsnrtowcs is declared without a macro... yes
+checking whether wcrtomb is declared without a macro... yes
+checking whether wcsrtombs is declared without a macro... yes
+checking whether wcsnrtombs is declared without a macro... yes
+checking whether wcwidth is declared without a macro... yes
+checking whether wmemchr is declared without a macro... yes
+checking whether wmemcmp is declared without a macro... yes
+checking whether wmemcpy is declared without a macro... yes
+checking whether wmemmove is declared without a macro... yes
+checking whether wmemset is declared without a macro... yes
+checking whether wcslen is declared without a macro... yes
+checking whether wcsnlen is declared without a macro... yes
+checking whether wcscpy is declared without a macro... yes
+checking whether wcpcpy is declared without a macro... yes
+checking whether wcsncpy is declared without a macro... yes
+checking whether wcpncpy is declared without a macro... yes
+checking whether wcscat is declared without a macro... yes
+checking whether wcsncat is declared without a macro... yes
+checking whether wcscmp is declared without a macro... yes
+checking whether wcsncmp is declared without a macro... yes
+checking whether wcscasecmp is declared without a macro... yes
+checking whether wcsncasecmp is declared without a macro... yes
+checking whether wcscoll is declared without a macro... yes
+checking whether wcsxfrm is declared without a macro... yes
+checking whether wcsdup is declared without a macro... yes
+checking whether wcschr is declared without a macro... yes
+checking whether wcsrchr is declared without a macro... yes
+checking whether wcscspn is declared without a macro... yes
+checking whether wcsspn is declared without a macro... yes
+checking whether wcspbrk is declared without a macro... yes
+checking whether wcsstr is declared without a macro... yes
+checking whether wcstok is declared without a macro... yes
+checking whether wcswidth is declared without a macro... yes
+checking for inline... inline
+checking for nl_langinfo and CODESET... yes
+checking for LC_MESSAGES... yes
+checking whether imported symbols can be declared weak... yes
+checking for pthread.h... yes
+checking for pthread_kill in -lpthread... yes
+checking for multithread API to use... posix
+checking whether the compiler generally respects inline... yes
+checking if gcc/ld supports -Wl,--output-def... no
+checking if LD -Wl,--version-script works... yes
+checking whether the -Werror option is usable... yes
+checking for simple visibility declarations... yes
+checking for ssize_t... (cached) yes
+checking for max_align_t... (cached) yes
+checking whether NULL can be used in arbitrary expressions... (cached) yes
+checking for strverscmp... yes
+checking for alloca as a compiler built-in... (cached) yes
+checking for a traditional french locale... none
+checking for a turkish Unicode locale... none
+checking whether isblank is declared without a macro... yes
+checking whether INT32_MAX < INTMAX_MAX... (cached) yes
+checking whether INT64_MAX == LONG_MAX... (cached) no
+checking whether UINT32_MAX < UINTMAX_MAX... (cached) yes
+checking whether UINT64_MAX == ULONG_MAX... (cached) no
+checking whether langinfo.h defines CODESET... yes
+checking whether langinfo.h defines T_FMT_AMPM... yes
+checking whether langinfo.h defines ERA... yes
+checking whether langinfo.h defines YESEXPR... yes
+checking whether nl_langinfo is declared without a macro... yes
+checking whether locale.h conforms to POSIX:2001... yes
+checking whether struct lconv is properly defined... yes
+checking whether setlocale is declared without a macro... yes
+checking whether duplocale is declared without a macro... yes
+checking for setlocale... yes
+checking for uselocale... yes
+checking for getlocalename_l... no
+checking for pthread_rwlock_t... yes
+checking for putenv compatible with GNU and SVID... (cached) yes
+checking whether setenv validates arguments... (cached) yes
+checking for a traditional french locale... (cached) none
+checking for a french Unicode locale... none
+checking for a traditional japanese locale... none
+checking for a transitional chinese locale... none
+checking for working stdalign.h... (cached) yes
+checking whether _Exit is declared without a macro... (cached) yes
+checking whether atoll is declared without a macro... (cached) yes
+checking whether canonicalize_file_name is declared without a macro... (cached) yes
+checking whether getloadavg is declared without a macro... (cached) yes
+checking whether getsubopt is declared without a macro... (cached) yes
+checking whether grantpt is declared without a macro... (cached) yes
+checking whether initstate is declared without a macro... (cached) yes
+checking whether initstate_r is declared without a macro... (cached) yes
+checking whether mkdtemp is declared without a macro... (cached) yes
+checking whether mkostemp is declared without a macro... (cached) yes
+checking whether mkostemps is declared without a macro... (cached) yes
+checking whether mkstemp is declared without a macro... (cached) yes
+checking whether mkstemps is declared without a macro... (cached) yes
+checking whether posix_openpt is declared without a macro... (cached) yes
+checking whether ptsname is declared without a macro... (cached) yes
+checking whether ptsname_r is declared without a macro... (cached) yes
+checking whether random is declared without a macro... (cached) yes
+checking whether random_r is declared without a macro... (cached) yes
+checking whether realpath is declared without a macro... (cached) yes
+checking whether rpmatch is declared without a macro... (cached) yes
+checking whether secure_getenv is declared without a macro... (cached) yes
+checking whether setenv is declared without a macro... (cached) yes
+checking whether setstate is declared without a macro... (cached) yes
+checking whether setstate_r is declared without a macro... (cached) yes
+checking whether srandom is declared without a macro... (cached) yes
+checking whether srandom_r is declared without a macro... (cached) yes
+checking whether strtod is declared without a macro... (cached) yes
+checking whether strtoll is declared without a macro... (cached) yes
+checking whether strtoull is declared without a macro... (cached) yes
+checking whether unlockpt is declared without a macro... (cached) yes
+checking whether unsetenv is declared without a macro... (cached) yes
+checking for pthread_atfork... yes
+checking whether chdir is declared without a macro... (cached) yes
+checking whether chown is declared without a macro... (cached) yes
+checking whether dup is declared without a macro... (cached) yes
+checking whether dup2 is declared without a macro... (cached) yes
+checking whether dup3 is declared without a macro... (cached) yes
+checking whether environ is declared without a macro... (cached) yes
+checking whether euidaccess is declared without a macro... (cached) yes
+checking whether faccessat is declared without a macro... (cached) yes
+checking whether fchdir is declared without a macro... (cached) yes
+checking whether fchownat is declared without a macro... (cached) yes
+checking whether fdatasync is declared without a macro... (cached) yes
+checking whether fsync is declared without a macro... (cached) yes
+checking whether ftruncate is declared without a macro... (cached) yes
+checking whether getcwd is declared without a macro... (cached) yes
+checking whether getdomainname is declared without a macro... (cached) yes
+checking whether getdtablesize is declared without a macro... (cached) yes
+checking whether getgroups is declared without a macro... (cached) yes
+checking whether gethostname is declared without a macro... (cached) yes
+checking whether getlogin is declared without a macro... (cached) yes
+checking whether getlogin_r is declared without a macro... (cached) yes
+checking whether getpagesize is declared without a macro... (cached) yes
+checking whether getusershell is declared without a macro... (cached) yes
+checking whether setusershell is declared without a macro... (cached) yes
+checking whether endusershell is declared without a macro... (cached) yes
+checking whether group_member is declared without a macro... (cached) yes
+checking whether isatty is declared without a macro... (cached) yes
+checking whether lchown is declared without a macro... (cached) yes
+checking whether link is declared without a macro... (cached) yes
+checking whether linkat is declared without a macro... (cached) yes
+checking whether lseek is declared without a macro... (cached) yes
+checking whether pipe is declared without a macro... (cached) yes
+checking whether pipe2 is declared without a macro... (cached) yes
+checking whether pread is declared without a macro... (cached) yes
+checking whether pwrite is declared without a macro... (cached) yes
+checking whether readlink is declared without a macro... (cached) yes
+checking whether readlinkat is declared without a macro... (cached) yes
+checking whether rmdir is declared without a macro... (cached) yes
+checking whether sethostname is declared without a macro... (cached) yes
+checking whether sleep is declared without a macro... (cached) yes
+checking whether symlink is declared without a macro... (cached) yes
+checking whether symlinkat is declared without a macro... (cached) yes
+checking whether ttyname_r is declared without a macro... (cached) yes
+checking whether unlink is declared without a macro... (cached) yes
+checking whether unlinkat is declared without a macro... (cached) yes
+checking whether usleep is declared without a macro... (cached) yes
+checking for unsetenv... (cached) yes
+checking for unsetenv() return type... (cached) int
+checking whether unsetenv obeys POSIX... (cached) yes
+checking whether btowc is declared without a macro... (cached) yes
+checking whether wctob is declared without a macro... (cached) yes
+checking whether mbsinit is declared without a macro... (cached) yes
+checking whether mbrtowc is declared without a macro... (cached) yes
+checking whether mbrlen is declared without a macro... (cached) yes
+checking whether mbsrtowcs is declared without a macro... (cached) yes
+checking whether mbsnrtowcs is declared without a macro... (cached) yes
+checking whether wcrtomb is declared without a macro... (cached) yes
+checking whether wcsrtombs is declared without a macro... (cached) yes
+checking whether wcsnrtombs is declared without a macro... (cached) yes
+checking whether wcwidth is declared without a macro... (cached) yes
+checking whether wmemchr is declared without a macro... (cached) yes
+checking whether wmemcmp is declared without a macro... (cached) yes
+checking whether wmemcpy is declared without a macro... (cached) yes
+checking whether wmemmove is declared without a macro... (cached) yes
+checking whether wmemset is declared without a macro... (cached) yes
+checking whether wcslen is declared without a macro... (cached) yes
+checking whether wcsnlen is declared without a macro... (cached) yes
+checking whether wcscpy is declared without a macro... (cached) yes
+checking whether wcpcpy is declared without a macro... (cached) yes
+checking whether wcsncpy is declared without a macro... (cached) yes
+checking whether wcpncpy is declared without a macro... (cached) yes
+checking whether wcscat is declared without a macro... (cached) yes
+checking whether wcsncat is declared without a macro... (cached) yes
+checking whether wcscmp is declared without a macro... (cached) yes
+checking whether wcsncmp is declared without a macro... (cached) yes
+checking whether wcscasecmp is declared without a macro... (cached) yes
+checking whether wcsncasecmp is declared without a macro... (cached) yes
+checking whether wcscoll is declared without a macro... (cached) yes
+checking whether wcsxfrm is declared without a macro... (cached) yes
+checking whether wcsdup is declared without a macro... (cached) yes
+checking whether wcschr is declared without a macro... (cached) yes
+checking whether wcsrchr is declared without a macro... (cached) yes
+checking whether wcscspn is declared without a macro... (cached) yes
+checking whether wcsspn is declared without a macro... (cached) yes
+checking whether wcspbrk is declared without a macro... (cached) yes
+checking whether wcsstr is declared without a macro... (cached) yes
+checking whether wcstok is declared without a macro... (cached) yes
+checking whether wcswidth is declared without a macro... (cached) yes
+checking for sched_yield in -lrt... yes
+checking for nl_langinfo and CODESET... (cached) yes
+checking if TLD API for specific TLD rules should be built... yes
+checking for pkg-config... /usr/sbin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for gtk-doc... yes
+checking for gtkdoc-check... gtkdoc-check.test
+checking for gtkdoc-check... /usr/sbin/gtkdoc-check
+checking for gtkdoc-rebase... /usr/sbin/gtkdoc-rebase
+checking for gtkdoc-mkpdf... /usr/sbin/gtkdoc-mkpdf
+checking whether to build gtk-doc documentation... no
+checking for GTKDOC_DEPS... yes
+checking for gcj... no
+checking dependency style of gcj... none
+checking dependency style of gcj... (cached) none
+checking if gcj supports -fno-rtti -fno-exceptions... (cached) no
+checking for gcj option to produce PIC... -fPIC
+checking if gcj PIC flag -fPIC works... no
+checking if gcj static flag -static works... no
+checking if gcj supports -c -o file.o... no
+checking if gcj supports -c -o file.o... (cached) no
+checking whether the gcj linker (/usr/sbin/ld) supports shared libraries... yes
+checking how to hardcode library paths into programs... immediate
+checking if implementation in Java should be built... no
+checking if implementation in C# should be built... no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating csharpcomp.sh
+config.status: creating csharpexec.sh
+config.status: creating Makefile
+config.status: creating contrib/doxygen/Doxyfile
+config.status: creating csharp/Makefile
+config.status: creating doc/Makefile
+config.status: creating doc/cyclo/Makefile
+config.status: creating doc/java/Makefile
+config.status: creating doc/reference/Makefile
+config.status: creating doc/reference/version.xml
+config.status: creating doc/specifications/Makefile
+config.status: creating doc/tld/Makefile
+config.status: creating examples/Makefile
+config.status: creating gl/Makefile
+config.status: creating gltests/Makefile
+config.status: creating java/Makefile
+config.status: creating java/pom.xml
+config.status: creating java/src/Makefile
+config.status: creating java/src/main/Makefile
+config.status: creating java/src/main/java/Makefile
+config.status: creating java/src/main/java/gnu/Makefile
+config.status: creating java/src/main/java/gnu/inet/Makefile
+config.status: creating java/src/main/java/gnu/inet/encoding/Makefile
+config.status: creating java/src/util/Makefile
+config.status: creating java/src/util/java/Makefile
+config.status: creating java/src/test/Makefile
+config.status: creating java/src/test/java/Makefile
+config.status: creating lib/Makefile
+config.status: creating lib/gl/Makefile
+config.status: creating lib/gltests/Makefile
+config.status: creating libidn.pc
+config.status: creating po/Makefile.in
+config.status: creating src/Makefile
+config.status: creating tests/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+configure: summary of build options:
+
+  version:          1.33 shared 17:16:6
+  Host type:        i686-pc-linux-gnu
+  Install prefix:   /usr
+  Compiler:         gcc -m32
+  Warning flags:    
+  Library types:    Shared=yes, Static=no
+  Libiconv:         yes
+  Valgrind:         
+  Version script:   yes
+  TLD code:         yes
+  Build Java port:  no
+  Build C# port:    no
+
+make  all-recursive
+make[1]: Entering directory '/workspace/build/lib32-libidn11/src/libidn'
+Making all in gl
+make[2]: Entering directory '/workspace/build/lib32-libidn11/src/libidn/gl'
+  GEN      arg-nonnull.h
+  GEN      c++defs.h
+  GEN      warn-on-use.h
+  GEN      stdio.h
+  GEN      stdlib.h
+  GEN      string.h
+  GEN      sys/types.h
+  GEN      unistd.h
+make  all-recursive
+make[3]: Entering directory '/workspace/build/lib32-libidn11/src/libidn/gl'
+make[4]: Entering directory '/workspace/build/lib32-libidn11/src/libidn/gl'
+  CC       progname.lo
+  CC       unistd.lo
+  CC       version-etc.lo
+  CCLD     libgnu.la
+make[4]: Leaving directory '/workspace/build/lib32-libidn11/src/libidn/gl'
+make[3]: Leaving directory '/workspace/build/lib32-libidn11/src/libidn/gl'
+make[2]: Leaving directory '/workspace/build/lib32-libidn11/src/libidn/gl'
+Making all in lib/gl
+make[2]: Entering directory '/workspace/build/lib32-libidn11/src/libidn/lib/gl'
+  GEN      c++defs.h
+  GEN      arg-nonnull.h
+  GEN      warn-on-use.h
+  GEN      iconv.h
+  GPERF    iconv_open-aix.h
+  GPERF    iconv_open-hpux.h
+  GPERF    iconv_open-irix.h
+  GPERF    iconv_open-osf.h
+  GPERF    iconv_open-solaris.h
+  GEN      unused-parameter.h
+  GEN      stdbool.h
+  GEN      string.h
+  GEN      sys/types.h
+  GEN      unistr.h
+  GEN      unitypes.h
+make  all-recursive
+make[3]: Entering directory '/workspace/build/lib32-libidn11/src/libidn/lib/gl'
+make[4]: Entering directory '/workspace/build/lib32-libidn11/src/libidn/lib/gl'
+  CC       c-ctype.lo
+  CC       c-strcasecmp.lo
+  CC       c-strncasecmp.lo
+  CC       striconv.lo
+  CC       unistr/u8-check.lo
+  CC       unistr/u8-mbtoucr.lo
+  CC       unistr/u8-uctomb.lo
+  CC       unistr/u8-uctomb-aux.lo
+  CCLD     libgnu.la
+make[4]: Leaving directory '/workspace/build/lib32-libidn11/src/libidn/lib/gl'
+make[3]: Leaving directory '/workspace/build/lib32-libidn11/src/libidn/lib/gl'
+make[2]: Leaving directory '/workspace/build/lib32-libidn11/src/libidn/lib/gl'
+Making all in lib
+make[2]: Entering directory '/workspace/build/lib32-libidn11/src/libidn/lib'
+if test -n ""; then \
+	sed -e s/include_next/include/ gl/stdint.h > idn-int.h; \
+else \
+	echo '#include <stdint.h>' > idn-int.h; \
+fi
+/bin/sh '/workspace/build/lib32-libidn11/src/libidn/build-aux/missing' perl ./gen-stringprep-tables.pl ../doc/specifications/rfc3454.txt
+/bin/sh '/workspace/build/lib32-libidn11/src/libidn/build-aux/missing' perl ./gen-tld-tables.pl ../doc/tld/*.tld > tlds.c
+make  all-am
+make[3]: Entering directory '/workspace/build/lib32-libidn11/src/libidn/lib'
+  CC       nfkc.lo
+  CC       toutf8.lo
+  CC       version.lo
+  CC       stringprep.lo
+  CC       rfc3454.lo
+  CC       profiles.lo
+  CC       punycode.lo
+  CC       idna.lo
+  CC       pr29.lo
+  CC       idn-free.lo
+  CC       strerror-idna.lo
+  CC       strerror-pr29.lo
+  CC       strerror-punycode.lo
+  CC       strerror-stringprep.lo
+  CC       strerror-tld.lo
+  CC       tld.lo
+  CC       tlds.lo
+  CCLD     libidn.la
+make[3]: Leaving directory '/workspace/build/lib32-libidn11/src/libidn/lib'
+make[2]: Leaving directory '/workspace/build/lib32-libidn11/src/libidn/lib'
+Making all in po
+make[2]: Entering directory '/workspace/build/lib32-libidn11/src/libidn/po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/workspace/build/lib32-libidn11/src/libidn/po'
+make[2]: Entering directory '/workspace/build/lib32-libidn11/src/libidn'
+make[2]: Leaving directory '/workspace/build/lib32-libidn11/src/libidn'
+make[1]: Leaving directory '/workspace/build/lib32-libidn11/src/libidn'
+==> Entering fakeroot environment...
+==> Starting package()...
+make: Entering directory '/workspace/build/lib32-libidn11/src/libidn'
+Making install in gl
+make[1]: Entering directory '/workspace/build/lib32-libidn11/src/libidn/gl'
+make  install-recursive
+make[2]: Entering directory '/workspace/build/lib32-libidn11/src/libidn/gl'
+make[3]: Entering directory '/workspace/build/lib32-libidn11/src/libidn/gl'
+make[4]: Entering directory '/workspace/build/lib32-libidn11/src/libidn/gl'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/workspace/build/lib32-libidn11/src/libidn/gl'
+make[3]: Leaving directory '/workspace/build/lib32-libidn11/src/libidn/gl'
+make[2]: Leaving directory '/workspace/build/lib32-libidn11/src/libidn/gl'
+make[1]: Leaving directory '/workspace/build/lib32-libidn11/src/libidn/gl'
+Making install in lib/gl
+make[1]: Entering directory '/workspace/build/lib32-libidn11/src/libidn/lib/gl'
+make  install-recursive
+make[2]: Entering directory '/workspace/build/lib32-libidn11/src/libidn/lib/gl'
+make[3]: Entering directory '/workspace/build/lib32-libidn11/src/libidn/lib/gl'
+make[4]: Entering directory '/workspace/build/lib32-libidn11/src/libidn/lib/gl'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/workspace/build/lib32-libidn11/src/libidn/lib/gl'
+make[3]: Leaving directory '/workspace/build/lib32-libidn11/src/libidn/lib/gl'
+make[2]: Leaving directory '/workspace/build/lib32-libidn11/src/libidn/lib/gl'
+make[1]: Leaving directory '/workspace/build/lib32-libidn11/src/libidn/lib/gl'
+Making install in lib
+make[1]: Entering directory '/workspace/build/lib32-libidn11/src/libidn/lib'
+make  install-am
+make[2]: Entering directory '/workspace/build/lib32-libidn11/src/libidn/lib'
+make[3]: Entering directory '/workspace/build/lib32-libidn11/src/libidn/lib'
+ /usr/sbin/mkdir -p '/workspace/build/lib32-libidn11/pkg/lib32-libidn11/usr/lib32'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libidn.la '/workspace/build/lib32-libidn11/pkg/lib32-libidn11/usr/lib32'
+libtool: install: /usr/bin/install -c .libs/libidn.so.11.6.16 /workspace/build/lib32-libidn11/pkg/lib32-libidn11/usr/lib32/libidn.so.11.6.16
+libtool: install: (cd /workspace/build/lib32-libidn11/pkg/lib32-libidn11/usr/lib32 && { ln -s -f libidn.so.11.6.16 libidn.so.11 || { rm -f libidn.so.11 && ln -s libidn.so.11.6.16 libidn.so.11; }; })
+libtool: install: (cd /workspace/build/lib32-libidn11/pkg/lib32-libidn11/usr/lib32 && { ln -s -f libidn.so.11.6.16 libidn.so || { rm -f libidn.so && ln -s libidn.so.11.6.16 libidn.so; }; })
+libtool: install: /usr/bin/install -c .libs/libidn.lai /workspace/build/lib32-libidn11/pkg/lib32-libidn11/usr/lib32/libidn.la
+libtool: warning: remember to run 'libtool --finish /usr/lib32'
+ /usr/sbin/mkdir -p '/workspace/build/lib32-libidn11/pkg/lib32-libidn11/usr/include'
+ /usr/bin/install -c -m 644 stringprep.h idna.h punycode.h idn-free.h pr29.h tld.h '/workspace/build/lib32-libidn11/pkg/lib32-libidn11/usr/include'
+ /usr/sbin/mkdir -p '/workspace/build/lib32-libidn11/pkg/lib32-libidn11/usr/include'
+ /usr/bin/install -c -m 644 idn-int.h '/workspace/build/lib32-libidn11/pkg/lib32-libidn11/usr/include'
+make[3]: Leaving directory '/workspace/build/lib32-libidn11/src/libidn/lib'
+make[2]: Leaving directory '/workspace/build/lib32-libidn11/src/libidn/lib'
+make[1]: Leaving directory '/workspace/build/lib32-libidn11/src/libidn/lib'
+Making install in po
+make[1]: Entering directory '/workspace/build/lib32-libidn11/src/libidn/po'
+if test "libidn" = "gettext-tools"; then \
+  /usr/sbin/mkdir -p /workspace/build/lib32-libidn11/pkg/lib32-libidn11/usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 ./$file \
+		    /workspace/build/lib32-libidn11/pkg/lib32-libidn11/usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /workspace/build/lib32-libidn11/pkg/lib32-libidn11/usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/workspace/build/lib32-libidn11/src/libidn/po'
+make[1]: Entering directory '/workspace/build/lib32-libidn11/src/libidn'
+make[2]: Entering directory '/workspace/build/lib32-libidn11/src/libidn'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/sbin/mkdir -p '/workspace/build/lib32-libidn11/pkg/lib32-libidn11/usr/lib32/pkgconfig'
+ /usr/bin/install -c -m 644 libidn.pc '/workspace/build/lib32-libidn11/pkg/lib32-libidn11/usr/lib32/pkgconfig'
+make[2]: Leaving directory '/workspace/build/lib32-libidn11/src/libidn'
+make[1]: Leaving directory '/workspace/build/lib32-libidn11/src/libidn'
+make: Leaving directory '/workspace/build/lib32-libidn11/src/libidn'
+==> Tidying install...
+  -> Removing libtool files...
+  -> Purging unwanted files...
+  -> Removing static library files...
+  -> Stripping unneeded symbols from binaries and libraries...
+  -> Compressing man and info pages...
+==> Checking for packaging issues...
+==> Creating package "lib32-libidn11"...
+  -> Generating .PKGINFO file...
+  -> Generating .BUILDINFO file...
+  -> Generating .MTREE file...
+  -> Compressing package...
+==> Leaving fakeroot environment.
+==> Finished making: lib32-libidn11 1.33-3 (Fri Oct 31 21:25:24 2025)
+==> Installing package lib32-libidn11 with pacman -U...
+loading packages...
+resolving dependencies...
+looking for conflicting packages...
+
+Package (1)     New Version  Net Change
+
+lib32-libidn11  1.33-3         0.20 MiB
+
+Total Installed Size:  0.20 MiB
+
+:: Proceed with installation? [Y/n] 
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+:: Processing package changes...
+installing lib32-libidn11...
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...

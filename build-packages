@@ -6,10 +6,11 @@ packages=(
     # steam-runtime libs
     glew1.10
     gtk2
-    libjpeg6-turbo
     libgcrypt15
+    libdbusmenu-gtk2
     libidn11
     libindicator-gtk2
+    libjpeg6-turbo
     libpng12
     librtmp0
     libtiff4
@@ -19,37 +20,47 @@ packages=(
     lib32-glew1.10
     lib32-gtk2
     lib32-libgcrypt15
-    lib32-libdbusmenu-gtk2
+    lib32-libdbusmenu-gtk2 # dependency of lib32-libappindicator-gtk2
     lib32-libidn11
     lib32-libappindicator-gtk2
     lib32-libindicator-gtk2
+    lib32-libjpeg6-turbo
     lib32-libpng12
     lib32-librtmp0
     lib32-libtiff4
     lib32-libudev0-shim
     lib32-libvpx1.3
-    lib32-libjpeg6-turbo
     lib32-openssl-1.0
 )
 packages+=(steam-native-runtime)
 basedir="$(realpath "$(dirname "$0")")"
-[ ! -d build ] && "$basedir"/build
+mkdir -p "$basedir"/build
 if [ ! -d logs ]; then
     mkdir "$basedir"/logs
 else
-    rm "$basedir/logs/"*.log
+    rm -r "$basedir/logs/"
+    mkdir "$basedir"/logs
 fi
+[ -f "$basedir/build.log" ] && rm "$basedir/build.log"
 cd "$basedir"/build
+pindx=0
 for package in "${packages[@]}"; do
-    echo "Working on «$package»"
-    if [ ! -d "$package" ]; then
-        git clone "https://aur.archlinux.org/$package.git"
-    else
-        cd "$basedir/build/$package"
-        git pull > /dev/null
+    echo "[$(date +"%T")] Working on «$package»"
+    ((pindx++)) || true
+    if [ ! -d "$basedir/build/$package" ]; then
+        cd "$basedir/build"
+        git clone "https://aur.archlinux.org/$package.git" >> "$basedir/logs/$pindx-$package.log" 2>&1
     fi
     cd "$basedir/build/$package"
-    makepkg -si --noconfirm --needed --asdeps > "$basedir/logs/$package.log" 2>&1 || \
-    echo "[$(date +"%F %T")] Failed to build «$package»" >> "$basedir/build.log" && \
+    git pull >> "$basedir/logs/$pindx-$package.log" 2>&1
+    if [ "$package" == "libdn11" ]; then
+        # libidn11 takes a while to clone,
+        # so just link the clone from 32bit package to the regular one
+        ln -sf "../lib32-libidn11/libidn" "$basedir/build/libidn11/libidn"
+    fi
+    # shellcheck disable=SC2046
+    gpg --recv-keys $(bash -c "source '$basedir/build/$package/PKGBUILD'; echo \$validpgpkeys") >> "$basedir/logs/$pindx-$package.log" 2>&1
+    makepkg -si --noconfirm --needed --asdeps >> "$basedir/logs/$pindx-$package.log" 2>&1 || \
+    echo "[$(date +"%F %T")] Failed to build «$package»" | tee -a "$basedir/failed.log" && \
     continue # --rmdeps
 done

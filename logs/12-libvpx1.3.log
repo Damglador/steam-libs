@@ -1,0 +1,1827 @@
+Cloning into 'libvpx1.3'...
+Already up to date.
+==> Making package: libvpx1.3 1.3.0-4 (Fri Oct 31 21:12:07 2025)
+==> Checking runtime dependencies...
+==> Checking buildtime dependencies...
+==> Installing missing dependencies...
+resolving dependencies...
+looking for conflicting packages...
+
+Package (1)  New Version  Net Change
+
+extra/yasm   1.3.0-8        3.72 MiB
+
+Total Installed Size:  3.72 MiB
+
+:: Proceed with installation? [Y/n] 
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+:: Processing package changes...
+installing yasm...
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+==> Retrieving sources...
+  -> Downloading libvpx-1.3.0.tar.gz...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 31 2517k   31  798k    0     0  1183k      0  0:00:02 --:--:--  0:00:02 1183k100 2517k  100 2517k    0     0  2882k      0 --:--:-- --:--:-- --:--:-- 8679k
+  -> Found libvpx-1.3-gcc-5.2.patch
+==> Validating source files with sha256sums...
+    libvpx-1.3.0.tar.gz ... Passed
+    libvpx-1.3-gcc-5.2.patch ... Passed
+==> Extracting sources...
+  -> Extracting libvpx-1.3.0.tar.gz with bsdtar
+==> Starting prepare()...
+patching file nestegg/halloc/src/align.h
+patching file nestegg/halloc/src/halloc.c
+==> Starting build()...
+Configuring selected codecs
+  enabling vp8_encoder
+  enabling vp8_decoder
+  enabling vp9_encoder
+  enabling vp9_decoder
+Configuring for target 'x86_64-linux-gcc'
+  enabling x86_64
+  enabling pic
+  enabling runtime_cpu_detect
+  enabling mmx
+  enabling sse
+  enabling sse2
+  enabling sse3
+  enabling ssse3
+  enabling sse4_1
+  enabling avx
+  enabling avx2
+  using yasm
+  checking here for x86inc "x86_64" "yes" 
+  enabling use_x86inc
+  enabling postproc
+  enabling unit_tests
+Creating makefiles for x86_64-linux-gcc libs
+Creating makefiles for x86_64-linux-gcc examples
+Creating makefiles for x86_64-linux-gcc docs
+    [CREATE] vpx_scale_rtcd.h
+    [CREATE] vp8_rtcd.h
+    [CREATE] vp9_rtcd.h
+    [DEP] vpx/src/svc_encodeframe.c.d
+    [DEP] vpx/src/vpx_decoder.c.d
+    [DEP] vpx/src/vpx_encoder.c.d
+    [DEP] vpx/src/vpx_codec.c.d
+    [DEP] vpx/src/vpx_image.c.d
+    [DEP] vpx_mem/vpx_mem.c.d
+    [DEP] vpx_scale/generic/vpx_scale.c.d
+    [DEP] vpx_scale/generic/yv12config.c.d
+    [DEP] vpx_scale/generic/yv12extend.c.d
+    [DEP] vpx_scale/generic/gen_scalers.c.d
+    [DEP] vpx_scale/vpx_scale_asm_offsets.c.d
+    [DEP] vpx_scale/vpx_scale_rtcd.c.d
+    [DEP] vpx_ports/x86_cpuid.c.d
+    [DEP] vp8/common/alloccommon.c.d
+    [DEP] vp8/common/blockd.c.d
+    [DEP] vp8/common/debugmodes.c.d
+    [DEP] vp8/common/dequantize.c.d
+    [DEP] vp8/common/entropy.c.d
+    [DEP] vp8/common/entropymode.c.d
+    [DEP] vp8/common/entropymv.c.d
+    [DEP] vp8/common/extend.c.d
+    [DEP] vp8/common/filter.c.d
+    [DEP] vp8/common/findnearmv.c.d
+    [DEP] vp8/common/generic/systemdependent.c.d
+    [DEP] vp8/common/idct_blk.c.d
+    [DEP] vp8/common/idctllm.c.d
+    [DEP] vp8/common/rtcd.c.d
+    [DEP] vp8/common/loopfilter.c.d
+    [DEP] vp8/common/loopfilter_filters.c.d
+    [DEP] vp8/common/mbpitch.c.d
+    [DEP] vp8/common/modecont.c.d
+    [DEP] vp8/common/quant_common.c.d
+    [DEP] vp8/common/reconinter.c.d
+    [DEP] vp8/common/reconintra.c.d
+    [DEP] vp8/common/reconintra4x4.c.d
+    [DEP] vp8/common/sad_c.c.d
+    [DEP] vp8/common/setupintrarecon.c.d
+    [DEP] vp8/common/swapyv12buffer.c.d
+    [DEP] vp8/common/variance_c.c.d
+    [DEP] vp8/common/treecoder.c.d
+    [DEP] vp8/common/x86/filter_x86.c.d
+    [DEP] vp8/common/x86/vp8_asm_stubs.c.d
+    [DEP] vp8/common/x86/loopfilter_x86.c.d
+    [DEP] vp8/common/mfqe.c.d
+    [DEP] vp8/common/postproc.c.d
+    [DEP] vp8/common/x86/idct_blk_mmx.c.d
+    [DEP] vp8/common/x86/variance_mmx.c.d
+    [DEP] vp8/common/x86/idct_blk_sse2.c.d
+    [DEP] vp8/common/x86/recon_wrapper_sse2.c.d
+    [DEP] vp8/common/x86/variance_sse2.c.d
+    [DEP] vp8/common/x86/variance_ssse3.c.d
+    [DEP] vp8/common/x86/postproc_x86.c.d
+    [DEP] vp8/vp8_cx_iface.c.d
+    [DEP] vp8/encoder/bitstream.c.d
+    [DEP] vp8/encoder/boolhuff.c.d
+    [DEP] vp8/encoder/dct.c.d
+    [DEP] vp8/encoder/encodeframe.c.d
+    [DEP] vp8/encoder/encodeintra.c.d
+    [DEP] vp8/encoder/encodemb.c.d
+    [DEP] vp8/encoder/encodemv.c.d
+    [DEP] vp8/encoder/ethreading.c.d
+    [DEP] vp8/encoder/firstpass.c.d
+    [DEP] vp8/encoder/denoising.c.d
+    [DEP] vp8/encoder/lookahead.c.d
+    [DEP] vp8/encoder/mcomp.c.d
+    [DEP] vp8/encoder/modecosts.c.d
+    [DEP] vp8/encoder/onyx_if.c.d
+    [DEP] vp8/encoder/pickinter.c.d
+    [DEP] vp8/encoder/picklpf.c.d
+    [DEP] vp8/encoder/psnr.c.d
+    [DEP] vp8/encoder/quantize.c.d
+    [DEP] vp8/encoder/ratectrl.c.d
+    [DEP] vp8/encoder/rdopt.c.d
+    [DEP] vp8/encoder/segmentation.c.d
+    [DEP] vp8/encoder/tokenize.c.d
+    [DEP] vp8/encoder/treewriter.c.d
+    [DEP] vp8/encoder/temporal_filter.c.d
+    [DEP] vp8/encoder/vp8_asm_enc_offsets.c.d
+    [DEP] vp8/encoder/x86/vp8_enc_stubs_mmx.c.d
+    [DEP] vp8/encoder/x86/quantize_sse2.c.d
+    [DEP] vp8/encoder/x86/denoising_sse2.c.d
+    [DEP] vp8/encoder/x86/vp8_enc_stubs_sse2.c.d
+    [DEP] vp8/vp8_dx_iface.c.d
+    [DEP] vp8/decoder/dboolhuff.c.d
+    [DEP] vp8/decoder/decodemv.c.d
+    [DEP] vp8/decoder/decodframe.c.d
+    [DEP] vp8/decoder/detokenize.c.d
+    [DEP] vp8/decoder/onyxd_if.c.d
+    [DEP] vp8/decoder/threading.c.d
+    [DEP] vp9/common/vp9_alloccommon.c.d
+    [DEP] vp9/common/vp9_convolve.c.d
+    [DEP] vp9/common/vp9_debugmodes.c.d
+    [DEP] vp9/common/vp9_entropy.c.d
+    [DEP] vp9/common/vp9_entropymode.c.d
+    [DEP] vp9/common/vp9_entropymv.c.d
+    [DEP] vp9/common/vp9_extend.c.d
+    [DEP] vp9/common/vp9_filter.c.d
+    [DEP] vp9/common/vp9_findnearmv.c.d
+    [DEP] vp9/common/generic/vp9_systemdependent.c.d
+    [DEP] vp9/common/vp9_idct.c.d
+    [DEP] vp9/common/vp9_pred_common.c.d
+    [DEP] vp9/common/vp9_rtcd.c.d
+    [DEP] vp9/common/vp9_scale.c.d
+    [DEP] vp9/common/vp9_seg_common.c.d
+    [DEP] vp9/common/vp9_tile_common.c.d
+    [DEP] vp9/common/vp9_loopfilter.c.d
+    [DEP] vp9/common/vp9_loopfilter_filters.c.d
+    [DEP] vp9/common/vp9_mvref_common.c.d
+    [DEP] vp9/common/vp9_quant_common.c.d
+    [DEP] vp9/common/vp9_reconinter.c.d
+    [DEP] vp9/common/vp9_reconintra.c.d
+    [DEP] vp9/common/vp9_treecoder.c.d
+    [DEP] vp9/common/vp9_common_data.c.d
+    [DEP] vp9/common/vp9_scan.c.d
+    [DEP] vp9/common/x86/vp9_asm_stubs.c.d
+    [DEP] vp9/common/x86/vp9_loopfilter_intrin_sse2.c.d
+    [DEP] vp9/common/x86/vp9_loopfilter_intrin_avx2.c.d
+    [DEP] vp9/common/x86/vp9_idct_intrin_sse2.c.d
+    [DEP] vp9/vp9_cx_iface.c.d
+    [DEP] vp9/encoder/vp9_bitstream.c.d
+    [DEP] vp9/encoder/vp9_boolhuff.c.d
+    [DEP] vp9/encoder/vp9_dct.c.d
+    [DEP] vp9/encoder/vp9_encodeframe.c.d
+    [DEP] vp9/encoder/vp9_encodeintra.c.d
+    [DEP] vp9/encoder/vp9_encodemb.c.d
+    [DEP] vp9/encoder/vp9_encodemv.c.d
+    [DEP] vp9/encoder/vp9_firstpass.c.d
+    [DEP] vp9/encoder/vp9_lookahead.c.d
+    [DEP] vp9/encoder/vp9_mcomp.c.d
+    [DEP] vp9/encoder/vp9_modecosts.c.d
+    [DEP] vp9/encoder/vp9_onyx_if.c.d
+    [DEP] vp9/encoder/vp9_picklpf.c.d
+    [DEP] vp9/encoder/vp9_psnr.c.d
+    [DEP] vp9/encoder/vp9_quantize.c.d
+    [DEP] vp9/encoder/vp9_ratectrl.c.d
+    [DEP] vp9/encoder/vp9_rdopt.c.d
+    [DEP] vp9/encoder/vp9_sad_c.c.d
+    [DEP] vp9/encoder/vp9_segmentation.c.d
+    [DEP] vp9/encoder/vp9_subexp.c.d
+    [DEP] vp9/encoder/vp9_tokenize.c.d
+    [DEP] vp9/encoder/vp9_treewriter.c.d
+    [DEP] vp9/encoder/vp9_variance_c.c.d
+    [DEP] vp9/encoder/vp9_vaq.c.d
+    [DEP] vp9/encoder/vp9_temporal_filter.c.d
+    [DEP] vp9/encoder/vp9_mbgraph.c.d
+    [DEP] vp9/encoder/x86/vp9_variance_mmx.c.d
+    [DEP] vp9/encoder/x86/vp9_variance_sse2.c.d
+    [DEP] vp9/encoder/x86/vp9_dct_sse2.c.d
+    [DEP] vp9/encoder/x86/vp9_dct32x32_sse2.c.d
+    [DEP] vp9/vp9_dx_iface.c.d
+    [DEP] vp9/decoder/vp9_dboolhuff.c.d
+    [DEP] vp9/decoder/vp9_decodemv.c.d
+    [DEP] vp9/decoder/vp9_decodframe.c.d
+    [DEP] vp9/decoder/vp9_detokenize.c.d
+    [DEP] vp9/decoder/vp9_thread.c.d
+    [DEP] vp9/decoder/vp9_onyxd_if.c.d
+    [DEP] vp9/decoder/vp9_dsubexp.c.d
+    [DEP] vpx_config.c.d
+    [DEP] vpx_ports/emms.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vpx_ports/x86_abi_support.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/dequantize_mmx.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/idctllm_mmx.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/iwalsh_mmx.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/loopfilter_mmx.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/recon_mmx.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/sad_mmx.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/subpixel_mmx.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/variance_impl_mmx.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/idctllm_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/recon_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/sad_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/subpixel_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/loopfilter_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/iwalsh_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/variance_impl_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/sad_sse3.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/sad_ssse3.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/subpixel_ssse3.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/variance_impl_ssse3.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/sad_sse4.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/postproc_mmx.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/mfqe_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/postproc_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/loopfilter_block_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/encoder/x86/dct_mmx.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/encoder/x86/subtract_mmx.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/encoder/x86/dct_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/encoder/x86/fwalsh_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/encoder/x86/subtract_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/encoder/x86/temporal_filter_apply_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/encoder/x86/quantize_ssse3.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/encoder/x86/quantize_sse4.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/encoder/x86/quantize_mmx.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/encoder/x86/encodeopt.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/encoder/x86/ssim_opt.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/common/x86/vp9_loopfilter_mmx.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/common/x86/vp9_subpixel_8t_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/common/x86/vp9_subpixel_8t_ssse3.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/common/x86/vp9_copy_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/common/x86/vp9_intrapred_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/common/x86/vp9_intrapred_ssse3.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/encoder/x86/vp9_variance_impl_mmx.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/encoder/x86/vp9_sad_mmx.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/encoder/x86/vp9_variance_impl_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/encoder/x86/vp9_sad4d_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/encoder/x86/vp9_subpel_variance_impl_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/encoder/x86/vp9_temporal_filter_apply_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/encoder/x86/vp9_sad_sse3.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/encoder/x86/vp9_error_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/encoder/x86/vp9_sad_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/encoder/x86/vp9_subtract_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/encoder/x86/vp9_subpel_variance.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/encoder/x86/vp9_quantize_ssse3.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/encoder/x86/vp9_sad_ssse3.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/encoder/x86/vp9_sad_sse4.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/encoder/x86/vp9_ssim_opt.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] third_party/x86inc/x86inc.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] third_party/googletest/src/src/gtest-all.cc.d
+    [DEP] test/../md5_utils.c.d
+    [DEP] test/../nestegg/halloc/src/halloc.c.d
+    [DEP] test/../nestegg/src/nestegg.c.d
+    [DEP] test/altref_test.cc.d
+    [DEP] test/borders_test.cc.d
+    [DEP] test/config_test.cc.d
+    [DEP] test/cpu_speed_test.cc.d
+    [DEP] test/cq_test.cc.d
+    [DEP] test/datarate_test.cc.d
+    [DEP] test/decode_test_driver.cc.d
+    [DEP] test/encode_test_driver.cc.d
+    [DEP] test/error_resilience_test.cc.d
+    [DEP] test/keyframe_test.cc.d
+    [DEP] test/resize_test.cc.d
+    [DEP] test/test_libvpx.cc.d
+    [DEP] test/test_vector_test.cc.d
+    [DEP] test/vp9_lossless_test.cc.d
+    [CREATE] vpx_config.asm
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vpx_ports/emms.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vpx_ports/x86_abi_support.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/dequantize_mmx.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/idctllm_mmx.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/iwalsh_mmx.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/loopfilter_mmx.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/recon_mmx.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/sad_mmx.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/subpixel_mmx.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/variance_impl_mmx.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/idctllm_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/recon_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/sad_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/subpixel_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/loopfilter_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/iwalsh_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/variance_impl_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/sad_sse3.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/sad_ssse3.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/subpixel_ssse3.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/variance_impl_ssse3.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/sad_sse4.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/postproc_mmx.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/mfqe_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/postproc_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/common/x86/loopfilter_block_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/encoder/x86/dct_mmx.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/encoder/x86/subtract_mmx.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/encoder/x86/dct_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/encoder/x86/fwalsh_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/encoder/x86/subtract_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/encoder/x86/temporal_filter_apply_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [GEN] vp8/encoder/vp8_asm_enc_offsets.c.S
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CREATE] vp8_asm_enc_offsets.asm
+    [DEP] vp8/encoder/x86/quantize_ssse3.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/encoder/x86/quantize_sse4.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/encoder/x86/quantize_mmx.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/encoder/x86/encodeopt.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp8/encoder/x86/ssim_opt.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/common/x86/vp9_loopfilter_mmx.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/common/x86/vp9_subpixel_8t_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/common/x86/vp9_subpixel_8t_ssse3.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/common/x86/vp9_copy_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/common/x86/vp9_intrapred_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/common/x86/vp9_intrapred_ssse3.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/encoder/x86/vp9_variance_impl_mmx.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/encoder/x86/vp9_sad_mmx.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/encoder/x86/vp9_variance_impl_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/encoder/x86/vp9_sad4d_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/encoder/x86/vp9_subpel_variance_impl_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/encoder/x86/vp9_temporal_filter_apply_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/encoder/x86/vp9_sad_sse3.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/encoder/x86/vp9_error_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/encoder/x86/vp9_sad_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/encoder/x86/vp9_subtract_sse2.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/encoder/x86/vp9_subpel_variance.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/encoder/x86/vp9_quantize_ssse3.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/encoder/x86/vp9_sad_ssse3.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/encoder/x86/vp9_sad_sse4.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] vp9/encoder/x86/vp9_ssim_opt.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [DEP] third_party/x86inc/x86inc.asm.d
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+    [CC] vpx/src/svc_encodeframe.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vpx/src/vpx_decoder.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vpx/src/vpx_encoder.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vpx/src/vpx_codec.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vpx/src/vpx_image.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vpx_mem/vpx_mem.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vpx_scale/generic/vpx_scale.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vpx_scale/generic/yv12config.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vpx_scale/generic/yv12extend.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vpx_scale/generic/gen_scalers.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vpx_scale/vpx_scale_asm_offsets.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vpx_scale/vpx_scale_rtcd.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vpx_ports/x86_cpuid.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/common/alloccommon.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/common/blockd.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/common/debugmodes.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/common/dequantize.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/common/entropy.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/common/entropymode.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/common/entropymv.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/common/extend.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/common/filter.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/common/findnearmv.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/common/generic/systemdependent.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/common/idct_blk.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/common/idctllm.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/common/rtcd.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/common/loopfilter.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/common/loopfilter_filters.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/common/mbpitch.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/common/modecont.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/common/quant_common.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/common/reconinter.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/common/reconintra.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/common/reconintra4x4.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/common/sad_c.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/common/setupintrarecon.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/common/swapyv12buffer.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/common/variance_c.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/common/treecoder.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/common/x86/filter_x86.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/common/x86/vp8_asm_stubs.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/common/x86/loopfilter_x86.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/common/mfqe.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/common/postproc.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+vp8/common/postproc.c:74:20: warning: ‘kernel5’ defined but not used [-Wunused-const-variable=]
+   74 | static const short kernel5[] =
+      |                    ^~~~~~~
+    [CC] vp8/common/x86/idct_blk_mmx.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/common/x86/variance_mmx.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/common/x86/idct_blk_sse2.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/common/x86/recon_wrapper_sse2.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/common/x86/variance_sse2.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/common/x86/variance_ssse3.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/common/x86/postproc_x86.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/vp8_cx_iface.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/encoder/bitstream.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/encoder/boolhuff.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/encoder/dct.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/encoder/encodeframe.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/encoder/encodeintra.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/encoder/encodemb.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/encoder/encodemv.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/encoder/ethreading.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/encoder/firstpass.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/encoder/denoising.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/encoder/lookahead.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/encoder/mcomp.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/encoder/modecosts.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/encoder/onyx_if.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/encoder/pickinter.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/encoder/picklpf.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/encoder/psnr.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/encoder/quantize.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/encoder/ratectrl.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+vp8/encoder/ratectrl.c:178:18: warning: ‘kf_boost_seperation_adjustment’ defined but not used [-Wunused-const-variable=]
+  178 | static const int kf_boost_seperation_adjustment[16] =
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    [CC] vp8/encoder/rdopt.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/encoder/segmentation.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/encoder/tokenize.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/encoder/treewriter.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/encoder/temporal_filter.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/encoder/vp8_asm_enc_offsets.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/encoder/x86/vp8_enc_stubs_mmx.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/encoder/x86/quantize_sse2.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/encoder/x86/denoising_sse2.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/encoder/x86/vp8_enc_stubs_sse2.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/vp8_dx_iface.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/decoder/dboolhuff.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/decoder/decodemv.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/decoder/decodframe.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/decoder/detokenize.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/decoder/onyxd_if.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp8/decoder/threading.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/common/vp9_alloccommon.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/common/vp9_convolve.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/common/vp9_debugmodes.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/common/vp9_entropy.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/common/vp9_entropymode.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/common/vp9_entropymv.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/common/vp9_extend.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/common/vp9_filter.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/common/vp9_findnearmv.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/common/generic/vp9_systemdependent.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/common/vp9_idct.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/common/vp9_pred_common.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/common/vp9_rtcd.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/common/vp9_scale.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/common/vp9_seg_common.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/common/vp9_tile_common.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/common/vp9_loopfilter.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/common/vp9_loopfilter_filters.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/common/vp9_mvref_common.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/common/vp9_quant_common.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/common/vp9_reconinter.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+vp9/common/vp9_reconinter.c: In function ‘vp9_setup_interp_filters’:
+vp9/common/vp9_reconinter.c:29:5: warning: ‘set_scale_factors’ accessing 64 bytes in a region of size 48 [-Wstringop-overflow=]
+   29 |     set_scale_factors(xd, mbmi->ref_frame[0] - LAST_FRAME,
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   30 |                           mbmi->ref_frame[1] - LAST_FRAME,
+      |                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   31 |                           cm->active_ref_scale);
+      |                           ~~~~~~~~~~~~~~~~~~~~~
+vp9/common/vp9_reconinter.c:29:5: note: referencing argument 4 of type ‘struct scale_factors[4]’
+In file included from vp9/common/vp9_reconinter.c:20:
+./vp9/common/vp9_reconinter.h:95:13: note: in a call to function ‘set_scale_factors’
+   95 | static void set_scale_factors(MACROBLOCKD *xd, int ref0, int ref1,
+      |             ^~~~~~~~~~~~~~~~~
+vp9/common/vp9_reconinter.c:33:5: warning: ‘set_scale_factors’ accessing 64 bytes in a region of size 48 [-Wstringop-overflow=]
+   33 |     set_scale_factors(xd, -1, -1, cm->active_ref_scale);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/common/vp9_reconinter.c:33:5: note: referencing argument 4 of type ‘struct scale_factors[4]’
+./vp9/common/vp9_reconinter.h:95:13: note: in a call to function ‘set_scale_factors’
+   95 | static void set_scale_factors(MACROBLOCKD *xd, int ref0, int ref1,
+      |             ^~~~~~~~~~~~~~~~~
+    [CC] vp9/common/vp9_reconintra.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/common/vp9_treecoder.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/common/vp9_common_data.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/common/vp9_scan.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/common/x86/vp9_asm_stubs.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/common/x86/vp9_loopfilter_intrin_sse2.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/common/x86/vp9_loopfilter_intrin_avx2.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/common/x86/vp9_idct_intrin_sse2.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/vp9_cx_iface.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/encoder/vp9_bitstream.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/encoder/vp9_boolhuff.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/encoder/vp9_dct.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/encoder/vp9_encodeframe.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+vp9/encoder/vp9_encodeframe.c: In function ‘set_offsets’:
+vp9/encoder/vp9_encodeframe.c:561:28: warning: logical not is only applied to the left hand side of comparison [-Wlogical-not-parentheses]
+  561 |     if (!cpi->oxcf.aq_mode == VARIANCE_AQ) {
+      |                            ^~
+vp9/encoder/vp9_encodeframe.c:561:9: note: add parentheses around left hand side expression to silence this warning
+  561 |     if (!cpi->oxcf.aq_mode == VARIANCE_AQ) {
+      |         ^~~~~~~~~~~~~~~~~~
+      |         (                 )
+    [CC] vp9/encoder/vp9_encodeintra.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/encoder/vp9_encodemb.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/encoder/vp9_encodemv.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/encoder/vp9_firstpass.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/encoder/vp9_lookahead.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/encoder/vp9_mcomp.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/encoder/vp9_modecosts.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/encoder/vp9_onyx_if.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/encoder/vp9_picklpf.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/encoder/vp9_psnr.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/encoder/vp9_quantize.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/encoder/vp9_ratectrl.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/encoder/vp9_rdopt.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+vp9/encoder/vp9_rdopt.c: In function ‘vp9_get_entropy_contexts’:
+vp9/encoder/vp9_rdopt.c:648:20: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  648 |         t_above[i] = !!*(const uint32_t *)&above[i];
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:21: note: at offset [64, 2147483644] into destination object ‘t_above’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |     ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:648:20: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  648 |         t_above[i] = !!*(const uint32_t *)&above[i];
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:21: note: at offset [68, 2147483644] into destination object ‘t_above’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |     ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:648:20: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  648 |         t_above[i] = !!*(const uint32_t *)&above[i];
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:21: note: at offset [72, 2147483644] into destination object ‘t_above’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |     ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:648:20: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  648 |         t_above[i] = !!*(const uint32_t *)&above[i];
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:21: note: at offset [76, 2147483644] into destination object ‘t_above’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |     ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:648:20: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  648 |         t_above[i] = !!*(const uint32_t *)&above[i];
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:21: note: at offset [80, 2147483644] into destination object ‘t_above’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |     ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:648:20: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  648 |         t_above[i] = !!*(const uint32_t *)&above[i];
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:21: note: at offset [84, 2147483644] into destination object ‘t_above’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |     ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:648:20: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  648 |         t_above[i] = !!*(const uint32_t *)&above[i];
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:21: note: at offset [88, 2147483644] into destination object ‘t_above’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |     ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:648:20: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  648 |         t_above[i] = !!*(const uint32_t *)&above[i];
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:21: note: at offset [92, 2147483644] into destination object ‘t_above’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |     ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:648:20: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  648 |         t_above[i] = !!*(const uint32_t *)&above[i];
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:21: note: at offset [96, 2147483644] into destination object ‘t_above’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |     ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:648:20: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  648 |         t_above[i] = !!*(const uint32_t *)&above[i];
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:21: note: at offset [100, 2147483644] into destination object ‘t_above’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |     ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:648:20: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  648 |         t_above[i] = !!*(const uint32_t *)&above[i];
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:21: note: at offset [104, 2147483644] into destination object ‘t_above’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |     ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:648:20: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  648 |         t_above[i] = !!*(const uint32_t *)&above[i];
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:21: note: at offset [108, 2147483644] into destination object ‘t_above’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |     ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:648:20: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  648 |         t_above[i] = !!*(const uint32_t *)&above[i];
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:21: note: at offset [112, 2147483644] into destination object ‘t_above’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |     ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:648:20: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  648 |         t_above[i] = !!*(const uint32_t *)&above[i];
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:21: note: at offset [116, 2147483644] into destination object ‘t_above’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |     ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:648:20: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  648 |         t_above[i] = !!*(const uint32_t *)&above[i];
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:21: note: at offset [120, 2147483644] into destination object ‘t_above’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |     ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:650:19: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  650 |         t_left[i] = !!*(const uint32_t *)&left[i];
+      |         ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:50: note: at offset [64, 2147483644] into destination object ‘t_left’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |                                  ~~~~~~~~~~~~~~~~^~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:650:19: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  650 |         t_left[i] = !!*(const uint32_t *)&left[i];
+      |         ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:50: note: at offset [68, 2147483644] into destination object ‘t_left’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |                                  ~~~~~~~~~~~~~~~~^~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:650:19: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  650 |         t_left[i] = !!*(const uint32_t *)&left[i];
+      |         ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:50: note: at offset [72, 2147483644] into destination object ‘t_left’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |                                  ~~~~~~~~~~~~~~~~^~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:650:19: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  650 |         t_left[i] = !!*(const uint32_t *)&left[i];
+      |         ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:50: note: at offset [76, 2147483644] into destination object ‘t_left’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |                                  ~~~~~~~~~~~~~~~~^~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:650:19: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  650 |         t_left[i] = !!*(const uint32_t *)&left[i];
+      |         ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:50: note: at offset [80, 2147483644] into destination object ‘t_left’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |                                  ~~~~~~~~~~~~~~~~^~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:650:19: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  650 |         t_left[i] = !!*(const uint32_t *)&left[i];
+      |         ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:50: note: at offset [84, 2147483644] into destination object ‘t_left’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |                                  ~~~~~~~~~~~~~~~~^~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:650:19: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  650 |         t_left[i] = !!*(const uint32_t *)&left[i];
+      |         ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:50: note: at offset [88, 2147483644] into destination object ‘t_left’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |                                  ~~~~~~~~~~~~~~~~^~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:650:19: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  650 |         t_left[i] = !!*(const uint32_t *)&left[i];
+      |         ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:50: note: at offset [92, 2147483644] into destination object ‘t_left’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |                                  ~~~~~~~~~~~~~~~~^~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:650:19: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  650 |         t_left[i] = !!*(const uint32_t *)&left[i];
+      |         ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:50: note: at offset [96, 2147483644] into destination object ‘t_left’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |                                  ~~~~~~~~~~~~~~~~^~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:650:19: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  650 |         t_left[i] = !!*(const uint32_t *)&left[i];
+      |         ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:50: note: at offset [100, 2147483644] into destination object ‘t_left’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |                                  ~~~~~~~~~~~~~~~~^~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:650:19: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  650 |         t_left[i] = !!*(const uint32_t *)&left[i];
+      |         ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:50: note: at offset [104, 2147483644] into destination object ‘t_left’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |                                  ~~~~~~~~~~~~~~~~^~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:650:19: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  650 |         t_left[i] = !!*(const uint32_t *)&left[i];
+      |         ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:50: note: at offset [108, 2147483644] into destination object ‘t_left’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |                                  ~~~~~~~~~~~~~~~~^~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:650:19: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  650 |         t_left[i] = !!*(const uint32_t *)&left[i];
+      |         ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:50: note: at offset [112, 2147483644] into destination object ‘t_left’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |                                  ~~~~~~~~~~~~~~~~^~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:650:19: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  650 |         t_left[i] = !!*(const uint32_t *)&left[i];
+      |         ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:50: note: at offset [116, 2147483644] into destination object ‘t_left’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |                                  ~~~~~~~~~~~~~~~~^~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:650:19: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  650 |         t_left[i] = !!*(const uint32_t *)&left[i];
+      |         ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:50: note: at offset [120, 2147483644] into destination object ‘t_left’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |                                  ~~~~~~~~~~~~~~~~^~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:654:20: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  654 |         t_above[i] = !!*(const uint64_t *)&above[i];
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:21: note: at offset [128, 2147483640] into destination object ‘t_above’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |     ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:654:20: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  654 |         t_above[i] = !!*(const uint64_t *)&above[i];
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:21: note: at offset [136, 2147483640] into destination object ‘t_above’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |     ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:654:20: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  654 |         t_above[i] = !!*(const uint64_t *)&above[i];
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:21: note: at offset [144, 2147483640] into destination object ‘t_above’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |     ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:654:20: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  654 |         t_above[i] = !!*(const uint64_t *)&above[i];
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:21: note: at offset [152, 2147483640] into destination object ‘t_above’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |     ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:654:20: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  654 |         t_above[i] = !!*(const uint64_t *)&above[i];
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:21: note: at offset [160, 2147483640] into destination object ‘t_above’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |     ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:654:20: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  654 |         t_above[i] = !!*(const uint64_t *)&above[i];
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:21: note: at offset [168, 2147483640] into destination object ‘t_above’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |     ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:654:20: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  654 |         t_above[i] = !!*(const uint64_t *)&above[i];
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:21: note: at offset [176, 2147483640] into destination object ‘t_above’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |     ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:654:20: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  654 |         t_above[i] = !!*(const uint64_t *)&above[i];
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:21: note: at offset [184, 2147483640] into destination object ‘t_above’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |     ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:654:20: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  654 |         t_above[i] = !!*(const uint64_t *)&above[i];
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:21: note: at offset [192, 2147483640] into destination object ‘t_above’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |     ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:654:20: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  654 |         t_above[i] = !!*(const uint64_t *)&above[i];
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:21: note: at offset [200, 2147483640] into destination object ‘t_above’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |     ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:654:20: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  654 |         t_above[i] = !!*(const uint64_t *)&above[i];
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:21: note: at offset [208, 2147483640] into destination object ‘t_above’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |     ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:654:20: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  654 |         t_above[i] = !!*(const uint64_t *)&above[i];
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:21: note: at offset [216, 2147483640] into destination object ‘t_above’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |     ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:654:20: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  654 |         t_above[i] = !!*(const uint64_t *)&above[i];
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:21: note: at offset [224, 2147483640] into destination object ‘t_above’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |     ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:654:20: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  654 |         t_above[i] = !!*(const uint64_t *)&above[i];
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:21: note: at offset [232, 2147483640] into destination object ‘t_above’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |     ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:654:20: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  654 |         t_above[i] = !!*(const uint64_t *)&above[i];
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:21: note: at offset [240, 2147483640] into destination object ‘t_above’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |     ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:656:19: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  656 |         t_left[i] = !!*(const uint64_t *)&left[i];
+      |         ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:50: note: at offset [128, 2147483640] into destination object ‘t_left’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |                                  ~~~~~~~~~~~~~~~~^~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:656:19: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  656 |         t_left[i] = !!*(const uint64_t *)&left[i];
+      |         ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:50: note: at offset [136, 2147483640] into destination object ‘t_left’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |                                  ~~~~~~~~~~~~~~~~^~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:656:19: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  656 |         t_left[i] = !!*(const uint64_t *)&left[i];
+      |         ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:50: note: at offset [144, 2147483640] into destination object ‘t_left’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |                                  ~~~~~~~~~~~~~~~~^~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:656:19: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  656 |         t_left[i] = !!*(const uint64_t *)&left[i];
+      |         ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:50: note: at offset [152, 2147483640] into destination object ‘t_left’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |                                  ~~~~~~~~~~~~~~~~^~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:656:19: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  656 |         t_left[i] = !!*(const uint64_t *)&left[i];
+      |         ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:50: note: at offset [160, 2147483640] into destination object ‘t_left’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |                                  ~~~~~~~~~~~~~~~~^~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:656:19: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  656 |         t_left[i] = !!*(const uint64_t *)&left[i];
+      |         ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:50: note: at offset [168, 2147483640] into destination object ‘t_left’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |                                  ~~~~~~~~~~~~~~~~^~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:656:19: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  656 |         t_left[i] = !!*(const uint64_t *)&left[i];
+      |         ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:50: note: at offset [176, 2147483640] into destination object ‘t_left’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |                                  ~~~~~~~~~~~~~~~~^~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:656:19: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  656 |         t_left[i] = !!*(const uint64_t *)&left[i];
+      |         ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:50: note: at offset [184, 2147483640] into destination object ‘t_left’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |                                  ~~~~~~~~~~~~~~~~^~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:656:19: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  656 |         t_left[i] = !!*(const uint64_t *)&left[i];
+      |         ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:50: note: at offset [192, 2147483640] into destination object ‘t_left’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |                                  ~~~~~~~~~~~~~~~~^~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:656:19: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  656 |         t_left[i] = !!*(const uint64_t *)&left[i];
+      |         ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:50: note: at offset [200, 2147483640] into destination object ‘t_left’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |                                  ~~~~~~~~~~~~~~~~^~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:656:19: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  656 |         t_left[i] = !!*(const uint64_t *)&left[i];
+      |         ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:50: note: at offset [208, 2147483640] into destination object ‘t_left’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |                                  ~~~~~~~~~~~~~~~~^~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:656:19: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  656 |         t_left[i] = !!*(const uint64_t *)&left[i];
+      |         ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:50: note: at offset [216, 2147483640] into destination object ‘t_left’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |                                  ~~~~~~~~~~~~~~~~^~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:656:19: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  656 |         t_left[i] = !!*(const uint64_t *)&left[i];
+      |         ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:50: note: at offset [224, 2147483640] into destination object ‘t_left’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |                                  ~~~~~~~~~~~~~~~~^~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:656:19: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  656 |         t_left[i] = !!*(const uint64_t *)&left[i];
+      |         ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:50: note: at offset [232, 2147483640] into destination object ‘t_left’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |                                  ~~~~~~~~~~~~~~~~^~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:656:19: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  656 |         t_left[i] = !!*(const uint64_t *)&left[i];
+      |         ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vp9/encoder/vp9_rdopt.c:631:50: note: at offset [240, 2147483640] into destination object ‘t_left’ of size [0, 16]
+  631 |     ENTROPY_CONTEXT t_above[16], ENTROPY_CONTEXT t_left[16],
+      |                                  ~~~~~~~~~~~~~~~~^~~~~~~~~~
+    [CC] vp9/encoder/vp9_sad_c.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/encoder/vp9_segmentation.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/encoder/vp9_subexp.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/encoder/vp9_tokenize.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/encoder/vp9_treewriter.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/encoder/vp9_variance_c.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/encoder/vp9_vaq.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/encoder/vp9_temporal_filter.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/encoder/vp9_mbgraph.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/encoder/x86/vp9_variance_mmx.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/encoder/x86/vp9_variance_sse2.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/encoder/x86/vp9_dct_sse2.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/encoder/x86/vp9_dct32x32_sse2.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/vp9_dx_iface.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/decoder/vp9_dboolhuff.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/decoder/vp9_decodemv.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/decoder/vp9_decodframe.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/decoder/vp9_detokenize.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/decoder/vp9_thread.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/decoder/vp9_onyxd_if.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vp9/decoder/vp9_dsubexp.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vpx_config.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [AS] vpx_ports/emms.asm.o
+    [AS] vpx_ports/x86_abi_support.asm.o
+    [AS] vp8/common/x86/dequantize_mmx.asm.o
+    [AS] vp8/common/x86/idctllm_mmx.asm.o
+    [AS] vp8/common/x86/iwalsh_mmx.asm.o
+    [AS] vp8/common/x86/loopfilter_mmx.asm.o
+    [AS] vp8/common/x86/recon_mmx.asm.o
+    [AS] vp8/common/x86/sad_mmx.asm.o
+    [AS] vp8/common/x86/subpixel_mmx.asm.o
+    [AS] vp8/common/x86/variance_impl_mmx.asm.o
+    [AS] vp8/common/x86/idctllm_sse2.asm.o
+    [AS] vp8/common/x86/recon_sse2.asm.o
+    [AS] vp8/common/x86/sad_sse2.asm.o
+    [AS] vp8/common/x86/subpixel_sse2.asm.o
+    [AS] vp8/common/x86/loopfilter_sse2.asm.o
+    [AS] vp8/common/x86/iwalsh_sse2.asm.o
+    [AS] vp8/common/x86/variance_impl_sse2.asm.o
+    [AS] vp8/common/x86/sad_sse3.asm.o
+    [AS] vp8/common/x86/sad_ssse3.asm.o
+    [AS] vp8/common/x86/subpixel_ssse3.asm.o
+    [AS] vp8/common/x86/variance_impl_ssse3.asm.o
+    [AS] vp8/common/x86/sad_sse4.asm.o
+    [AS] vp8/common/x86/postproc_mmx.asm.o
+    [AS] vp8/common/x86/mfqe_sse2.asm.o
+    [AS] vp8/common/x86/postproc_sse2.asm.o
+    [AS] vp8/common/x86/loopfilter_block_sse2.asm.o
+    [AS] vp8/encoder/x86/dct_mmx.asm.o
+    [AS] vp8/encoder/x86/subtract_mmx.asm.o
+    [AS] vp8/encoder/x86/dct_sse2.asm.o
+    [AS] vp8/encoder/x86/fwalsh_sse2.asm.o
+    [AS] vp8/encoder/x86/subtract_sse2.asm.o
+    [AS] vp8/encoder/x86/temporal_filter_apply_sse2.asm.o
+    [AS] vp8/encoder/x86/quantize_ssse3.asm.o
+    [AS] vp8/encoder/x86/quantize_sse4.asm.o
+    [AS] vp8/encoder/x86/quantize_mmx.asm.o
+    [AS] vp8/encoder/x86/encodeopt.asm.o
+    [AS] vp8/encoder/x86/ssim_opt.asm.o
+    [AS] vp9/common/x86/vp9_loopfilter_mmx.asm.o
+    [AS] vp9/common/x86/vp9_subpixel_8t_sse2.asm.o
+    [AS] vp9/common/x86/vp9_subpixel_8t_ssse3.asm.o
+    [AS] vp9/common/x86/vp9_copy_sse2.asm.o
+    [AS] vp9/common/x86/vp9_intrapred_sse2.asm.o
+    [AS] vp9/common/x86/vp9_intrapred_ssse3.asm.o
+    [AS] vp9/encoder/x86/vp9_variance_impl_mmx.asm.o
+    [AS] vp9/encoder/x86/vp9_sad_mmx.asm.o
+    [AS] vp9/encoder/x86/vp9_variance_impl_sse2.asm.o
+    [AS] vp9/encoder/x86/vp9_sad4d_sse2.asm.o
+    [AS] vp9/encoder/x86/vp9_subpel_variance_impl_sse2.asm.o
+    [AS] vp9/encoder/x86/vp9_temporal_filter_apply_sse2.asm.o
+    [AS] vp9/encoder/x86/vp9_sad_sse3.asm.o
+    [AS] vp9/encoder/x86/vp9_error_sse2.asm.o
+    [AS] vp9/encoder/x86/vp9_sad_sse2.asm.o
+    [AS] vp9/encoder/x86/vp9_subtract_sse2.asm.o
+    [AS] vp9/encoder/x86/vp9_subpel_variance.asm.o
+    [AS] vp9/encoder/x86/vp9_quantize_ssse3.asm.o
+    [AS] vp9/encoder/x86/vp9_sad_ssse3.asm.o
+    [AS] vp9/encoder/x86/vp9_sad_sse4.asm.o
+    [AS] vp9/encoder/x86/vp9_ssim_opt.asm.o
+    [AS] third_party/x86inc/x86inc.asm.o
+    [AR] libvpx_g.a
+ar: `u' modifier ignored since `D' is the default (see `U')
+    [STRIP] libvpx.a < libvpx_g.a
+    [CREATE] libvpx.ver
+    [LD] libvpx.so.1.3.0
+    [LN]      libvpx.so.1.3.0 libvpx.so
+    [LN]      libvpx.so.1.3.0 libvpx.so.1
+    [LN]      libvpx.so.1.3.0 libvpx.so.1.3
+    [CREATE] vpx.pc
+    [CXX] third_party/googletest/src/src/gtest-all.cc.o
+third_party/googletest/src/src/gtest-all.cc: In function ‘bool testing::internal::StackGrowsDown()’:
+third_party/googletest/src/src/gtest-all.cc:7485:24: warning: ‘dummy’ may be used uninitialized [-Wmaybe-uninitialized]
+ 7485 |   StackLowerThanAddress(&dummy, &result);
+      |   ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+third_party/googletest/src/src/gtest-all.cc:7477:6: note: by argument 1 of type ‘const void*’ to ‘void testing::internal::StackLowerThanAddress(const void*, bool*)’ declared here
+ 7477 | void StackLowerThanAddress(const void* ptr, bool* result) {
+      |      ^~~~~~~~~~~~~~~~~~~~~
+third_party/googletest/src/src/gtest-all.cc:7483:7: note: ‘dummy’ declared here
+ 7483 |   int dummy;
+      |       ^~~~~
+    [AR] libgtest_g.a
+ar: `u' modifier ignored since `D' is the default (see `U')
+    [STRIP] libgtest.a < libgtest_g.a
+    [CC] test/../md5_utils.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] test/../nestegg/halloc/src/halloc.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] test/../nestegg/src/nestegg.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CXX] test/altref_test.cc.o
+    [CXX] test/borders_test.cc.o
+    [CXX] test/config_test.cc.o
+    [CXX] test/cpu_speed_test.cc.o
+    [CXX] test/cq_test.cc.o
+    [CXX] test/datarate_test.cc.o
+    [CXX] test/decode_test_driver.cc.o
+    [CXX] test/encode_test_driver.cc.o
+    [CXX] test/error_resilience_test.cc.o
+    [CXX] test/keyframe_test.cc.o
+test/keyframe_test.cc: In member function ‘virtual void {anonymous}::KeyframeTest_TestRandomVideoSource_Test::TestBody()’:
+test/keyframe_test.cc:67:6: warning: suggest explicit braces to avoid ambiguous ‘else’ [-Wdangling-else]
+   67 |   if (GET_PARAM(1) > 0)
+      |      ^
+test/keyframe_test.cc: In member function ‘virtual void {anonymous}::KeyframeTest_TestAutoKeyframe_Test::TestBody()’:
+test/keyframe_test.cc:129:6: warning: suggest explicit braces to avoid ambiguous ‘else’ [-Wdangling-else]
+  129 |   if (GET_PARAM(1) > 0)
+      |      ^
+    [CXX] test/resize_test.cc.o
+    [CXX] test/test_libvpx.cc.o
+    [CXX] test/test_vector_test.cc.o
+    [CXX] test/vp9_lossless_test.cc.o
+    [LD] test_libvpx
+    [DEP] args.c.d
+    [DEP] tools_common.c.d
+    [DEP] third_party/libyuv/source/scale.c.d
+    [DEP] third_party/libyuv/source/cpu_id.c.d
+    [DEP] vpxdec.c.d
+    [DEP] y4minput.c.d
+    [DEP] webmenc.c.d
+    [DEP] vpxstats.c.d
+    [DEP] third_party/libmkv/EbmlWriter.c.d
+    [DEP] vpxenc.c.d
+    [DEP] vp8_scalable_patterns.c.d
+    [DEP] vp9_spatial_scalable_encoder.c.d
+    [EXAMPLE] simple_decoder.c
+    [DEP] simple_decoder.c.d
+    [EXAMPLE] postproc.c
+    [DEP] postproc.c.d
+    [EXAMPLE] decode_to_md5.c
+    [DEP] decode_to_md5.c.d
+    [EXAMPLE] simple_encoder.c
+    [DEP] simple_encoder.c.d
+    [EXAMPLE] twopass_encoder.c
+    [DEP] twopass_encoder.c.d
+    [EXAMPLE] force_keyframe.c
+    [DEP] force_keyframe.c.d
+    [EXAMPLE] decode_with_drops.c
+    [DEP] decode_with_drops.c.d
+    [EXAMPLE] error_resilient.c
+    [DEP] error_resilient.c.d
+    [EXAMPLE] vp8_set_maps.c
+    [DEP] vp8_set_maps.c.d
+    [EXAMPLE] vp8cx_set_ref.c
+    [DEP] vp8cx_set_ref.c.d
+    [CC] args.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] tools_common.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] third_party/libyuv/source/scale.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] third_party/libyuv/source/cpu_id.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vpxdec.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [LD] vpxdec
+    [CC] y4minput.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] webmenc.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vpxstats.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] third_party/libmkv/EbmlWriter.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [CC] vpxenc.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [LD] vpxenc
+    [CC] vp8_scalable_patterns.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [LD] vp8_scalable_patterns
+    [CC] vp9_spatial_scalable_encoder.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [LD] vp9_spatial_scalable_encoder
+    [CC] simple_decoder.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [LD] simple_decoder
+    [CC] postproc.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [LD] postproc
+    [CC] decode_to_md5.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [LD] decode_to_md5
+    [CC] simple_encoder.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [LD] simple_encoder
+    [CC] twopass_encoder.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [LD] twopass_encoder
+    [CC] force_keyframe.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [LD] force_keyframe
+    [CC] decode_with_drops.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [LD] decode_with_drops
+    [CC] error_resilient.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [LD] error_resilient
+    [CC] vp8_set_maps.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+    [LD] vp8_set_maps
+    [CC] vp8cx_set_ref.c.o
+<command-line>: warning: ‘_FORTIFY_SOURCE’ redefined
+<command-line>: note: this is the location of the previous definition
+vp8cx_set_ref.c: In function ‘main’:
+vp8cx_set_ref.c:136:5: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  136 |     if(argc!=6)                                                               //
+      |     ^~
+vp8cx_set_ref.c:140:9: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  140 |         update_frame_num = atoi(argv[5]);                                     //
+      |         ^~~~~~~~~~~~~~~~
+    [LD] vp8cx_set_ref
+make[1]: Nothing to be done for 'all'.
+==> Entering fakeroot environment...
+==> Starting package()...
+    [INSTALL] /workspace/build/libvpx1.3/pkg/libvpx1.3/usr/include/vpx/vp8.h
+    [INSTALL] /workspace/build/libvpx1.3/pkg/libvpx1.3/usr/include/vpx/vp8cx.h
+    [INSTALL] /workspace/build/libvpx1.3/pkg/libvpx1.3/usr/include/vpx/vp8dx.h
+    [INSTALL] /workspace/build/libvpx1.3/pkg/libvpx1.3/usr/include/vpx/svc_context.h
+    [INSTALL] /workspace/build/libvpx1.3/pkg/libvpx1.3/usr/include/vpx/vpx_codec.h
+    [INSTALL] /workspace/build/libvpx1.3/pkg/libvpx1.3/usr/include/vpx/vpx_image.h
+    [INSTALL] /workspace/build/libvpx1.3/pkg/libvpx1.3/usr/include/vpx/vpx_integer.h
+    [INSTALL] /workspace/build/libvpx1.3/pkg/libvpx1.3/usr/include/vpx/vpx_decoder.h
+    [INSTALL] /workspace/build/libvpx1.3/pkg/libvpx1.3/usr/include/vpx/vpx_encoder.h
+    [INSTALL] /workspace/build/libvpx1.3/pkg/libvpx1.3/usr/lib/libvpx.a
+    [LN]      libvpx.so.1.3.0 /workspace/build/libvpx1.3/pkg/libvpx1.3/usr/lib/libvpx.so
+    [LN]      libvpx.so.1.3.0 /workspace/build/libvpx1.3/pkg/libvpx1.3/usr/lib/libvpx.so.1
+    [LN]      libvpx.so.1.3.0 /workspace/build/libvpx1.3/pkg/libvpx1.3/usr/lib/libvpx.so.1.3
+    [INSTALL] /workspace/build/libvpx1.3/pkg/libvpx1.3/usr/lib/libvpx.so.1.3.0
+    [INSTALL] /workspace/build/libvpx1.3/pkg/libvpx1.3/usr/lib/pkgconfig/vpx.pc
+    [INSTALL] /workspace/build/libvpx1.3/pkg/libvpx1.3/usr/bin/vpxdec
+    [INSTALL] /workspace/build/libvpx1.3/pkg/libvpx1.3/usr/bin/vpxenc
+    [INSTALL] /workspace/build/libvpx1.3/pkg/libvpx1.3/usr/bin/vp8_scalable_patterns
+    [INSTALL] /workspace/build/libvpx1.3/pkg/libvpx1.3/usr/bin/vp9_spatial_scalable_encoder
+make[1]: Nothing to be done for 'install'.
+==> Tidying install...
+  -> Removing libtool files...
+  -> Purging unwanted files...
+  -> Removing static library files...
+  -> Stripping unneeded symbols from binaries and libraries...
+  -> Compressing man and info pages...
+==> Checking for packaging issues...
+==> Creating package "libvpx1.3"...
+  -> Generating .PKGINFO file...
+  -> Generating .BUILDINFO file...
+  -> Generating .MTREE file...
+  -> Compressing package...
+==> Creating package "libvpx1.3-debug"...
+  -> Generating .PKGINFO file...
+  -> Generating .BUILDINFO file...
+  -> Generating .MTREE file...
+  -> Compressing package...
+==> Leaving fakeroot environment.
+==> Finished making: libvpx1.3 1.3.0-4 (Fri Oct 31 21:14:16 2025)
+==> Installing package libvpx1.3 with pacman -U...
+loading packages...
+resolving dependencies...
+looking for conflicting packages...
+
+Package (2)      New Version  Net Change
+
+libvpx1.3        1.3.0-4        1.75 MiB
+libvpx1.3-debug  1.3.0-4       10.91 MiB
+
+Total Installed Size:  12.65 MiB
+
+:: Proceed with installation? [Y/n] 
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+:: Processing package changes...
+installing libvpx1.3...
+installing libvpx1.3-debug...
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...

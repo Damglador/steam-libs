@@ -1,0 +1,931 @@
+Cloning into 'lib32-libappindicator-gtk2'...
+Already up to date.
+gpg: key 5BE41E162CD6358E: "Charles Kerr <charles.kerr@canonical.com>" not changed
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+==> Making package: lib32-libappindicator-gtk2 12.10.0.r298-5 (Fri Oct 31 21:25:26 2025)
+==> Checking runtime dependencies...
+==> Checking buildtime dependencies...
+==> Installing missing dependencies...
+resolving dependencies...
+looking for conflicting packages...
+
+Package (13)                     New Version  Net Change
+
+extra/dbus-glib                  0.114-1        0.75 MiB
+extra/perl-alien-build           2.84-3         0.74 MiB
+extra/perl-alien-libxml2         0.20-3         0.01 MiB
+extra/perl-capture-tiny          0.50-3         0.03 MiB
+extra/perl-ffi-checklib          0.31-7         0.03 MiB
+extra/perl-file-chdir            0.1011-6       0.01 MiB
+extra/perl-file-which            1.27-7         0.02 MiB
+extra/perl-path-tiny             0.150-1        0.10 MiB
+extra/perl-xml-namespacesupport  1.12-6         0.02 MiB
+extra/perl-xml-sax               1.02-2         0.10 MiB
+extra/perl-xml-sax-base          1.09-6         0.16 MiB
+multilib/lib32-dbus-glib         0.114-1        0.13 MiB
+extra/perl-xml-libxml            2.0210-4       1.85 MiB
+
+Total Installed Size:  3.95 MiB
+
+:: Proceed with installation? [Y/n] 
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+:: Processing package changes...
+installing dbus-glib...
+installing lib32-dbus-glib...
+installing perl-capture-tiny...
+installing perl-ffi-checklib...
+installing perl-file-chdir...
+installing perl-file-which...
+installing perl-path-tiny...
+installing perl-alien-build...
+installing perl-alien-libxml2...
+installing perl-xml-sax-base...
+installing perl-xml-namespacesupport...
+installing perl-xml-sax...
+installing perl-xml-libxml...
+:: Installing SAX XML Parsers
+:: Running post-transaction hooks...
+(1/2) Arming ConditionNeedsUpdate...
+(2/2) Checking for old perl modules...
+==> Retrieving sources...
+  -> Branching https://code.launchpad.net/~indicator-applet-developers/libappindicator/trunk...
+Branched 298 revisions.
+  -> Found libappindicator-fix-unfallback.patch
+==> Validating source files with sha512sums...
+    libappindicator ... Passed
+    libappindicator-fix-unfallback.patch ... Passed
+==> Extracting sources...
+  -> Creating working copy of libappindicator bzr repo...
+==> Starting prepare()...
+patching file src/app-indicator.c
+/usr/sbin/gnome-autogen.sh
+***Warning*** USE_COMMON_DOC_BUILD is deprecated, you may remove it from autogen.sh
+***Warning*** USE_GNOME2_MACROS is deprecated, you may remove it from autogen.sh
+***Warning*** $srcdir is not defined, out of dir autogen is broken!
+configure.ac:158: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:158: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:158: the top level
+configure.ac:187: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:187: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:187: the top level
+[1mchecking for automake >= 1.11.2...
+(B[m  testing automake... found 1.18.1
+[1mchecking for autoreconf >= 2.53...
+(B[m  testing autoreconf... found 2.72
+configure.ac:158: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:158: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:158: the top level
+configure.ac:187: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:187: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:187: the top level
+[1mchecking for pkg-config >= 0.14.0...
+(B[m  testing pkg-config... found 2.5.1
+[1mchecking for gtk-doc >= 1.0...
+(B[m  testing gtkdocize... found 1.35.1
+[1mChecking for required M4 macros...
+(B[m[1mProcessing ./configure.ac
+(B[mconfigure.ac:158: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:158: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:158: the top level
+configure.ac:187: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:187: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:187: the top level
+[1mRunning gtkdocize...
+(B[m[1mRunning autoreconf...
+(B[mautoreconf: export WARNINGS=no-portability
+autoreconf: Entering directory '.'
+autoreconf: configure.ac: not using Gettext
+autoreconf: running: aclocal --force -I m4 ${ACLOCAL_FLAGS}
+autoreconf: configure.ac: tracing
+autoreconf: running: libtoolize --copy --force
+libtoolize: putting auxiliary files in '.'.
+libtoolize: copying file './ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'm4'.
+libtoolize: copying file 'm4/libtool.m4'
+libtoolize: copying file 'm4/ltoptions.m4'
+libtoolize: copying file 'm4/ltsugar.m4'
+libtoolize: copying file 'm4/ltversion.m4'
+libtoolize: copying file 'm4/lt~obsolete.m4'
+autoreconf: configure.ac: not using Intltool
+autoreconf: running: gtkdocize --copy
+autoreconf: running: aclocal --force -I m4 ${ACLOCAL_FLAGS}
+autoreconf: running: /usr/bin/autoconf --force
+configure.ac:158: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:158: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:158: the top level
+configure.ac:187: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:187: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:187: the top level
+autoreconf: running: /usr/bin/autoheader --force
+autoreconf: running: automake --add-missing --copy --force-missing
+configure.ac:20: installing './compile'
+configure.ac:25: installing './config.guess'
+configure.ac:25: installing './config.sub'
+configure.ac:13: installing './install-sh'
+configure.ac:13: installing './missing'
+Makefile.am: installing './INSTALL'
+bindings/mono/Makefile.am:128: warning: addprefix $(srcdir: non-POSIX variable name
+bindings/mono/Makefile.am:128: (probably a GNU make extension)
+bindings/mono/Makefile.am:58: warning: variable 'TEST_SOURCES' is defined but no program or
+bindings/mono/Makefile.am:58: library has 'TEST' as canonical name (possible typo)
+bindings/vala/examples/Makefile.am: installing './depcomp'
+src/Makefile.am:43: warning: addprefix $(srcdir: non-POSIX variable name
+src/Makefile.am:43: (probably a GNU make extension)
+src/Makefile.am:106: warning: '%'-style pattern rules are a GNU make extension
+src/Makefile.am:108: warning: subst -,_,$(subst .,_,$(basename $(notdir $<: non-POSIX variable name
+src/Makefile.am:108: (probably a GNU make extension)
+src/Makefile.am:110: warning: '%'-style pattern rules are a GNU make extension
+src/Makefile.am:112: warning: subst -,_,$(subst .,_,$(basename $(notdir $<: non-POSIX variable name
+src/Makefile.am:112: (probably a GNU make extension)
+src/Makefile.am:138: warning: addprefix --c-include=$(libappindicatorincludefolder: non-POSIX variable name
+src/Makefile.am:138: (probably a GNU make extension)
+src/Makefile.am:145: warning: addprefix --c-include=$(libappindicatorincludefolder: non-POSIX variable name
+src/Makefile.am:145: (probably a GNU make extension)
+src/Makefile.am:154: warning: addprefix $(srcdir: non-POSIX variable name
+src/Makefile.am:154: (probably a GNU make extension)
+/usr/share/automake-1.18/am/ltlibrary.am: warning: 'libappindicator.la': linking libtool libraries using a non-POSIX
+/usr/share/automake-1.18/am/ltlibrary.am: archiver requires 'AM_PROG_AR' in 'configure.ac'
+src/Makefile.am:7:   while processing Libtool library 'libappindicator.la'
+/usr/share/automake-1.18/am/ltlibrary.am: warning: 'libappindicator3.la': linking libtool libraries using a non-POSIX
+/usr/share/automake-1.18/am/ltlibrary.am: archiver requires 'AM_PROG_AR' in 'configure.ac'
+src/Makefile.am:3:   while processing Libtool library 'libappindicator3.la'
+parallel-tests: installing './test-driver'
+autoreconf: Leaving directory '.'
+Skipping configure process.
+==> Starting build()...
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/sbin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking how to create a pax tar archive... gnutar
+checking whether to enable maintainer-specific portions of Makefiles... yes
+checking for gcc... gcc -m32
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc -m32 accepts -g... yes
+checking for gcc -m32 option to enable C11 features... none needed
+checking whether gcc -m32 understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of gcc -m32... gcc3
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/sbin/sed
+checking for grep that handles long lines and -e... /usr/sbin/grep
+checking for egrep... /usr/sbin/grep -E
+checking for fgrep... /usr/sbin/grep -F
+checking for ld used by gcc -m32... /usr/sbin/ld
+checking if the linker (/usr/sbin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/sbin/nm -B
+checking the name lister (/usr/sbin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert i686-pc-linux-gnu file names to i686-pc-linux-gnu format... func_convert_file_noop
+checking how to convert i686-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/sbin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ranlib... ranlib
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking command to parse /usr/sbin/nm -B output from gcc -m32 object... ok
+checking for sysroot... no
+checking for a working dd... /usr/sbin/dd
+checking how to truncate binary pipes... /usr/sbin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking which variant of shared library versioning to provide... (default) aix
+checking for objdir... .libs
+checking if gcc -m32 supports -fno-rtti -fno-exceptions... no
+checking for gcc -m32 option to produce PIC... -fPIC -DPIC
+checking if gcc -m32 PIC flag -fPIC -DPIC works... yes
+checking if gcc -m32 static flag -static works... yes
+checking if gcc -m32 supports -c -o file.o... yes
+checking if gcc -m32 supports -c -o file.o... (cached) yes
+checking whether the gcc -m32 linker (/usr/sbin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for glib-mkenums... /usr/sbin/glib-mkenums
+checking for glib-genmarshal... /usr/sbin/glib-genmarshal
+checking for pkg-config... /usr/sbin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for gtk-doc... yes
+checking for gtkdoc-check... gtkdoc-check.test
+checking for gtkdoc-check... /usr/sbin/gtkdoc-check
+checking for gtkdoc-rebase... /usr/sbin/gtkdoc-rebase
+checking for gtkdoc-mkpdf... /usr/sbin/gtkdoc-mkpdf
+checking whether to build gtk-doc documentation... no
+checking for glib-2.0 >= 2.10.0 gobject-2.0  >= 2.10.0... yes
+checking for gtk+-2.0 >= 2.18
+                                     glib-2.0 >= 2.35.4
+                                     gio-unix-2.0
+                                     gio-2.0 >= 2.26
+                                     dbusmenu-gtk-0.4 >= 0.5.90... yes
+checking for dbus-glib-1... yes
+checking for gobject-introspection... yes
+checking for vapigen... /usr/sbin/vapigen
+checking for valac... /usr/sbin/valac
+checking whether /usr/sbin/valac supports at least API version 0.14.0... yes
+checking for mono >= 1.0... no
+checking for al... no
+configure: No al tool found.  You need to install Mono.
+checking for gacutil... no
+configure: No gacutil tool found
+checking for gtk-sharp-2.0 >= 2.12... no
+checking for gapi-2.0 >= 2.12.1... no
+checking for gapi2-parser... no
+checking for gapi2-codegen... no
+checking for gapi2-fixup... no
+checking for nunit >= 2.4.7... no
+checking for mono-nunit... no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating src/appindicator-0.1.pc
+config.status: creating src/appindicator3-0.1.pc
+config.status: creating bindings/Makefile
+config.status: creating bindings/vala/Makefile
+config.status: creating bindings/vala/examples/Makefile
+config.status: creating tests/Makefile
+config.status: creating example/Makefile
+config.status: creating docs/Makefile
+config.status: creating docs/reference/Makefile
+config.status: creating docs/reference/version.xml
+config.status: creating docs/reference/libappindicator-docs.sgml
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+configure:
+
+Libappindicator Configuration:
+
+	Prefix:        /usr
+	GTK+ Version:  2
+	Mono:          false
+	Tests:         yes
+	Mono tests:    no
+	gcov:	       no
+
+make  all-recursive
+make[1]: Entering directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator'
+Making all in src
+make[2]: Entering directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/src'
+mkdir -p `dirname ./app-indicator-enum-types.h`
+/usr/sbin/glib-mkenums \
+	--template ./app-indicator-enum-types.h.in \
+./app-indicator.h > xgen-eh \
+&& (cmp -s xgen-eh ./app-indicator-enum-types.h || cp -f xgen-eh ./app-indicator-enum-types.h) \
+&& rm -f xgen-eh \
+&& echo timestamp > stamp-enum-types
+mkdir -p `dirname ./app-indicator-enum-types.c`
+/usr/sbin/glib-mkenums \
+	--template ./app-indicator-enum-types.c.in \
+./app-indicator.h > xgen-ec \
+&& cp -f xgen-ec ./app-indicator-enum-types.c \
+&& rm -f xgen-ec
+/usr/sbin/glib-genmarshal \
+	--prefix=_application_service_marshal \
+	--header \
+./application-service-marshal.list > xgen-mh \
+&& (cmp -s xgen-mh application-service-marshal.h || cp -f xgen-mh application-service-marshal.h) \
+&& rm -f xgen-mh \
+&& echo timestamp > stamp-marshal
+INFO: Reading ./application-service-marshal.list...
+WARNING: The token "BOOL" is deprecated; use "BOOLEAN" instead
+(echo "#include \"application-service-marshal.h\"" ; \
+/usr/sbin/glib-genmarshal \
+	--prefix=_application_service_marshal \
+	--body \
+./application-service-marshal.list) > xgen-mc \
+&& cp xgen-mc application-service-marshal.c \
+&& rm -f xgen-mc
+INFO: Reading ./application-service-marshal.list...
+WARNING: The token "BOOL" is deprecated; use "BOOLEAN" instead
+Building gen-notification-item.xml.c from notification-item.xml
+Building gen-notification-item.xml.h from notification-item.xml
+Building gen-notification-watcher.xml.c from notification-watcher.xml
+Building gen-notification-watcher.xml.h from notification-watcher.xml
+  CC       libappindicator3_la-app-indicator-enum-types.lo
+  CC       libappindicator3_la-app-indicator.lo
+In file included from /usr/lib32/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/libdbusmenu-glib-0.4/libdbusmenu-glib/menuitem.h:32,
+                 from app-indicator.c:34:
+app-indicator.c: In function 'app_indicator_init':
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro '_GLIB_GNUC_DO_PRAGMA'
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro 'GLIB_DEPRECATED_MACRO_FOR'
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro 'GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR'
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+app-indicator.c:162:31: note: in expansion of macro 'G_TYPE_INSTANCE_GET_PRIVATE'
+  162 |                              (G_TYPE_INSTANCE_GET_PRIVATE ((o), APP_INDICATOR_TYPE, AppIndicatorPrivate))
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+app-indicator.c:685:38: note: in expansion of macro 'APP_INDICATOR_GET_PRIVATE'
+  685 |         AppIndicatorPrivate * priv = APP_INDICATOR_GET_PRIVATE(self);
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~
+  CC       libappindicator3_la-application-service-marshal.lo
+  CC       libappindicator3_la-generate-id.lo
+  CC       libappindicator3_la-indicator-desktop-shortcuts.lo
+In file included from /usr/lib32/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/glib-2.0/gio/gioenums.h:30,
+                 from /usr/include/glib-2.0/gio/giotypes.h:30,
+                 from /usr/include/glib-2.0/gio/gio.h:28,
+                 from /usr/include/gio-unix-2.0/gio/gdesktopappinfo.h:26,
+                 from indicator-desktop-shortcuts.c:28:
+indicator-desktop-shortcuts.c: In function 'indicator_desktop_shortcuts_init':
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro '_GLIB_GNUC_DO_PRAGMA'
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro 'GLIB_DEPRECATED_MACRO_FOR'
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro 'GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR'
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c:64:18: note: in expansion of macro 'G_TYPE_INSTANCE_GET_PRIVATE'
+   64 |                 (G_TYPE_INSTANCE_GET_PRIVATE ((o), INDICATOR_TYPE_DESKTOP_SHORTCUTS, IndicatorDesktopShortcutsPrivate))
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c:112:51: note: in expansion of macro 'INDICATOR_DESKTOP_SHORTCUTS_GET_PRIVATE'
+  112 |         IndicatorDesktopShortcutsPrivate * priv = INDICATOR_DESKTOP_SHORTCUTS_GET_PRIVATE(self);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c: In function 'indicator_desktop_shortcuts_dispose':
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro '_GLIB_GNUC_DO_PRAGMA'
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro 'GLIB_DEPRECATED_MACRO_FOR'
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro 'GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR'
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c:64:18: note: in expansion of macro 'G_TYPE_INSTANCE_GET_PRIVATE'
+   64 |                 (G_TYPE_INSTANCE_GET_PRIVATE ((o), INDICATOR_TYPE_DESKTOP_SHORTCUTS, IndicatorDesktopShortcutsPrivate))
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c:127:51: note: in expansion of macro 'INDICATOR_DESKTOP_SHORTCUTS_GET_PRIVATE'
+  127 |         IndicatorDesktopShortcutsPrivate * priv = INDICATOR_DESKTOP_SHORTCUTS_GET_PRIVATE(object);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c: In function 'indicator_desktop_shortcuts_finalize':
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro '_GLIB_GNUC_DO_PRAGMA'
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro 'GLIB_DEPRECATED_MACRO_FOR'
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro 'GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR'
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c:64:18: note: in expansion of macro 'G_TYPE_INSTANCE_GET_PRIVATE'
+   64 |                 (G_TYPE_INSTANCE_GET_PRIVATE ((o), INDICATOR_TYPE_DESKTOP_SHORTCUTS, IndicatorDesktopShortcutsPrivate))
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c:142:51: note: in expansion of macro 'INDICATOR_DESKTOP_SHORTCUTS_GET_PRIVATE'
+  142 |         IndicatorDesktopShortcutsPrivate * priv = INDICATOR_DESKTOP_SHORTCUTS_GET_PRIVATE(object);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c: In function 'set_property':
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro '_GLIB_GNUC_DO_PRAGMA'
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro 'GLIB_DEPRECATED_MACRO_FOR'
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro 'GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR'
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c:64:18: note: in expansion of macro 'G_TYPE_INSTANCE_GET_PRIVATE'
+   64 |                 (G_TYPE_INSTANCE_GET_PRIVATE ((o), INDICATOR_TYPE_DESKTOP_SHORTCUTS, IndicatorDesktopShortcutsPrivate))
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c:173:51: note: in expansion of macro 'INDICATOR_DESKTOP_SHORTCUTS_GET_PRIVATE'
+  173 |         IndicatorDesktopShortcutsPrivate * priv = INDICATOR_DESKTOP_SHORTCUTS_GET_PRIVATE(object);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c: In function 'get_property':
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro '_GLIB_GNUC_DO_PRAGMA'
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro 'GLIB_DEPRECATED_MACRO_FOR'
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro 'GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR'
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c:64:18: note: in expansion of macro 'G_TYPE_INSTANCE_GET_PRIVATE'
+   64 |                 (G_TYPE_INSTANCE_GET_PRIVATE ((o), INDICATOR_TYPE_DESKTOP_SHORTCUTS, IndicatorDesktopShortcutsPrivate))
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c:236:51: note: in expansion of macro 'INDICATOR_DESKTOP_SHORTCUTS_GET_PRIVATE'
+  236 |         IndicatorDesktopShortcutsPrivate * priv = INDICATOR_DESKTOP_SHORTCUTS_GET_PRIVATE(object);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c: In function 'parse_keyfile':
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro '_GLIB_GNUC_DO_PRAGMA'
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro 'GLIB_DEPRECATED_MACRO_FOR'
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro 'GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR'
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c:64:18: note: in expansion of macro 'G_TYPE_INSTANCE_GET_PRIVATE'
+   64 |                 (G_TYPE_INSTANCE_GET_PRIVATE ((o), INDICATOR_TYPE_DESKTOP_SHORTCUTS, IndicatorDesktopShortcutsPrivate))
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c:256:51: note: in expansion of macro 'INDICATOR_DESKTOP_SHORTCUTS_GET_PRIVATE'
+  256 |         IndicatorDesktopShortcutsPrivate * priv = INDICATOR_DESKTOP_SHORTCUTS_GET_PRIVATE(ids);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c: In function 'indicator_desktop_shortcuts_get_nicks':
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro '_GLIB_GNUC_DO_PRAGMA'
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro 'GLIB_DEPRECATED_MACRO_FOR'
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro 'GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR'
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c:64:18: note: in expansion of macro 'G_TYPE_INSTANCE_GET_PRIVATE'
+   64 |                 (G_TYPE_INSTANCE_GET_PRIVATE ((o), INDICATOR_TYPE_DESKTOP_SHORTCUTS, IndicatorDesktopShortcutsPrivate))
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c:478:51: note: in expansion of macro 'INDICATOR_DESKTOP_SHORTCUTS_GET_PRIVATE'
+  478 |         IndicatorDesktopShortcutsPrivate * priv = INDICATOR_DESKTOP_SHORTCUTS_GET_PRIVATE(ids);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c: In function 'indicator_desktop_shortcuts_nick_get_name':
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro '_GLIB_GNUC_DO_PRAGMA'
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro 'GLIB_DEPRECATED_MACRO_FOR'
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro 'GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR'
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c:64:18: note: in expansion of macro 'G_TYPE_INSTANCE_GET_PRIVATE'
+   64 |                 (G_TYPE_INSTANCE_GET_PRIVATE ((o), INDICATOR_TYPE_DESKTOP_SHORTCUTS, IndicatorDesktopShortcutsPrivate))
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c:500:51: note: in expansion of macro 'INDICATOR_DESKTOP_SHORTCUTS_GET_PRIVATE'
+  500 |         IndicatorDesktopShortcutsPrivate * priv = INDICATOR_DESKTOP_SHORTCUTS_GET_PRIVATE(ids);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c: In function 'indicator_desktop_shortcuts_nick_exec_with_context':
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro '_GLIB_GNUC_DO_PRAGMA'
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro 'GLIB_DEPRECATED_MACRO_FOR'
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro 'GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR'
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c:64:18: note: in expansion of macro 'G_TYPE_INSTANCE_GET_PRIVATE'
+   64 |                 (G_TYPE_INSTANCE_GET_PRIVATE ((o), INDICATOR_TYPE_DESKTOP_SHORTCUTS, IndicatorDesktopShortcutsPrivate))
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c:577:51: note: in expansion of macro 'INDICATOR_DESKTOP_SHORTCUTS_GET_PRIVATE'
+  577 |         IndicatorDesktopShortcutsPrivate * priv = INDICATOR_DESKTOP_SHORTCUTS_GET_PRIVATE(ids);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CC       libappindicator3_la-gen-notification-item.xml.lo
+  CC       libappindicator3_la-gen-notification-watcher.xml.lo
+  CCLD     libappindicator3.la
+libtool: warning: '-version-info/-version-number' is ignored for convenience libraries
+  GISCAN   AppIndicator3-0.1.gir
+app-indicator.c:60: Warning: AppIndicator3: "@id" parameter unexpected at this location:
+ * @id: The ID of the indicator.  Maps to AppIndicator:id.
+    ^
+app-indicator.c:583: Error: AppIndicator3: multiple "@arg1" parameters for identifier "AppIndicator::new-label":
+	 * @arg1: The string for the guide
+     ^
+app-indicator.h:243: Warning: AppIndicator3: "@parent" parameter unexpected at this location:
+ * @parent: Parent object.
+    ^
+app-indicator.h:76: Warning: AppIndicator3: symbol='IS_APP_INDICATOR': Unknown namespace for symbol 'IS_APP_INDICATOR'
+app-indicator.h:77: Warning: AppIndicator3: symbol='IS_APP_INDICATOR_CLASS': Unknown namespace for symbol 'IS_APP_INDICATOR_CLASS'
+app-indicator.c:579: Warning: AppIndicator3: incorrect number of parameters in comment block, parameter annotations will be ignored.
+app-indicator.c:611: Warning: AppIndicator3: incorrect number of parameters in comment block, parameter annotations will be ignored.
+cp -f ./AppIndicator3-0.1.metadata.in AppIndicator3-0.1.metadata
+make  all-am
+make[3]: Entering directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/src'
+  CC       libappindicator_la-app-indicator-enum-types.lo
+  CC       libappindicator_la-app-indicator.lo
+In file included from /usr/lib32/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/libdbusmenu-glib-0.4/libdbusmenu-glib/menuitem.h:32,
+                 from app-indicator.c:34:
+app-indicator.c: In function 'app_indicator_init':
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro '_GLIB_GNUC_DO_PRAGMA'
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro 'GLIB_DEPRECATED_MACRO_FOR'
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro 'GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR'
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+app-indicator.c:162:31: note: in expansion of macro 'G_TYPE_INSTANCE_GET_PRIVATE'
+  162 |                              (G_TYPE_INSTANCE_GET_PRIVATE ((o), APP_INDICATOR_TYPE, AppIndicatorPrivate))
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+app-indicator.c:685:38: note: in expansion of macro 'APP_INDICATOR_GET_PRIVATE'
+  685 |         AppIndicatorPrivate * priv = APP_INDICATOR_GET_PRIVATE(self);
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~
+  CC       libappindicator_la-application-service-marshal.lo
+  CC       libappindicator_la-generate-id.lo
+  CC       libappindicator_la-indicator-desktop-shortcuts.lo
+In file included from /usr/lib32/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/glib-2.0/gio/gioenums.h:30,
+                 from /usr/include/glib-2.0/gio/giotypes.h:30,
+                 from /usr/include/glib-2.0/gio/gio.h:28,
+                 from /usr/include/gio-unix-2.0/gio/gdesktopappinfo.h:26,
+                 from indicator-desktop-shortcuts.c:28:
+indicator-desktop-shortcuts.c: In function 'indicator_desktop_shortcuts_init':
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro '_GLIB_GNUC_DO_PRAGMA'
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro 'GLIB_DEPRECATED_MACRO_FOR'
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro 'GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR'
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c:64:18: note: in expansion of macro 'G_TYPE_INSTANCE_GET_PRIVATE'
+   64 |                 (G_TYPE_INSTANCE_GET_PRIVATE ((o), INDICATOR_TYPE_DESKTOP_SHORTCUTS, IndicatorDesktopShortcutsPrivate))
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c:112:51: note: in expansion of macro 'INDICATOR_DESKTOP_SHORTCUTS_GET_PRIVATE'
+  112 |         IndicatorDesktopShortcutsPrivate * priv = INDICATOR_DESKTOP_SHORTCUTS_GET_PRIVATE(self);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c: In function 'indicator_desktop_shortcuts_dispose':
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro '_GLIB_GNUC_DO_PRAGMA'
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro 'GLIB_DEPRECATED_MACRO_FOR'
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro 'GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR'
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c:64:18: note: in expansion of macro 'G_TYPE_INSTANCE_GET_PRIVATE'
+   64 |                 (G_TYPE_INSTANCE_GET_PRIVATE ((o), INDICATOR_TYPE_DESKTOP_SHORTCUTS, IndicatorDesktopShortcutsPrivate))
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c:127:51: note: in expansion of macro 'INDICATOR_DESKTOP_SHORTCUTS_GET_PRIVATE'
+  127 |         IndicatorDesktopShortcutsPrivate * priv = INDICATOR_DESKTOP_SHORTCUTS_GET_PRIVATE(object);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c: In function 'indicator_desktop_shortcuts_finalize':
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro '_GLIB_GNUC_DO_PRAGMA'
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro 'GLIB_DEPRECATED_MACRO_FOR'
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro 'GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR'
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c:64:18: note: in expansion of macro 'G_TYPE_INSTANCE_GET_PRIVATE'
+   64 |                 (G_TYPE_INSTANCE_GET_PRIVATE ((o), INDICATOR_TYPE_DESKTOP_SHORTCUTS, IndicatorDesktopShortcutsPrivate))
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c:142:51: note: in expansion of macro 'INDICATOR_DESKTOP_SHORTCUTS_GET_PRIVATE'
+  142 |         IndicatorDesktopShortcutsPrivate * priv = INDICATOR_DESKTOP_SHORTCUTS_GET_PRIVATE(object);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c: In function 'set_property':
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro '_GLIB_GNUC_DO_PRAGMA'
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro 'GLIB_DEPRECATED_MACRO_FOR'
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro 'GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR'
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c:64:18: note: in expansion of macro 'G_TYPE_INSTANCE_GET_PRIVATE'
+   64 |                 (G_TYPE_INSTANCE_GET_PRIVATE ((o), INDICATOR_TYPE_DESKTOP_SHORTCUTS, IndicatorDesktopShortcutsPrivate))
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c:173:51: note: in expansion of macro 'INDICATOR_DESKTOP_SHORTCUTS_GET_PRIVATE'
+  173 |         IndicatorDesktopShortcutsPrivate * priv = INDICATOR_DESKTOP_SHORTCUTS_GET_PRIVATE(object);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c: In function 'get_property':
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro '_GLIB_GNUC_DO_PRAGMA'
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro 'GLIB_DEPRECATED_MACRO_FOR'
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro 'GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR'
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c:64:18: note: in expansion of macro 'G_TYPE_INSTANCE_GET_PRIVATE'
+   64 |                 (G_TYPE_INSTANCE_GET_PRIVATE ((o), INDICATOR_TYPE_DESKTOP_SHORTCUTS, IndicatorDesktopShortcutsPrivate))
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c:236:51: note: in expansion of macro 'INDICATOR_DESKTOP_SHORTCUTS_GET_PRIVATE'
+  236 |         IndicatorDesktopShortcutsPrivate * priv = INDICATOR_DESKTOP_SHORTCUTS_GET_PRIVATE(object);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c: In function 'parse_keyfile':
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro '_GLIB_GNUC_DO_PRAGMA'
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro 'GLIB_DEPRECATED_MACRO_FOR'
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro 'GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR'
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c:64:18: note: in expansion of macro 'G_TYPE_INSTANCE_GET_PRIVATE'
+   64 |                 (G_TYPE_INSTANCE_GET_PRIVATE ((o), INDICATOR_TYPE_DESKTOP_SHORTCUTS, IndicatorDesktopShortcutsPrivate))
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c:256:51: note: in expansion of macro 'INDICATOR_DESKTOP_SHORTCUTS_GET_PRIVATE'
+  256 |         IndicatorDesktopShortcutsPrivate * priv = INDICATOR_DESKTOP_SHORTCUTS_GET_PRIVATE(ids);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c: In function 'indicator_desktop_shortcuts_get_nicks':
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro '_GLIB_GNUC_DO_PRAGMA'
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro 'GLIB_DEPRECATED_MACRO_FOR'
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro 'GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR'
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c:64:18: note: in expansion of macro 'G_TYPE_INSTANCE_GET_PRIVATE'
+   64 |                 (G_TYPE_INSTANCE_GET_PRIVATE ((o), INDICATOR_TYPE_DESKTOP_SHORTCUTS, IndicatorDesktopShortcutsPrivate))
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c:478:51: note: in expansion of macro 'INDICATOR_DESKTOP_SHORTCUTS_GET_PRIVATE'
+  478 |         IndicatorDesktopShortcutsPrivate * priv = INDICATOR_DESKTOP_SHORTCUTS_GET_PRIVATE(ids);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c: In function 'indicator_desktop_shortcuts_nick_get_name':
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro '_GLIB_GNUC_DO_PRAGMA'
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro 'GLIB_DEPRECATED_MACRO_FOR'
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro 'GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR'
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c:64:18: note: in expansion of macro 'G_TYPE_INSTANCE_GET_PRIVATE'
+   64 |                 (G_TYPE_INSTANCE_GET_PRIVATE ((o), INDICATOR_TYPE_DESKTOP_SHORTCUTS, IndicatorDesktopShortcutsPrivate))
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c:500:51: note: in expansion of macro 'INDICATOR_DESKTOP_SHORTCUTS_GET_PRIVATE'
+  500 |         IndicatorDesktopShortcutsPrivate * priv = INDICATOR_DESKTOP_SHORTCUTS_GET_PRIVATE(ids);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c: In function 'indicator_desktop_shortcuts_nick_exec_with_context':
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro '_GLIB_GNUC_DO_PRAGMA'
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro 'GLIB_DEPRECATED_MACRO_FOR'
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro 'GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR'
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c:64:18: note: in expansion of macro 'G_TYPE_INSTANCE_GET_PRIVATE'
+   64 |                 (G_TYPE_INSTANCE_GET_PRIVATE ((o), INDICATOR_TYPE_DESKTOP_SHORTCUTS, IndicatorDesktopShortcutsPrivate))
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+indicator-desktop-shortcuts.c:577:51: note: in expansion of macro 'INDICATOR_DESKTOP_SHORTCUTS_GET_PRIVATE'
+  577 |         IndicatorDesktopShortcutsPrivate * priv = INDICATOR_DESKTOP_SHORTCUTS_GET_PRIVATE(ids);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CC       libappindicator_la-gen-notification-item.xml.lo
+  CC       libappindicator_la-gen-notification-watcher.xml.lo
+  CCLD     libappindicator.la
+  GICOMP   AppIndicator3-0.1.gir
+make[3]: Leaving directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/src'
+make[2]: Leaving directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/src'
+Making all in bindings
+make[2]: Entering directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/bindings'
+make[3]: Entering directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/bindings'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/bindings'
+make[2]: Leaving directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/bindings'
+Making all in docs
+make[2]: Entering directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/docs'
+Making all in reference
+make[3]: Entering directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/docs/reference'
+Makefile:794: warning: overriding recipe for target 'libappindicator-docs.sgml'
+Makefile:556: warning: ignoring old recipe for target 'libappindicator-docs.sgml'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/docs/reference'
+make[3]: Entering directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/docs'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/docs'
+make[2]: Leaving directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/docs'
+Making all in tests
+make[2]: Entering directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/tests'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/tests'
+make[2]: Entering directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator'
+make[2]: Leaving directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator'
+make[1]: Leaving directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator'
+==> Entering fakeroot environment...
+==> Starting package()...
+Making install in src
+make[1]: Entering directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/src'
+make  install-am
+make[2]: Entering directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/src'
+make[3]: Entering directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/src'
+ /usr/sbin/mkdir -p '/workspace/build/lib32-libappindicator-gtk2/pkg/lib32-libappindicator-gtk2/usr/lib32'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libappindicator.la '/workspace/build/lib32-libappindicator-gtk2/pkg/lib32-libappindicator-gtk2/usr/lib32'
+libtool: install: /usr/bin/install -c .libs/libappindicator.so.1.0.0 /workspace/build/lib32-libappindicator-gtk2/pkg/lib32-libappindicator-gtk2/usr/lib32/libappindicator.so.1.0.0
+libtool: install: (cd /workspace/build/lib32-libappindicator-gtk2/pkg/lib32-libappindicator-gtk2/usr/lib32 && { ln -s -f libappindicator.so.1.0.0 libappindicator.so.1 || { rm -f libappindicator.so.1 && ln -s libappindicator.so.1.0.0 libappindicator.so.1; }; })
+libtool: install: (cd /workspace/build/lib32-libappindicator-gtk2/pkg/lib32-libappindicator-gtk2/usr/lib32 && { ln -s -f libappindicator.so.1.0.0 libappindicator.so || { rm -f libappindicator.so && ln -s libappindicator.so.1.0.0 libappindicator.so; }; })
+libtool: install: /usr/bin/install -c .libs/libappindicator.lai /workspace/build/lib32-libappindicator-gtk2/pkg/lib32-libappindicator-gtk2/usr/lib32/libappindicator.la
+libtool: install: /usr/bin/install -c .libs/libappindicator.a /workspace/build/lib32-libappindicator-gtk2/pkg/lib32-libappindicator-gtk2/usr/lib32/libappindicator.a
+libtool: install: chmod 644 /workspace/build/lib32-libappindicator-gtk2/pkg/lib32-libappindicator-gtk2/usr/lib32/libappindicator.a
+libtool: install: ranlib /workspace/build/lib32-libappindicator-gtk2/pkg/lib32-libappindicator-gtk2/usr/lib32/libappindicator.a
+libtool: warning: remember to run 'libtool --finish /usr/lib32'
+ /usr/sbin/mkdir -p '/workspace/build/lib32-libappindicator-gtk2/pkg/lib32-libappindicator-gtk2/usr/share/gir-1.0'
+ /usr/bin/install -c -m 644 AppIndicator3-0.1.gir '/workspace/build/lib32-libappindicator-gtk2/pkg/lib32-libappindicator-gtk2/usr/share/gir-1.0'
+ /usr/sbin/mkdir -p '/workspace/build/lib32-libappindicator-gtk2/pkg/lib32-libappindicator-gtk2/usr/include/libappindicator-0.1/libappindicator'
+ /usr/bin/install -c -m 644 app-indicator.h app-indicator-enum-types.h '/workspace/build/lib32-libappindicator-gtk2/pkg/lib32-libappindicator-gtk2/usr/include/libappindicator-0.1/libappindicator'
+ /usr/sbin/mkdir -p '/workspace/build/lib32-libappindicator-gtk2/pkg/lib32-libappindicator-gtk2/usr/include/libappindicator-0.1/libappindicator'
+ /usr/bin/install -c -m 644 app-indicator.h app-indicator-enum-types.h '/workspace/build/lib32-libappindicator-gtk2/pkg/lib32-libappindicator-gtk2/usr/include/libappindicator-0.1/libappindicator'
+ /usr/sbin/mkdir -p '/workspace/build/lib32-libappindicator-gtk2/pkg/lib32-libappindicator-gtk2/usr/lib32/pkgconfig'
+ /usr/bin/install -c -m 644 appindicator-0.1.pc '/workspace/build/lib32-libappindicator-gtk2/pkg/lib32-libappindicator-gtk2/usr/lib32/pkgconfig'
+ /usr/sbin/mkdir -p '/workspace/build/lib32-libappindicator-gtk2/pkg/lib32-libappindicator-gtk2/usr/lib32/girepository-1.0'
+ /usr/bin/install -c -m 644 AppIndicator3-0.1.typelib '/workspace/build/lib32-libappindicator-gtk2/pkg/lib32-libappindicator-gtk2/usr/lib32/girepository-1.0'
+make[3]: Leaving directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/src'
+make[2]: Leaving directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/src'
+make[1]: Leaving directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/src'
+Making install in bindings
+make[1]: Entering directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/bindings'
+make[2]: Entering directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/bindings'
+make[3]: Entering directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/bindings'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/bindings'
+make[2]: Leaving directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/bindings'
+make[1]: Leaving directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/bindings'
+Making install in docs
+make[1]: Entering directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/docs'
+Making install in reference
+make[2]: Entering directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/docs/reference'
+Makefile:794: warning: overriding recipe for target 'libappindicator-docs.sgml'
+Makefile:556: warning: ignoring old recipe for target 'libappindicator-docs.sgml'
+make[3]: Entering directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/docs/reference'
+Makefile:794: warning: overriding recipe for target 'libappindicator-docs.sgml'
+Makefile:556: warning: ignoring old recipe for target 'libappindicator-docs.sgml'
+make[3]: Nothing to be done for 'install-exec-am'.
+Nothing to install
+make[3]: Leaving directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/docs/reference'
+make[2]: Leaving directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/docs/reference'
+make[2]: Entering directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/docs'
+make[3]: Entering directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/docs'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/docs'
+make[2]: Leaving directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/docs'
+make[1]: Leaving directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/docs'
+Making install in tests
+make[1]: Entering directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/tests'
+make[2]: Entering directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/tests'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/tests'
+make[1]: Leaving directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator/tests'
+make[1]: Entering directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator'
+make[2]: Entering directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator'
+make[1]: Leaving directory '/workspace/build/lib32-libappindicator-gtk2/src/libappindicator'
+==> Tidying install...
+  -> Removing empty directories...
+  -> Removing libtool files...
+  -> Purging unwanted files...
+  -> Removing static library files...
+  -> Stripping unneeded symbols from binaries and libraries...
+  -> Compressing man and info pages...
+==> Checking for packaging issues...
+==> Creating package "lib32-libappindicator-gtk2"...
+  -> Generating .PKGINFO file...
+  -> Generating .BUILDINFO file...
+  -> Generating .MTREE file...
+  -> Compressing package...
+==> Leaving fakeroot environment.
+==> Finished making: lib32-libappindicator-gtk2 12.10.0.r298-5 (Fri Oct 31 21:26:01 2025)
+==> Installing package lib32-libappindicator-gtk2 with pacman -U...
+loading packages...
+resolving dependencies...
+looking for conflicting packages...
+
+Package (1)                 New Version     Net Change
+
+lib32-libappindicator-gtk2  12.10.0.r298-5    0.06 MiB
+
+Total Installed Size:  0.06 MiB
+
+:: Proceed with installation? [Y/n] 
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+:: Processing package changes...
+installing lib32-libappindicator-gtk2...
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...

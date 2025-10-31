@@ -1,0 +1,212 @@
+Cloning into 'librtmp0'...
+Already up to date.
+==> Making package: librtmp0 2.4-6 (Fri Oct 31 21:11:04 2025)
+==> Checking runtime dependencies...
+==> Checking buildtime dependencies...
+==> Retrieving sources...
+  -> Cloning rtmpdump git repo...
+Cloning into bare repository '/workspace/build/librtmp0/rtmpdump'...
+==> Validating source files with sha256sums...
+    rtmpdump ... Skipped
+==> Extracting sources...
+  -> Creating working copy of rtmpdump git repo...
+Cloning into 'rtmpdump'...
+done.
+Switched to a new branch 'makepkg'
+==> Starting prepare()...
+Auto-merging librtmp/Makefile
+Auto-merging librtmp/dh.h
+Auto-merging librtmp/hashswf.c
+Auto-merging librtmp/rtmp.c
+Auto-merging librtmp/rtmp_sys.h
+Auto-merging librtmp/dh.h
+Auto-merging librtmp/Makefile
+Auto-merging librtmp/dh.h
+Auto-merging librtmp/hashswf.c
+Auto-merging librtmp/rtmp.c
+Auto-merging librtmp/rtmp_sys.h
+==> Starting build()...
+make[1]: Entering directory '/workspace/build/librtmp0/src/rtmpdump/librtmp'
+gcc -Wall   -DRTMPDUMP_VERSION=\"v2.4\" -DUSE_GNUTLS  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/librtmp0/src=/usr/src/debug/librtmp0 -flto=auto -fPIC   -c -o rtmp.o rtmp.c
+In file included from rtmp.c:126:
+handshake.h: In function ‘InitRC4Encryption’:
+handshake.h:119:16: warning: variable ‘digestLen’ set but not used [-Wunused-but-set-variable]
+  119 |   unsigned int digestLen = 0;
+      |                ^~~~~~~~~
+rtmp.c: In function ‘RTMP_ReadPacket’:
+rtmp.c:2888:7: warning: variable ‘didAlloc’ set but not used [-Wunused-but-set-variable]
+ 2888 |   int didAlloc = FALSE;
+      |       ^~~~~~~~
+rtmp.c: At top level:
+rtmp.c:1423:35: warning: ‘av_record’ defined but not used [-Wunused-const-variable=]
+ 1423 | #define SAVC(x) static const AVal av_##x = AVC(#x)
+      |                                   ^~~
+rtmp.c:1736:1: note: in expansion of macro ‘SAVC’
+ 1736 | SAVC(record);
+      | ^~~~
+gcc -Wall   -DRTMPDUMP_VERSION=\"v2.4\" -DUSE_GNUTLS  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/librtmp0/src=/usr/src/debug/librtmp0 -flto=auto -fPIC   -c -o log.o log.c
+gcc -Wall   -DRTMPDUMP_VERSION=\"v2.4\" -DUSE_GNUTLS  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/librtmp0/src=/usr/src/debug/librtmp0 -flto=auto -fPIC   -c -o amf.o amf.c
+gcc -Wall   -DRTMPDUMP_VERSION=\"v2.4\" -DUSE_GNUTLS  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/librtmp0/src=/usr/src/debug/librtmp0 -flto=auto -fPIC   -c -o hashswf.o hashswf.c
+hashswf.c: In function ‘RTMP_HashSWF’:
+hashswf.c:585:22: warning: pointer targets in passing argument 3 of ‘nettle_hmac_sha256_set_key’ differ in signedness [-Wpointer-sign]
+  585 |   HMAC_setup(in.ctx, "Genuine Adobe Flash Player 001", 30);
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                      |
+      |                      char *
+hashswf.c:51:72: note: in definition of macro ‘HMAC_setup’
+   51 | #define HMAC_setup(ctx, key, len)       hmac_sha256_set_key(&ctx, len, key)
+      |                                                                        ^~~
+In file included from hashswf.c:45:
+/usr/include/nettle/hmac.h:172:55: note: expected ‘const uint8_t *’ {aka ‘const unsigned char *’} but argument is of type ‘char *’
+  172 |                     size_t key_length, const uint8_t *key);
+      |                                        ~~~~~~~~~~~~~~~^~~
+gcc -Wall   -DRTMPDUMP_VERSION=\"v2.4\" -DUSE_GNUTLS  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/librtmp0/src=/usr/src/debug/librtmp0 -flto=auto -fPIC   -c -o parseurl.o parseurl.c
+ar rs librtmp.a rtmp.o log.o amf.o hashswf.o parseurl.o
+ar: creating librtmp.a
+gcc -shared -Wl,-soname,librtmp.so.0 -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -o librtmp.so.0 rtmp.o log.o amf.o hashswf.o parseurl.o  -lgnutls -lhogweed -lnettle -lgmp -lz 
+ln -sf librtmp.so.0 librtmp.so
+make[1]: Leaving directory '/workspace/build/librtmp0/src/rtmpdump/librtmp'
+gcc -Wall   -DRTMPDUMP_VERSION=\"v2.4\"   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/librtmp0/src=/usr/src/debug/librtmp0 -flto=auto   -c -o rtmpdump.o rtmpdump.c
+gcc -Wall -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -o rtmpdump rtmpdump.o -Llibrtmp -lrtmp -lgnutls -lhogweed -lnettle -lgmp -lz  
+gcc -Wall   -DRTMPDUMP_VERSION=\"v2.4\"   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/librtmp0/src=/usr/src/debug/librtmp0 -flto=auto   -c -o rtmpgw.o rtmpgw.c
+gcc -Wall   -DRTMPDUMP_VERSION=\"v2.4\"   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/librtmp0/src=/usr/src/debug/librtmp0 -flto=auto   -c -o thread.o thread.c
+gcc -Wall -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -o rtmpgw rtmpgw.o thread.o -lpthread -Llibrtmp -lrtmp -lgnutls -lhogweed -lnettle -lgmp -lz  
+gcc -Wall   -DRTMPDUMP_VERSION=\"v2.4\"   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/librtmp0/src=/usr/src/debug/librtmp0 -flto=auto   -c -o rtmpsrv.o rtmpsrv.c
+rtmpsrv.c: In function ‘dumpAMF’:
+rtmpsrv.c:404:10: warning: variable ‘len’ set but not used [-Wunused-but-set-variable]
+  404 |   int i, len, ac = *argc;
+      |          ^~~
+rtmpsrv.c: At top level:
+rtmpsrv.c:142:35: warning: ‘av_secureToken’ defined but not used [-Wunused-const-variable=]
+  142 | #define SAVC(x) static const AVal av_##x = AVC(#x)
+      |                                   ^~~
+rtmpsrv.c:165:1: note: in expansion of macro ‘SAVC’
+  165 | SAVC(secureToken);
+      | ^~~~
+rtmpsrv.c:142:35: warning: ‘av_videoFunction’ defined but not used [-Wunused-const-variable=]
+  142 | #define SAVC(x) static const AVal av_##x = AVC(#x)
+      |                                   ^~~
+rtmpsrv.c:154:1: note: in expansion of macro ‘SAVC’
+  154 | SAVC(videoFunction);
+      | ^~~~
+rtmpsrv.c:142:35: warning: ‘av_fpad’ defined but not used [-Wunused-const-variable=]
+  142 | #define SAVC(x) static const AVal av_##x = AVC(#x)
+      |                                   ^~~
+rtmpsrv.c:150:1: note: in expansion of macro ‘SAVC’
+  150 | SAVC(fpad);
+      | ^~~~
+gcc -Wall -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -o rtmpsrv rtmpsrv.o thread.o -lpthread -Llibrtmp -lrtmp -lgnutls -lhogweed -lnettle -lgmp -lz  
+gcc -Wall   -DRTMPDUMP_VERSION=\"v2.4\"   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/workspace/build/librtmp0/src=/usr/src/debug/librtmp0 -flto=auto   -c -o rtmpsuck.o rtmpsuck.c
+rtmpsuck.c:119:35: warning: ‘av_secureToken’ defined but not used [-Wunused-const-variable=]
+  119 | #define SAVC(x) static const AVal av_##x = AVC(#x)
+      |                                   ^~~
+rtmpsuck.c:141:1: note: in expansion of macro ‘SAVC’
+  141 | SAVC(secureToken);
+      | ^~~~
+rtmpsuck.c:119:35: warning: ‘av_mode’ defined but not used [-Wunused-const-variable=]
+  119 | #define SAVC(x) static const AVal av_##x = AVC(#x)
+      |                                   ^~~
+rtmpsuck.c:138:1: note: in expansion of macro ‘SAVC’
+  138 | SAVC(mode);
+      | ^~~~
+rtmpsuck.c:119:35: warning: ‘av_fmsVer’ defined but not used [-Wunused-const-variable=]
+  119 | #define SAVC(x) static const AVal av_##x = AVC(#x)
+      |                                   ^~~
+rtmpsuck.c:137:1: note: in expansion of macro ‘SAVC’
+  137 | SAVC(fmsVer);
+      | ^~~~
+rtmpsuck.c:119:35: warning: ‘av_createStream’ defined but not used [-Wunused-const-variable=]
+  119 | #define SAVC(x) static const AVal av_##x = AVC(#x)
+      |                                   ^~~
+rtmpsuck.c:134:1: note: in expansion of macro ‘SAVC’
+  134 | SAVC(createStream);
+      | ^~~~
+rtmpsuck.c:119:35: warning: ‘av__result’ defined but not used [-Wunused-const-variable=]
+  119 | #define SAVC(x) static const AVal av_##x = AVC(#x)
+      |                                   ^~~
+rtmpsuck.c:133:1: note: in expansion of macro ‘SAVC’
+  133 | SAVC(_result);
+      | ^~~~
+rtmpsuck.c:119:35: warning: ‘av_videoFunction’ defined but not used [-Wunused-const-variable=]
+  119 | #define SAVC(x) static const AVal av_##x = AVC(#x)
+      |                                   ^~~
+rtmpsuck.c:131:1: note: in expansion of macro ‘SAVC’
+  131 | SAVC(videoFunction);
+      | ^~~~
+rtmpsuck.c:119:35: warning: ‘av_capabilities’ defined but not used [-Wunused-const-variable=]
+  119 | #define SAVC(x) static const AVal av_##x = AVC(#x)
+      |                                   ^~~
+rtmpsuck.c:128:1: note: in expansion of macro ‘SAVC’
+  128 | SAVC(capabilities);
+      | ^~~~
+rtmpsuck.c:119:35: warning: ‘av_fpad’ defined but not used [-Wunused-const-variable=]
+  119 | #define SAVC(x) static const AVal av_##x = AVC(#x)
+      |                                   ^~~
+rtmpsuck.c:127:1: note: in expansion of macro ‘SAVC’
+  127 | SAVC(fpad);
+      | ^~~~
+gcc -Wall -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -o rtmpsuck rtmpsuck.o thread.o -lpthread -Llibrtmp -lrtmp -lgnutls -lhogweed -lnettle -lgmp -lz  
+==> Entering fakeroot environment...
+==> Starting package()...
+make[1]: Entering directory '/workspace/build/librtmp0/src/rtmpdump/librtmp'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/workspace/build/librtmp0/src/rtmpdump/librtmp'
+mkdir -p /workspace/build/librtmp0/pkg/librtmp0/usr/bin /workspace/build/librtmp0/pkg/librtmp0/usr/bin /workspace/build/librtmp0/pkg/librtmp0/usr/share/man/man1 /workspace/build/librtmp0/pkg/librtmp0/usr/share/man/man8
+cp rtmpdump /workspace/build/librtmp0/pkg/librtmp0/usr/bin
+cp rtmpgw rtmpsrv rtmpsuck /workspace/build/librtmp0/pkg/librtmp0/usr/bin
+cp rtmpdump.1 /workspace/build/librtmp0/pkg/librtmp0/usr/share/man/man1
+cp rtmpgw.8 /workspace/build/librtmp0/pkg/librtmp0/usr/share/man/man8
+make[1]: Entering directory '/workspace/build/librtmp0/src/rtmpdump/librtmp'
+sed -e "s;@prefix@;/usr;" -e "s;@libdir@;/usr/lib;" \
+	-e "s;@VERSION@;v2.4;" \
+	-e "s;@CRYPTO_REQ@;gnutls;" \
+	-e "s;@PRIVATE_LIBS@;;" librtmp.pc.in > librtmp.pc
+mkdir -p /workspace/build/librtmp0/pkg/librtmp0/usr/include/librtmp /workspace/build/librtmp0/pkg/librtmp0/usr/lib/pkgconfig /workspace/build/librtmp0/pkg/librtmp0/usr/share/man/man3
+cp amf.h http.h log.h rtmp.h /workspace/build/librtmp0/pkg/librtmp0/usr/include/librtmp
+cp librtmp.a /workspace/build/librtmp0/pkg/librtmp0/usr/lib
+cp librtmp.pc /workspace/build/librtmp0/pkg/librtmp0/usr/lib/pkgconfig
+cp librtmp.3 /workspace/build/librtmp0/pkg/librtmp0/usr/share/man/man3
+cp librtmp.so.0 /workspace/build/librtmp0/pkg/librtmp0/usr/lib
+cd /workspace/build/librtmp0/pkg/librtmp0/usr/lib; ln -sf librtmp.so.0 librtmp.so
+make[1]: Leaving directory '/workspace/build/librtmp0/src/rtmpdump/librtmp'
+==> Tidying install...
+  -> Removing libtool files...
+  -> Purging unwanted files...
+  -> Removing static library files...
+  -> Stripping unneeded symbols from binaries and libraries...
+  -> Compressing man and info pages...
+==> Checking for packaging issues...
+==> Creating package "librtmp0"...
+  -> Generating .PKGINFO file...
+  -> Generating .BUILDINFO file...
+  -> Generating .MTREE file...
+  -> Compressing package...
+==> Creating package "librtmp0-debug"...
+  -> Generating .PKGINFO file...
+  -> Generating .BUILDINFO file...
+  -> Generating .MTREE file...
+  -> Compressing package...
+==> Leaving fakeroot environment.
+==> Finished making: librtmp0 2.4-6 (Fri Oct 31 21:11:10 2025)
+==> Installing package librtmp0 with pacman -U...
+loading packages...
+resolving dependencies...
+looking for conflicting packages...
+
+Package (2)     New Version  Net Change
+
+librtmp0        2.4-6          0.11 MiB
+librtmp0-debug  2.4-6          0.46 MiB
+
+Total Installed Size:  0.57 MiB
+
+:: Proceed with installation? [Y/n] 
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+:: Processing package changes...
+installing librtmp0...
+installing librtmp0-debug...
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...

@@ -1,0 +1,286 @@
+Cloning into 'glew1.10'...
+Already up to date.
+gpg: directory '/home/damglador/.gnupg' created
+==> Making package: glew1.10 1.10.0-4 (Fri Oct 31 20:59:37 2025)
+==> Checking runtime dependencies...
+==> Installing missing dependencies...
+resolving dependencies...
+looking for conflicting packages...
+warning: dependency cycle detected:
+warning: mesa will be installed before its libglvnd dependency
+
+Package (25)           New Version     Net Change
+
+extra/default-cursors  3-1               0.00 MiB
+extra/libdrm           2.4.127-1         1.26 MiB
+core/libedit           20250104_3.1-1    0.26 MiB
+extra/libice           1.1.2-1           0.36 MiB
+extra/libpciaccess     0.18.1-2          0.06 MiB
+extra/libsm            1.2.6-1           0.26 MiB
+extra/libxau           1.0.12-1          0.02 MiB
+extra/libxcb           1.17.0-1          3.87 MiB
+extra/libxdmcp         1.1.5-1           0.13 MiB
+extra/libxfixes        6.0.2-1           0.04 MiB
+extra/libxshmfence     1.3.3-1           0.02 MiB
+extra/libxt            1.3.1-1           2.02 MiB
+extra/libxxf86vm       1.1.6-1           0.03 MiB
+extra/llvm-libs        21.1.4-1        150.01 MiB
+extra/lm_sensors       1:3.6.2-1         0.48 MiB
+extra/mesa             1:25.2.6-1       44.44 MiB
+extra/spirv-tools      1:1.4.328.1-1     7.43 MiB
+extra/wayland          1.24.0-1          0.82 MiB
+extra/xcb-proto        1.17.0-3          1.02 MiB
+extra/xorgproto        2024.1-2          1.46 MiB
+extra/libglvnd         1.7.0-3           3.34 MiB
+extra/libx11           1.8.12-1          9.78 MiB
+extra/libxext          1.3.6-1           0.30 MiB
+extra/libxi            1.8.2-1           0.48 MiB
+extra/libxmu           1.2.1-1           0.33 MiB
+
+Total Installed Size:  228.23 MiB
+
+:: Proceed with installation? [Y/n] 
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+:: Processing package changes...
+installing xcb-proto...
+installing xorgproto...
+installing libxdmcp...
+installing libxau...
+installing libxcb...
+installing libx11...
+installing libxext...
+installing libpciaccess...
+installing libdrm...
+Optional dependencies for libdrm
+    cairo: needed for modetest tool
+installing libxshmfence...
+installing libxxf86vm...
+installing libedit...
+installing llvm-libs...
+installing lm_sensors...
+Optional dependencies for lm_sensors
+    rrdtool: for logging with sensord
+    perl: for sensor detection and configuration convert [installed]
+installing spirv-tools...
+installing default-cursors...
+Optional dependencies for default-cursors
+    adwaita-cursors: default cursor theme
+installing wayland...
+installing mesa...
+Optional dependencies for mesa
+    opengl-man-pages: for the OpenGL API man pages
+installing libglvnd...
+installing libxfixes...
+installing libxi...
+installing libice...
+installing libsm...
+installing libxt...
+installing libxmu...
+:: Running post-transaction hooks...
+(1/2) Reloading system manager configuration...
+  Skipped: Current root is not booted.
+(2/2) Arming ConditionNeedsUpdate...
+==> Checking buildtime dependencies...
+==> Retrieving sources...
+  -> Downloading glew-1.10.0.tgz...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   360  100   360    0     0    694      0 --:--:-- --:--:-- --:--:--   693100   360  100   360    0     0    693      0 --:--:-- --:--:-- --:--:--   693
+100   361  100   361    0     0    506      0 --:--:-- --:--:-- --:--:--   506
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0100  554k  100  554k    0     0  84184      0  0:00:06  0:00:06 --:--:--  146k
+==> Validating source files with sha256sums...
+    glew-1.10.0.tgz ... Passed
+==> Extracting sources...
+  -> Extracting glew-1.10.0.tgz with bsdtar
+==> Starting prepare()...
+==> Starting build()...
+cc -DGLEW_NO_GLU -O2 -Wall -W -Iinclude -fPIC  -o tmp/linux/default/shared/glew.o -c src/glew.c
+src/glew.c: In function ‘_glewStrSame1’:
+src/glew.c:219:29: warning: the comparison will always evaluate as ‘true’ for the pointer operand in ‘*a + (sizetype)i’ must not be NULL [-Waddress]
+  219 |     while (i < nb && (*a)+i != NULL && b+i != NULL && (*a)[i] == b[i]) i++;
+      |                             ^~
+src/glew.c:219:44: warning: the comparison will always evaluate as ‘true’ for the pointer operand in ‘b + (sizetype)i’ must not be NULL [-Waddress]
+  219 |     while (i < nb && (*a)+i != NULL && b+i != NULL && (*a)[i] == b[i]) i++;
+      |                                            ^~
+src/glew.c: In function ‘_glewStrSame2’:
+src/glew.c:235:29: warning: the comparison will always evaluate as ‘true’ for the pointer operand in ‘*a + (sizetype)i’ must not be NULL [-Waddress]
+  235 |     while (i < nb && (*a)+i != NULL && b+i != NULL && (*a)[i] == b[i]) i++;
+      |                             ^~
+src/glew.c:235:44: warning: the comparison will always evaluate as ‘true’ for the pointer operand in ‘b + (sizetype)i’ must not be NULL [-Waddress]
+  235 |     while (i < nb && (*a)+i != NULL && b+i != NULL && (*a)[i] == b[i]) i++;
+      |                                            ^~
+src/glew.c: In function ‘_glewStrSame3’:
+src/glew.c:251:29: warning: the comparison will always evaluate as ‘true’ for the pointer operand in ‘*a + (sizetype)i’ must not be NULL [-Waddress]
+  251 |     while (i < nb && (*a)+i != NULL && b+i != NULL && (*a)[i] == b[i]) i++;
+      |                             ^~
+src/glew.c:251:44: warning: the comparison will always evaluate as ‘true’ for the pointer operand in ‘b + (sizetype)i’ must not be NULL [-Waddress]
+  251 |     while (i < nb && (*a)+i != NULL && b+i != NULL && (*a)[i] == b[i]) i++;
+      |                                            ^~
+cc -shared -Wl,-soname=libGLEW.so.1.10 -o lib/libGLEW.so.1.10.0 tmp/linux/default/shared/glew.o -L/usr/X11R6/lib -L/usr/lib64 -lXmu -lXi -lGL -lXext -lX11 
+ln -sf libGLEW.so.1.10.0 lib/libGLEW.so.1.10
+ln -sf libGLEW.so.1.10.0 lib/libGLEW.so
+strip -x lib/libGLEW.so.1.10.0
+cc -DGLEW_NO_GLU -DGLEW_STATIC -O2 -Wall -W -Iinclude -fPIC  -o tmp/linux/default/static/glew.o -c src/glew.c
+src/glew.c: In function ‘_glewStrSame1’:
+src/glew.c:219:29: warning: the comparison will always evaluate as ‘true’ for the pointer operand in ‘*a + (sizetype)i’ must not be NULL [-Waddress]
+  219 |     while (i < nb && (*a)+i != NULL && b+i != NULL && (*a)[i] == b[i]) i++;
+      |                             ^~
+src/glew.c:219:44: warning: the comparison will always evaluate as ‘true’ for the pointer operand in ‘b + (sizetype)i’ must not be NULL [-Waddress]
+  219 |     while (i < nb && (*a)+i != NULL && b+i != NULL && (*a)[i] == b[i]) i++;
+      |                                            ^~
+src/glew.c: In function ‘_glewStrSame2’:
+src/glew.c:235:29: warning: the comparison will always evaluate as ‘true’ for the pointer operand in ‘*a + (sizetype)i’ must not be NULL [-Waddress]
+  235 |     while (i < nb && (*a)+i != NULL && b+i != NULL && (*a)[i] == b[i]) i++;
+      |                             ^~
+src/glew.c:235:44: warning: the comparison will always evaluate as ‘true’ for the pointer operand in ‘b + (sizetype)i’ must not be NULL [-Waddress]
+  235 |     while (i < nb && (*a)+i != NULL && b+i != NULL && (*a)[i] == b[i]) i++;
+      |                                            ^~
+src/glew.c: In function ‘_glewStrSame3’:
+src/glew.c:251:29: warning: the comparison will always evaluate as ‘true’ for the pointer operand in ‘*a + (sizetype)i’ must not be NULL [-Waddress]
+  251 |     while (i < nb && (*a)+i != NULL && b+i != NULL && (*a)[i] == b[i]) i++;
+      |                             ^~
+src/glew.c:251:44: warning: the comparison will always evaluate as ‘true’ for the pointer operand in ‘b + (sizetype)i’ must not be NULL [-Waddress]
+  251 |     while (i < nb && (*a)+i != NULL && b+i != NULL && (*a)[i] == b[i]) i++;
+      |                                            ^~
+ar cr lib/libGLEW.a tmp/linux/default/static/glew.o
+strip -x lib/libGLEW.a
+sed \
+	-e "s|@prefix@|/usr|g" \
+	-e "s|@libdir@|/usr/lib|g" \
+	-e "s|@exec_prefix@|/usr/bin|g" \
+	-e "s|@includedir@|/usr/include/GL|g" \
+	-e "s|@version@|1.10.0|g" \
+	-e "s|@cflags@||g" \
+	-e "s|@libname@|GLEW|g" \
+	< glew.pc.in > glew.pc
+cc -DGLEW_NO_GLU -DGLEW_MX -O2 -Wall -W -Iinclude -fPIC  -o tmp/linux/mx/shared/glew.o -c src/glew.c
+src/glew.c: In function ‘_glewStrSame1’:
+src/glew.c:219:29: warning: the comparison will always evaluate as ‘true’ for the pointer operand in ‘*a + (sizetype)i’ must not be NULL [-Waddress]
+  219 |     while (i < nb && (*a)+i != NULL && b+i != NULL && (*a)[i] == b[i]) i++;
+      |                             ^~
+src/glew.c:219:44: warning: the comparison will always evaluate as ‘true’ for the pointer operand in ‘b + (sizetype)i’ must not be NULL [-Waddress]
+  219 |     while (i < nb && (*a)+i != NULL && b+i != NULL && (*a)[i] == b[i]) i++;
+      |                                            ^~
+src/glew.c: In function ‘_glewStrSame2’:
+src/glew.c:235:29: warning: the comparison will always evaluate as ‘true’ for the pointer operand in ‘*a + (sizetype)i’ must not be NULL [-Waddress]
+  235 |     while (i < nb && (*a)+i != NULL && b+i != NULL && (*a)[i] == b[i]) i++;
+      |                             ^~
+src/glew.c:235:44: warning: the comparison will always evaluate as ‘true’ for the pointer operand in ‘b + (sizetype)i’ must not be NULL [-Waddress]
+  235 |     while (i < nb && (*a)+i != NULL && b+i != NULL && (*a)[i] == b[i]) i++;
+      |                                            ^~
+src/glew.c: In function ‘_glewStrSame3’:
+src/glew.c:251:29: warning: the comparison will always evaluate as ‘true’ for the pointer operand in ‘*a + (sizetype)i’ must not be NULL [-Waddress]
+  251 |     while (i < nb && (*a)+i != NULL && b+i != NULL && (*a)[i] == b[i]) i++;
+      |                             ^~
+src/glew.c:251:44: warning: the comparison will always evaluate as ‘true’ for the pointer operand in ‘b + (sizetype)i’ must not be NULL [-Waddress]
+  251 |     while (i < nb && (*a)+i != NULL && b+i != NULL && (*a)[i] == b[i]) i++;
+      |                                            ^~
+cc -shared -Wl,-soname=libGLEWmx.so.1.10 -o lib/libGLEWmx.so.1.10.0 tmp/linux/mx/shared/glew.o -L/usr/X11R6/lib -L/usr/lib64 -lXmu -lXi -lGL -lXext -lX11 
+ln -sf libGLEWmx.so.1.10.0 lib/libGLEWmx.so.1.10
+ln -sf libGLEWmx.so.1.10.0 lib/libGLEWmx.so
+strip -x lib/libGLEWmx.so.1.10.0
+cc -DGLEW_NO_GLU -DGLEW_MX -DGLEW_STATIC -O2 -Wall -W -Iinclude -fPIC  -o tmp/linux/mx/static/glew.o -c src/glew.c
+src/glew.c: In function ‘_glewStrSame1’:
+src/glew.c:219:29: warning: the comparison will always evaluate as ‘true’ for the pointer operand in ‘*a + (sizetype)i’ must not be NULL [-Waddress]
+  219 |     while (i < nb && (*a)+i != NULL && b+i != NULL && (*a)[i] == b[i]) i++;
+      |                             ^~
+src/glew.c:219:44: warning: the comparison will always evaluate as ‘true’ for the pointer operand in ‘b + (sizetype)i’ must not be NULL [-Waddress]
+  219 |     while (i < nb && (*a)+i != NULL && b+i != NULL && (*a)[i] == b[i]) i++;
+      |                                            ^~
+src/glew.c: In function ‘_glewStrSame2’:
+src/glew.c:235:29: warning: the comparison will always evaluate as ‘true’ for the pointer operand in ‘*a + (sizetype)i’ must not be NULL [-Waddress]
+  235 |     while (i < nb && (*a)+i != NULL && b+i != NULL && (*a)[i] == b[i]) i++;
+      |                             ^~
+src/glew.c:235:44: warning: the comparison will always evaluate as ‘true’ for the pointer operand in ‘b + (sizetype)i’ must not be NULL [-Waddress]
+  235 |     while (i < nb && (*a)+i != NULL && b+i != NULL && (*a)[i] == b[i]) i++;
+      |                                            ^~
+src/glew.c: In function ‘_glewStrSame3’:
+src/glew.c:251:29: warning: the comparison will always evaluate as ‘true’ for the pointer operand in ‘*a + (sizetype)i’ must not be NULL [-Waddress]
+  251 |     while (i < nb && (*a)+i != NULL && b+i != NULL && (*a)[i] == b[i]) i++;
+      |                             ^~
+src/glew.c:251:44: warning: the comparison will always evaluate as ‘true’ for the pointer operand in ‘b + (sizetype)i’ must not be NULL [-Waddress]
+  251 |     while (i < nb && (*a)+i != NULL && b+i != NULL && (*a)[i] == b[i]) i++;
+      |                                            ^~
+ar cr lib/libGLEWmx.a tmp/linux/mx/static/glew.o
+sed \
+	-e "s|@prefix@|/usr|g" \
+	-e "s|@libdir@|/usr/lib|g" \
+	-e "s|@exec_prefix@|/usr/bin|g" \
+	-e "s|@includedir@|/usr/include/GL|g" \
+	-e "s|@version@|1.10.0|g" \
+	-e "s|@cflags@|-DGLEW_MX|g" \
+	-e "s|@libname@|GLEWmx|g" \
+	< glew.pc.in > glewmx.pc
+cc -DGLEW_NO_GLU -O2 -Wall -W -Iinclude -fPIC  -o tmp/linux/default/shared/glewinfo.o -c src/glewinfo.c
+cc -O2 -Wall -W -Iinclude -fPIC -o bin/glewinfo tmp/linux/default/shared/glewinfo.o -Llib -Wl,-Bdynamic -lGLEW -L/usr/X11R6/lib -L/usr/lib64 -lXmu -lXi -lGL -lXext -lX11
+strip -x bin/glewinfo
+cc -DGLEW_NO_GLU -O2 -Wall -W -Iinclude -fPIC  -o tmp/linux/default/shared/visualinfo.o -c src/visualinfo.c
+cc -O2 -Wall -W -Iinclude -fPIC -o bin/visualinfo tmp/linux/default/shared/visualinfo.o -Llib -Wl,-Bdynamic -lGLEW -L/usr/X11R6/lib -L/usr/lib64 -lXmu -lXi -lGL -lXext -lX11
+strip -x bin/visualinfo
+==> Entering fakeroot environment...
+==> Starting package()...
+install -d -m 0755 /workspace/build/glew1.10/pkg/glew1.10/usr/include/GL
+install -m 0644 include/GL/wglew.h /workspace/build/glew1.10/pkg/glew1.10/usr/include/GL/
+install -m 0644 include/GL/glew.h /workspace/build/glew1.10/pkg/glew1.10/usr/include/GL/
+install -m 0644 include/GL/glxew.h /workspace/build/glew1.10/pkg/glew1.10/usr/include/GL/
+sed \
+	-e "s|@prefix@|/workspace/build/glew1.10/pkg/glew1.10/usr|g" \
+	-e "s|@libdir@|/workspace/build/glew1.10/pkg/glew1.10/usr/lib|g" \
+	-e "s|@exec_prefix@|/workspace/build/glew1.10/pkg/glew1.10/usr/bin|g" \
+	-e "s|@includedir@|/workspace/build/glew1.10/pkg/glew1.10/usr/include/GL|g" \
+	-e "s|@version@|1.10.0|g" \
+	-e "s|@cflags@||g" \
+	-e "s|@libname@|GLEW|g" \
+	< glew.pc.in > glew.pc
+install -d -m 0755 /workspace/build/glew1.10/pkg/glew1.10/usr/lib
+install -m 0644 lib/libGLEW.so.1.10.0 /workspace/build/glew1.10/pkg/glew1.10/usr/lib/
+ln -sf libGLEW.so.1.10.0 /workspace/build/glew1.10/pkg/glew1.10/usr/lib/libGLEW.so.1.10
+ln -sf libGLEW.so.1.10.0 /workspace/build/glew1.10/pkg/glew1.10/usr/lib/libGLEW.so
+install -m 0644 lib/libGLEW.a /workspace/build/glew1.10/pkg/glew1.10/usr/lib/
+install -d -m 0755 /workspace/build/glew1.10/pkg/glew1.10/usr/lib
+install -d -m 0755 /workspace/build/glew1.10/pkg/glew1.10/usr/lib/pkgconfig
+install -m 0644 glew.pc /workspace/build/glew1.10/pkg/glew1.10/usr/lib/pkgconfig/
+==> Tidying install...
+  -> Removing libtool files...
+  -> Purging unwanted files...
+  -> Removing static library files...
+  -> Stripping unneeded symbols from binaries and libraries...
+  -> Compressing man and info pages...
+==> Checking for packaging issues...
+==> Creating package "glew1.10"...
+  -> Generating .PKGINFO file...
+  -> Generating .BUILDINFO file...
+  -> Generating .MTREE file...
+  -> Compressing package...
+==> Creating package "glew1.10-debug"...
+  -> Generating .PKGINFO file...
+  -> Generating .BUILDINFO file...
+  -> Generating .MTREE file...
+  -> Compressing package...
+==> Leaving fakeroot environment.
+==> Finished making: glew1.10 1.10.0-4 (Fri Oct 31 21:00:04 2025)
+==> Installing package glew1.10 with pacman -U...
+loading packages...
+resolving dependencies...
+looking for conflicting packages...
+
+Package (2)     New Version  Net Change
+
+glew1.10        1.10.0-4       0.50 MiB
+glew1.10-debug  1.10.0-4       0.14 MiB
+
+Total Installed Size:  0.64 MiB
+
+:: Proceed with installation? [Y/n] 
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+:: Processing package changes...
+installing glew1.10...
+installing glew1.10-debug...
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...

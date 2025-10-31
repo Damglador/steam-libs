@@ -1,0 +1,1038 @@
+Cloning into 'lib32-libdbusmenu-gtk2'...
+Already up to date.
+gpg: key E83D089481836EBF: "Marco Trevisan (at 3v1n0.net) <marco.trevisan@3v1n0.net>" not changed
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+==> Making package: lib32-libdbusmenu-gtk2 16.04.0-7 (Fri Oct 31 21:24:26 2025)
+==> Checking runtime dependencies...
+==> Installing missing dependencies...
+resolving dependencies...
+looking for conflicting packages...
+
+Package (1)                      New Version  Net Change
+
+multilib/lib32-libdbusmenu-glib  16.04.0-7      0.10 MiB
+
+Total Installed Size:  0.10 MiB
+
+:: Proceed with installation? [Y/n] 
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+:: Processing package changes...
+installing lib32-libdbusmenu-glib...
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+==> Checking buildtime dependencies...
+==> Installing missing dependencies...
+resolving dependencies...
+looking for conflicting packages...
+
+Package (3)         New Version  Net Change
+
+core/debuginfod     0.193-5        0.42 MiB
+core/libmicrohttpd  1.0.2-1        0.61 MiB
+extra/valgrind      3.25.1-3      74.45 MiB
+
+Total Installed Size:  75.48 MiB
+
+:: Proceed with installation? [Y/n] 
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+:: Processing package changes...
+installing libmicrohttpd...
+installing debuginfod...
+Optional dependencies for debuginfod
+    elfutils=0.193: for translations
+installing valgrind...
+Optional dependencies for valgrind
+    lib32-glibc: 32-bit ABI support [installed]
+    python: cg_* scripts [installed]
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+==> Retrieving sources...
+  -> Downloading libdbusmenu-16.04.0.tar.gz...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  742k  100  742k    0     0   983k      0 --:--:-- --:--:-- --:--:-- 1899k
+  -> Downloading libdbusmenu-16.04.0.tar.gz.asc...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100   213  100   213    0     0    541      0 --:--:-- --:--:-- --:--:--   541
+==> Validating source files with sha512sums...
+    libdbusmenu-16.04.0.tar.gz ... Passed
+    libdbusmenu-16.04.0.tar.gz.asc ... Skipped
+==> Verifying source file signatures with gpg...
+    libdbusmenu-16.04.0.tar.gz ... Passed
+==> Extracting sources...
+  -> Extracting libdbusmenu-16.04.0.tar.gz with bsdtar
+==> Starting prepare()...
+==> Starting build()...
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /usr/sbin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking whether NLS is requested... yes
+checking for intltool >= 0.35.0... 0.51.0 found
+checking for intltool-update... /usr/sbin/intltool-update
+checking for intltool-merge... /usr/sbin/intltool-merge
+checking for intltool-extract... /usr/sbin/intltool-extract
+checking for xgettext... /usr/sbin/xgettext
+checking for msgmerge... /usr/sbin/msgmerge
+checking for msgfmt... /usr/sbin/msgfmt
+checking for gmsgfmt... /usr/sbin/msgfmt
+checking for perl... /usr/sbin/perl
+checking for perl >= 5.8.1... 5.42.0
+checking for XML::Parser... ok
+checking for style of include used by make... GNU
+checking for gcc... gcc -m32
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc -m32 accepts -g... yes
+checking for gcc -m32 option to accept ISO C89... none needed
+checking whether gcc -m32 understands -c and -o together... yes
+checking dependency style of gcc -m32... gcc3
+checking for library containing strerror... none required
+checking for gcc... (cached) gcc -m32
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc -m32 accepts -g... (cached) yes
+checking for gcc -m32 option to accept ISO C89... (cached) none needed
+checking whether gcc -m32 understands -c and -o together... (cached) yes
+checking dependency style of gcc -m32... (cached) gcc3
+checking how to run the C preprocessor... gcc -m32 -E
+checking for grep that handles long lines and -e... /usr/sbin/grep
+checking for egrep... /usr/sbin/grep -E
+checking for ANSI C header files... yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/sbin/sed
+checking for fgrep... /usr/sbin/grep -F
+checking for ld used by gcc -m32... /usr/sbin/ld
+checking if the linker (/usr/sbin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/sbin/nm -B
+checking the name lister (/usr/sbin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/sbin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/sbin/nm -B output from gcc -m32 object... ok
+checking for sysroot... no
+checking for a working dd... /usr/sbin/dd
+checking how to truncate binary pipes... /usr/sbin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc -m32 supports -fno-rtti -fno-exceptions... no
+checking for gcc -m32 option to produce PIC... -fPIC -DPIC
+checking if gcc -m32 PIC flag -fPIC -DPIC works... yes
+checking if gcc -m32 static flag -static works... yes
+checking if gcc -m32 supports -c -o file.o... yes
+checking if gcc -m32 supports -c -o file.o... (cached) yes
+checking whether the gcc -m32 linker (/usr/sbin/ld -m elf_i386) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking whether make supports nested variables... (cached) yes
+checking for glib-mkenums... /usr/sbin/glib-mkenums
+checking for pkg-config... /usr/sbin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for gtk-doc... yes
+checking for gtkdoc-check... gtkdoc-check.test
+checking for gtkdoc-check... /usr/sbin/gtkdoc-check
+checking for gtkdoc-rebase... /usr/sbin/gtkdoc-rebase
+checking for gtkdoc-mkpdf... /usr/sbin/gtkdoc-mkpdf
+checking whether to build gtk-doc documentation... no
+checking for GTKDOC_DEPS... yes
+checking for DBUSMENUGLIB... yes
+checking for DBUSMENUGTK... yes
+checking for gobject-introspection... yes
+checking for vapigen... /usr/sbin/vapigen
+checking for xsltproc... /usr/sbin/xsltproc
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking for LC_MESSAGES... yes
+checking libintl.h usability... yes
+checking libintl.h presence... yes
+checking for libintl.h... yes
+checking for ngettext in libc... yes
+checking for dgettext in libc... yes
+checking for bind_textdomain_codeset... yes
+checking for msgfmt... (cached) /usr/sbin/msgfmt
+checking for dcgettext... yes
+checking if msgfmt accepts -c... yes
+checking for gmsgfmt... (cached) /usr/sbin/msgfmt
+checking for xgettext... (cached) /usr/sbin/xgettext
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating po/Makefile.in
+config.status: creating libdbusmenu-glib/Makefile
+config.status: creating libdbusmenu-glib/dbusmenu-glib-0.4.pc
+config.status: creating libdbusmenu-gtk/Makefile
+config.status: creating libdbusmenu-gtk/dbusmenu-gtk-0.4.pc
+config.status: creating libdbusmenu-gtk/dbusmenu-gtk3-0.4.pc
+config.status: creating tools/Makefile
+config.status: creating tools/testapp/Makefile
+config.status: creating tests/Makefile
+config.status: creating tests/dbusmenu-jsonloader-0.4.pc
+config.status: creating docs/Makefile
+config.status: creating docs/libdbusmenu-glib/Makefile
+config.status: creating docs/libdbusmenu-glib/reference/Makefile
+config.status: creating docs/libdbusmenu-glib/reference/version.xml
+config.status: creating docs/libdbusmenu-gtk/Makefile
+config.status: creating docs/libdbusmenu-gtk/reference/Makefile
+config.status: creating docs/libdbusmenu-gtk/reference/version.xml
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing default-1 commands
+config.status: executing po/stamp-it commands
+configure:
+
+libdbusmenu Configuration:
+
+	Prefix:                 /usr
+	Massive Debugging:      no
+	GTK+ Version:           2
+
+configure: 	Tests:                  no
+configure: 	Gtk:                    yes (gtk2)
+configure: 	Vala bindings:          yes
+configure: 	Dumper:                 no
+configure: 	Coverage reporting:     no
+make  all-recursive
+make[1]: Entering directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0'
+Making all in libdbusmenu-glib
+make[2]: Entering directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/libdbusmenu-glib'
+mkdir -p `dirname ./enum-types.h`
+/usr/sbin/glib-mkenums \
+	--template ./enum-types.h.in \
+./menuitem.h ./menuitem-proxy.h ./server.h ./client.h ./types.h > xgen-eh \
+&& (cmp -s xgen-eh ./enum-types.h || cp -f xgen-eh ./enum-types.h) \
+&& rm -f xgen-eh \
+&& echo timestamp > stamp-enum-types
+mkdir -p `dirname ./enum-types.c`
+/usr/sbin/glib-mkenums \
+	--template ./enum-types.c.in \
+./menuitem.h ./menuitem-proxy.h ./server.h ./client.h ./types.h > xgen-ec \
+&& cp -f xgen-ec ./enum-types.c \
+&& rm -f xgen-ec
+make[2]: Circular dbus-menu.xml.c <- dbus-menu.xml dependency dropped.
+make  all-am
+make[3]: Entering directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/libdbusmenu-glib'
+make[3]: Circular dbus-menu.xml.c <- dbus-menu.xml dependency dropped.
+  CC       libdbusmenu_glib_la-dbus-menu-clean.xml.lo
+  CC       libdbusmenu_glib_la-defaults.lo
+defaults.c: In function ‘dbusmenu_defaults_class_init’:
+defaults.c:67:9: warning: ‘g_type_class_add_private’ is deprecated [-Wdeprecated-declarations]
+   67 |         g_type_class_add_private (klass, sizeof (DbusmenuDefaultsPrivate));
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:26,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:31,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from defaults.h:33,
+                 from defaults.c:35:
+/usr/include/glib-2.0/gobject/gtype.h:1503:10: note: declared here
+ 1503 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib32/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/glib/gi18n-lib.h:23,
+                 from defaults.c:33:
+defaults.c: In function ‘dbusmenu_defaults_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+defaults.c:50:2: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   50 | (G_TYPE_INSTANCE_GET_PRIVATE ((o), DBUSMENU_TYPE_DEFAULTS, DbusmenuDefaultsPrivate))
+      |  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+defaults.c:77:22: note: in expansion of macro ‘DBUSMENU_DEFAULTS_GET_PRIVATE’
+   77 |         self->priv = DBUSMENU_DEFAULTS_GET_PRIVATE(self);
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CC       libdbusmenu_glib_la-enum-types.lo
+  CC       libdbusmenu_glib_la-menuitem.lo
+menuitem.c: In function ‘dbusmenu_menuitem_class_init’:
+menuitem.c:114:9: warning: ‘g_type_class_add_private’ is deprecated [-Wdeprecated-declarations]
+  114 |         g_type_class_add_private (klass, sizeof (DbusmenuMenuitemPrivate));
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:26,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:31,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from menuitem.h:33,
+                 from menuitem.c:33:
+/usr/include/glib-2.0/gobject/gtype.h:1503:10: note: declared here
+ 1503 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib32/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from menuitem.h:32:
+menuitem.c: In function ‘dbusmenu_menuitem_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+menuitem.c:326:22: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+  326 |         self->priv = G_TYPE_INSTANCE_GET_PRIVATE ((self), DBUSMENU_TYPE_MENUITEM, DbusmenuMenuitemPrivate);
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CC       libdbusmenu_glib_la-menuitem-marshal.lo
+  CC       libdbusmenu_glib_la-menuitem-proxy.lo
+menuitem-proxy.c: In function ‘dbusmenu_menuitem_proxy_class_init’:
+menuitem-proxy.c:70:9: warning: ‘g_type_class_add_private’ is deprecated [-Wdeprecated-declarations]
+   70 |         g_type_class_add_private (klass, sizeof (DbusmenuMenuitemProxyPrivate));
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:26,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:31,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from menuitem-proxy.h:33,
+                 from menuitem-proxy.c:33:
+/usr/include/glib-2.0/gobject/gtype.h:1503:10: note: declared here
+ 1503 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib32/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from menuitem-proxy.h:32:
+menuitem-proxy.c: In function ‘dbusmenu_menuitem_proxy_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+menuitem-proxy.c:93:22: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   93 |         self->priv = G_TYPE_INSTANCE_GET_PRIVATE ((self), DBUSMENU_TYPE_MENUITEM_PROXY, DbusmenuMenuitemProxyPrivate);
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CC       libdbusmenu_glib_la-server.lo
+server.c: In function ‘dbusmenu_server_class_init’:
+server.c:231:9: warning: ‘g_type_class_add_private’ is deprecated [-Wdeprecated-declarations]
+  231 |         g_type_class_add_private (class, sizeof (DbusmenuServerPrivate));
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:26,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:31,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/glib-2.0/gio/gioenums.h:30,
+                 from /usr/include/glib-2.0/gio/giotypes.h:30,
+                 from /usr/include/glib-2.0/gio/gio.h:28,
+                 from server.c:34:
+/usr/include/glib-2.0/gobject/gtype.h:1503:10: note: declared here
+ 1503 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib32/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/glib/gi18n-lib.h:23,
+                 from server.c:33:
+server.c: In function ‘dbusmenu_server_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+server.c:384:22: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+  384 |         self->priv = G_TYPE_INSTANCE_GET_PRIVATE ((self), DBUSMENU_TYPE_SERVER, DbusmenuServerPrivate);
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CC       libdbusmenu_glib_la-server-marshal.lo
+  CC       libdbusmenu_glib_la-client-marshal.lo
+  CC       libdbusmenu_glib_la-client-menuitem.lo
+client-menuitem.c: In function ‘dbusmenu_client_menuitem_class_init’:
+client-menuitem.c:59:9: warning: ‘g_type_class_add_private’ is deprecated [-Wdeprecated-declarations]
+   59 |         g_type_class_add_private (klass, sizeof (DbusmenuClientMenuitemPrivate));
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:26,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:31,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from client-menuitem.h:32,
+                 from client-menuitem.c:32:
+/usr/include/glib-2.0/gobject/gtype.h:1503:10: note: declared here
+ 1503 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib32/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from client-menuitem.h:31:
+client-menuitem.c: In function ‘dbusmenu_client_menuitem_new’:
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+client-menuitem.c:43:2: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   43 | (G_TYPE_INSTANCE_GET_PRIVATE ((o), DBUSMENU_TYPE_CLIENT_MENUITEM, DbusmenuClientMenuitemPrivate))
+      |  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+client-menuitem.c:99:48: note: in expansion of macro ‘DBUSMENU_CLIENT_MENUITEM_GET_PRIVATE’
+   99 |         DbusmenuClientMenuitemPrivate * priv = DBUSMENU_CLIENT_MENUITEM_GET_PRIVATE(mi);
+      |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+client-menuitem.c: In function ‘handle_event’:
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+client-menuitem.c:43:2: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   43 | (G_TYPE_INSTANCE_GET_PRIVATE ((o), DBUSMENU_TYPE_CLIENT_MENUITEM, DbusmenuClientMenuitemPrivate))
+      |  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+client-menuitem.c:108:48: note: in expansion of macro ‘DBUSMENU_CLIENT_MENUITEM_GET_PRIVATE’
+  108 |         DbusmenuClientMenuitemPrivate * priv = DBUSMENU_CLIENT_MENUITEM_GET_PRIVATE(mi);
+      |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+client-menuitem.c: In function ‘send_about_to_show’:
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+client-menuitem.c:43:2: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   43 | (G_TYPE_INSTANCE_GET_PRIVATE ((o), DBUSMENU_TYPE_CLIENT_MENUITEM, DbusmenuClientMenuitemPrivate))
+      |  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+client-menuitem.c:137:48: note: in expansion of macro ‘DBUSMENU_CLIENT_MENUITEM_GET_PRIVATE’
+  137 |         DbusmenuClientMenuitemPrivate * priv = DBUSMENU_CLIENT_MENUITEM_GET_PRIVATE(mi);
+      |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CC       libdbusmenu_glib_la-client.lo
+client.c: In function ‘dbusmenu_client_class_init’:
+client.c:204:9: warning: ‘g_type_class_add_private’ is deprecated [-Wdeprecated-declarations]
+  204 |         g_type_class_add_private (klass, sizeof (DbusmenuClientPrivate));
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:26,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:31,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/glib-2.0/gio/gioenums.h:30,
+                 from /usr/include/glib-2.0/gio/giotypes.h:30,
+                 from /usr/include/glib-2.0/gio/gio.h:28,
+                 from client.c:33:
+/usr/include/glib-2.0/gobject/gtype.h:1503:10: note: declared here
+ 1503 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib32/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30:
+client.c: In function ‘dbusmenu_client_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c:360:22: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+  360 |         self->priv = G_TYPE_INSTANCE_GET_PRIVATE ((self), DBUSMENU_TYPE_CLIENT, DbusmenuClientPrivate);
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CCLD     libdbusmenu-glib.la
+  GISCAN   Dbusmenu-0.4.gir
+menuitem.h:136: Warning: Dbusmenu: GObject-Introspection specific GTK-Doc tag "Type" has been deprecated, please use annotations on the identifier instead:
+ * Type: #G_VARIANT_TYPE_STRING
+   ^
+menuitem.h:165: Warning: Dbusmenu: GObject-Introspection specific GTK-Doc tag "Type" has been deprecated, please use annotations on the identifier instead:
+ * Type: #G_VARIANT_TYPE_STRING
+   ^
+menuitem.h:182: Warning: Dbusmenu: GObject-Introspection specific GTK-Doc tag "Type" has been deprecated, please use annotations on the identifier instead:
+ * Type: #G_VARIANT_TYPE_INT32
+   ^
+menuitem.h:190: Warning: Dbusmenu: GObject-Introspection specific GTK-Doc tag "Type" has been deprecated, please use annotations on the identifier instead:
+ * Type: #G_VARIANT_TYPE_ARRAY
+   ^
+menuitem.c:1709: Warning: Dbusmenu: invalid "closure" annotation: only valid on callback parameters
+menuitem.c:1777: Warning: Dbusmenu: invalid "closure" annotation: only valid on callback parameters
+menuitem.c:1777: Warning: Dbusmenu: invalid "closure" annotation: only valid on callback parameters
+  GICOMP   Dbusmenu-0.4.gir
+/usr/sbin/vapigen --library=Dbusmenu-0.4 Dbusmenu-0.4.gir
+Dbusmenu-0.4.gir:1386.7-1386.29: warning: Signal `Dbusmenu.Menuitem.child_added' conflicts with method of the same name
+ 1386 |       <virtual-method name="child_added">
+      |       ^~~~~~~~~~~~~~~~~~~~~~~            
+Dbusmenu-0.4.gir:1403.7-1403.29: warning: Signal `Dbusmenu.Menuitem.child_moved' conflicts with method of the same name
+ 1403 |       <virtual-method name="child_moved">
+      |       ^~~~~~~~~~~~~~~~~~~~~~~            
+Dbusmenu-0.4.gir:1423.7-1423.33: warning: Signal `Dbusmenu.Menuitem.child_removed' conflicts with method of the same name
+ 1423 |       <virtual-method name="child_removed">
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~          
+Dbusmenu-0.4.gir:1519.7-1519.31: warning: Virtual method `Dbusmenu.Menuitem.show_to_user' conflicts with method of the same name
+ 1519 |       <virtual-method name="show_to_user">
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~           
+Dbusmenu-0.4.gir:1519.7-1519.31: warning: Signal `Dbusmenu.Menuitem.show_to_user' conflicts with method of the same name
+ 1519 |       <virtual-method name="show_to_user">
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~           
+Generation succeeded - 5 warning(s)
+make[3]: Leaving directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/libdbusmenu-glib'
+make[2]: Leaving directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/libdbusmenu-glib'
+Making all in libdbusmenu-gtk
+make[2]: Entering directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/libdbusmenu-gtk'
+mkdir -p `dirname ./genericmenuitem-enum-types.h`
+/usr/sbin/glib-mkenums \
+	--template ./genericmenuitem-enum-types.h.in \
+./genericmenuitem.h > xgen-eh \
+&& (cmp -s xgen-eh ./genericmenuitem-enum-types.h || cp -f xgen-eh ./genericmenuitem-enum-types.h) \
+&& rm -f xgen-eh \
+&& echo timestamp > stamp-enum-types
+mkdir -p `dirname ./genericmenuitem-enum-types.c`
+/usr/sbin/glib-mkenums \
+	--template ./genericmenuitem-enum-types.c.in \
+./genericmenuitem.h > xgen-ec \
+&& cp -f xgen-ec ./genericmenuitem-enum-types.c \
+&& rm -f xgen-ec
+make  all-am
+make[3]: Entering directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/libdbusmenu-gtk'
+  CC       libdbusmenu_gtk_la-client.lo
+In file included from /usr/include/gtk-2.0/gtk/gtkobject.h:37,
+                 from /usr/include/gtk-2.0/gtk/gtkwidget.h:36,
+                 from /usr/include/gtk-2.0/gtk/gtkcontainer.h:35,
+                 from /usr/include/gtk-2.0/gtk/gtkbin.h:35,
+                 from /usr/include/gtk-2.0/gtk/gtkwindow.h:36,
+                 from /usr/include/gtk-2.0/gtk/gtkdialog.h:35,
+                 from /usr/include/gtk-2.0/gtk/gtkaboutdialog.h:32,
+                 from /usr/include/gtk-2.0/gtk/gtk.h:33,
+                 from client.c:33:
+/usr/include/gtk-2.0/gtk/gtktypeutils.h:236:1: warning: ‘GTypeDebugFlags’ is deprecated [-Wdeprecated-declarations]
+  236 | void            gtk_type_init   (GTypeDebugFlags    debug_flags);
+      | ^~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:26,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:31,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/glib-2.0/gio/gioenums.h:30,
+                 from /usr/include/glib-2.0/gio/giotypes.h:30,
+                 from /usr/include/glib-2.0/gio/gio.h:28,
+                 from /usr/include/gtk-2.0/gdk/gdkapplaunchcontext.h:30,
+                 from /usr/include/gtk-2.0/gdk/gdk.h:32,
+                 from /usr/include/gtk-2.0/gtk/gtk.h:32:
+/usr/include/glib-2.0/gobject/gtype.h:725:1: note: declared here
+  725 | {
+      | ^
+In file included from /usr/include/gtk-2.0/gtk/gtktoolitem.h:31,
+                 from /usr/include/gtk-2.0/gtk/gtktoolbutton.h:30,
+                 from /usr/include/gtk-2.0/gtk/gtkmenutoolbutton.h:30,
+                 from /usr/include/gtk-2.0/gtk/gtk.h:126:
+/usr/include/gtk-2.0/gtk/gtktooltips.h:73:3: warning: ‘GTimeVal’ is deprecated: Use 'GDateTime' instead [-Wdeprecated-declarations]
+   73 |   GTimeVal last_popdown;
+      |   ^~~~~~~~
+In file included from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30:
+/usr/include/glib-2.0/glib/gtypes.h:580:8: note: declared here
+  580 | struct _GTimeVal
+      |        ^~~~~~~~~
+client.c: In function ‘dbusmenu_gtkclient_class_init’:
+client.c:83:9: warning: ‘g_type_class_add_private’ is deprecated [-Wdeprecated-declarations]
+   83 |         g_type_class_add_private (klass, sizeof (DbusmenuGtkClientPrivate));
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:1503:10: note: declared here
+ 1503 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib32/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34:
+client.c: In function ‘dbusmenu_gtkclient_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c:96:22: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   96 |         self->priv = G_TYPE_INSTANCE_GET_PRIVATE ((self), DBUSMENU_GTKCLIENT_TYPE, DbusmenuGtkClientPrivate);
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CC       libdbusmenu_gtk_la-genericmenuitem.lo
+In file included from /usr/include/gtk-2.0/gtk/gtkobject.h:37,
+                 from /usr/include/gtk-2.0/gtk/gtkwidget.h:36,
+                 from /usr/include/gtk-2.0/gtk/gtkcontainer.h:35,
+                 from /usr/include/gtk-2.0/gtk/gtkbin.h:35,
+                 from /usr/include/gtk-2.0/gtk/gtkwindow.h:36,
+                 from /usr/include/gtk-2.0/gtk/gtkdialog.h:35,
+                 from /usr/include/gtk-2.0/gtk/gtkaboutdialog.h:32,
+                 from /usr/include/gtk-2.0/gtk/gtk.h:33,
+                 from genericmenuitem.h:34,
+                 from genericmenuitem.c:35:
+/usr/include/gtk-2.0/gtk/gtktypeutils.h:236:1: warning: ‘GTypeDebugFlags’ is deprecated [-Wdeprecated-declarations]
+  236 | void            gtk_type_init   (GTypeDebugFlags    debug_flags);
+      | ^~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:26,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:31,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/glib-2.0/gio/gioenums.h:30,
+                 from /usr/include/glib-2.0/gio/giotypes.h:30,
+                 from /usr/include/glib-2.0/gio/gio.h:28,
+                 from /usr/include/gtk-2.0/gdk/gdkapplaunchcontext.h:30,
+                 from /usr/include/gtk-2.0/gdk/gdk.h:32,
+                 from genericmenuitem.c:33:
+/usr/include/glib-2.0/gobject/gtype.h:725:1: note: declared here
+  725 | {
+      | ^
+In file included from /usr/include/gtk-2.0/gtk/gtktoolitem.h:31,
+                 from /usr/include/gtk-2.0/gtk/gtktoolbutton.h:30,
+                 from /usr/include/gtk-2.0/gtk/gtkmenutoolbutton.h:30,
+                 from /usr/include/gtk-2.0/gtk/gtk.h:126:
+/usr/include/gtk-2.0/gtk/gtktooltips.h:73:3: warning: ‘GTimeVal’ is deprecated: Use 'GDateTime' instead [-Wdeprecated-declarations]
+   73 |   GTimeVal last_popdown;
+      |   ^~~~~~~~
+In file included from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30:
+/usr/include/glib-2.0/glib/gtypes.h:580:8: note: declared here
+  580 | struct _GTimeVal
+      |        ^~~~~~~~~
+genericmenuitem.c: In function ‘genericmenuitem_class_init’:
+genericmenuitem.c:81:9: warning: ‘g_type_class_add_private’ is deprecated [-Wdeprecated-declarations]
+   81 |         g_type_class_add_private (klass, sizeof (GenericmenuitemPrivate));
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:1503:10: note: declared here
+ 1503 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib32/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34:
+genericmenuitem.c: In function ‘genericmenuitem_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+genericmenuitem.c:51:2: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   51 | (G_TYPE_INSTANCE_GET_PRIVATE ((o), GENERICMENUITEM_TYPE, GenericmenuitemPrivate))
+      |  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+genericmenuitem.c:111:22: note: in expansion of macro ‘GENERICMENUITEM_GET_PRIVATE’
+  111 |         self->priv = GENERICMENUITEM_GET_PRIVATE(self);
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CC       libdbusmenu_gtk_la-genericmenuitem-enum-types.lo
+In file included from /usr/include/gtk-2.0/gtk/gtkobject.h:37,
+                 from /usr/include/gtk-2.0/gtk/gtkwidget.h:36,
+                 from /usr/include/gtk-2.0/gtk/gtkcontainer.h:35,
+                 from /usr/include/gtk-2.0/gtk/gtkbin.h:35,
+                 from /usr/include/gtk-2.0/gtk/gtkwindow.h:36,
+                 from /usr/include/gtk-2.0/gtk/gtkdialog.h:35,
+                 from /usr/include/gtk-2.0/gtk/gtkaboutdialog.h:32,
+                 from /usr/include/gtk-2.0/gtk/gtk.h:33,
+                 from genericmenuitem.h:34,
+                 from genericmenuitem-enum-types.h:38,
+                 from genericmenuitem-enum-types.c:31:
+/usr/include/gtk-2.0/gtk/gtktypeutils.h:236:1: warning: ‘GTypeDebugFlags’ is deprecated [-Wdeprecated-declarations]
+  236 | void            gtk_type_init   (GTypeDebugFlags    debug_flags);
+      | ^~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:26,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:31,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from genericmenuitem-enum-types.h:34:
+/usr/include/glib-2.0/gobject/gtype.h:725:1: note: declared here
+  725 | {
+      | ^
+In file included from /usr/include/gtk-2.0/gtk/gtktoolitem.h:31,
+                 from /usr/include/gtk-2.0/gtk/gtktoolbutton.h:30,
+                 from /usr/include/gtk-2.0/gtk/gtkmenutoolbutton.h:30,
+                 from /usr/include/gtk-2.0/gtk/gtk.h:126:
+/usr/include/gtk-2.0/gtk/gtktooltips.h:73:3: warning: ‘GTimeVal’ is deprecated: Use 'GDateTime' instead [-Wdeprecated-declarations]
+   73 |   GTimeVal last_popdown;
+      |   ^~~~~~~~
+In file included from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30:
+/usr/include/glib-2.0/glib/gtypes.h:580:8: note: declared here
+  580 | struct _GTimeVal
+      |        ^~~~~~~~~
+  CC       libdbusmenu_gtk_la-menu.lo
+In file included from /usr/include/gtk-2.0/gtk/gtkobject.h:37,
+                 from /usr/include/gtk-2.0/gtk/gtkwidget.h:36,
+                 from /usr/include/gtk-2.0/gtk/gtkcontainer.h:35,
+                 from /usr/include/gtk-2.0/gtk/gtkbin.h:35,
+                 from /usr/include/gtk-2.0/gtk/gtkwindow.h:36,
+                 from /usr/include/gtk-2.0/gtk/gtkdialog.h:35,
+                 from /usr/include/gtk-2.0/gtk/gtkaboutdialog.h:32,
+                 from /usr/include/gtk-2.0/gtk/gtk.h:33,
+                 from menu.c:33:
+/usr/include/gtk-2.0/gtk/gtktypeutils.h:236:1: warning: ‘GTypeDebugFlags’ is deprecated [-Wdeprecated-declarations]
+  236 | void            gtk_type_init   (GTypeDebugFlags    debug_flags);
+      | ^~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:26,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:31,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/glib-2.0/gio/gioenums.h:30,
+                 from /usr/include/glib-2.0/gio/giotypes.h:30,
+                 from /usr/include/glib-2.0/gio/gio.h:28,
+                 from /usr/include/gtk-2.0/gdk/gdkapplaunchcontext.h:30,
+                 from /usr/include/gtk-2.0/gdk/gdk.h:32,
+                 from /usr/include/gtk-2.0/gtk/gtk.h:32:
+/usr/include/glib-2.0/gobject/gtype.h:725:1: note: declared here
+  725 | {
+      | ^
+In file included from /usr/include/gtk-2.0/gtk/gtktoolitem.h:31,
+                 from /usr/include/gtk-2.0/gtk/gtktoolbutton.h:30,
+                 from /usr/include/gtk-2.0/gtk/gtkmenutoolbutton.h:30,
+                 from /usr/include/gtk-2.0/gtk/gtk.h:126:
+/usr/include/gtk-2.0/gtk/gtktooltips.h:73:3: warning: ‘GTimeVal’ is deprecated: Use 'GDateTime' instead [-Wdeprecated-declarations]
+   73 |   GTimeVal last_popdown;
+      |   ^~~~~~~~
+In file included from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30:
+/usr/include/glib-2.0/glib/gtypes.h:580:8: note: declared here
+  580 | struct _GTimeVal
+      |        ^~~~~~~~~
+menu.c: In function ‘dbusmenu_gtkmenu_class_init’:
+menu.c:78:9: warning: ‘g_type_class_add_private’ is deprecated [-Wdeprecated-declarations]
+   78 |         g_type_class_add_private (klass, sizeof (DbusmenuGtkMenuPrivate));
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:1503:10: note: declared here
+ 1503 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib32/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34:
+menu.c: In function ‘dbusmenu_gtkmenu_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+menu.c:114:22: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+  114 |         self->priv = G_TYPE_INSTANCE_GET_PRIVATE ((self), DBUSMENU_GTKMENU_TYPE, DbusmenuGtkMenuPrivate);
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CC       libdbusmenu_gtk_la-menuitem.lo
+In file included from /usr/include/gtk-2.0/gtk/gtkobject.h:37,
+                 from /usr/include/gtk-2.0/gtk/gtkwidget.h:36,
+                 from /usr/include/gtk-2.0/gtk/gtkcontainer.h:35,
+                 from /usr/include/gtk-2.0/gtk/gtkbin.h:35,
+                 from /usr/include/gtk-2.0/gtk/gtkwindow.h:36,
+                 from /usr/include/gtk-2.0/gtk/gtkdialog.h:35,
+                 from /usr/include/gtk-2.0/gtk/gtkaboutdialog.h:32,
+                 from /usr/include/gtk-2.0/gtk/gtk.h:33,
+                 from menuitem.h:36,
+                 from menuitem.c:29:
+/usr/include/gtk-2.0/gtk/gtktypeutils.h:236:1: warning: ‘GTypeDebugFlags’ is deprecated [-Wdeprecated-declarations]
+  236 | void            gtk_type_init   (GTypeDebugFlags    debug_flags);
+      | ^~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:26,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:31,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf.h:32,
+                 from menuitem.h:33:
+/usr/include/glib-2.0/gobject/gtype.h:725:1: note: declared here
+  725 | {
+      | ^
+In file included from /usr/include/gtk-2.0/gtk/gtktoolitem.h:31,
+                 from /usr/include/gtk-2.0/gtk/gtktoolbutton.h:30,
+                 from /usr/include/gtk-2.0/gtk/gtkmenutoolbutton.h:30,
+                 from /usr/include/gtk-2.0/gtk/gtk.h:126:
+/usr/include/gtk-2.0/gtk/gtktooltips.h:73:3: warning: ‘GTimeVal’ is deprecated: Use 'GDateTime' instead [-Wdeprecated-declarations]
+   73 |   GTimeVal last_popdown;
+      |   ^~~~~~~~
+In file included from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from menuitem.h:32:
+/usr/include/glib-2.0/glib/gtypes.h:580:8: note: declared here
+  580 | struct _GTimeVal
+      |        ^~~~~~~~~
+  CC       libdbusmenu_gtk_la-parser.lo
+In file included from /usr/include/gtk-2.0/gtk/gtkobject.h:37,
+                 from /usr/include/gtk-2.0/gtk/gtkwidget.h:36,
+                 from /usr/include/gtk-2.0/gtk/gtkcontainer.h:35,
+                 from /usr/include/gtk-2.0/gtk/gtkbin.h:35,
+                 from /usr/include/gtk-2.0/gtk/gtkwindow.h:36,
+                 from /usr/include/gtk-2.0/gtk/gtkdialog.h:35,
+                 from /usr/include/gtk-2.0/gtk/gtkaboutdialog.h:32,
+                 from /usr/include/gtk-2.0/gtk/gtk.h:33,
+                 from parser.h:33,
+                 from parser.c:31:
+/usr/include/gtk-2.0/gtk/gtktypeutils.h:236:1: warning: ‘GTypeDebugFlags’ is deprecated [-Wdeprecated-declarations]
+  236 | void            gtk_type_init   (GTypeDebugFlags    debug_flags);
+      | ^~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:26,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:31,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/atk-1.0/atk/atk-enum-types.h:12,
+                 from /usr/include/atk-1.0/atk/atk.h:24,
+                 from parser.c:29:
+/usr/include/glib-2.0/gobject/gtype.h:725:1: note: declared here
+  725 | {
+      | ^
+In file included from /usr/include/gtk-2.0/gtk/gtktoolitem.h:31,
+                 from /usr/include/gtk-2.0/gtk/gtktoolbutton.h:30,
+                 from /usr/include/gtk-2.0/gtk/gtkmenutoolbutton.h:30,
+                 from /usr/include/gtk-2.0/gtk/gtk.h:126:
+/usr/include/gtk-2.0/gtk/gtktooltips.h:73:3: warning: ‘GTimeVal’ is deprecated: Use 'GDateTime' instead [-Wdeprecated-declarations]
+   73 |   GTimeVal last_popdown;
+      |   ^~~~~~~~
+In file included from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/atk-1.0/atk/atkversion.h:31,
+                 from /usr/include/atk-1.0/atk/atk-enum-types.h:11:
+/usr/include/glib-2.0/glib/gtypes.h:580:8: note: declared here
+  580 | struct _GTimeVal
+      |        ^~~~~~~~~
+  CCLD     libdbusmenu-gtk.la
+  GISCAN   DbusmenuGtk-0.4.gir
+  GICOMP   DbusmenuGtk-0.4.gir
+/usr/sbin/sed \
+	-e "s|GdkPixbuf.Pixbuf|Gdk.Pixbuf|g" \
+	-e "s|Atk.ImplementorIface|Atk.Implementor|g" \
+	DbusmenuGtk-0.4.gir > DbusmenuGtk-0.4.tmp.gir
+/usr/sbin/vapigen --library=DbusmenuGtk-0.4 \
+	--pkg gdk-pixbuf-2.0 \
+	--pkg gtk+-2.0 \
+	--pkg atk \
+	--pkg Dbusmenu-0.4 \
+	--vapidir=../libdbusmenu-glib \
+	DbusmenuGtk-0.4.tmp.gir
+gtk+-2.0.vapi:5873.40-5873.42: warning: `Gtk' is deprecated. Use gtk+-3.0
+ 5873 | 		public Window (Gtk.WindowType type = Gtk.WindowType.TOPLEVEL);
+      | 		                                     ^~~                      
+Generation succeeded - 1 warning(s)
+make[3]: Leaving directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/libdbusmenu-gtk'
+make[2]: Leaving directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/libdbusmenu-gtk'
+Making all in tools
+make[2]: Entering directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/tools'
+Making all in testapp
+make[3]: Entering directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/tools/testapp'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/tools/testapp'
+make[3]: Entering directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/tools'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/tools'
+make[2]: Leaving directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/tools'
+Making all in docs
+make[2]: Entering directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/docs'
+Making all in libdbusmenu-glib
+make[3]: Entering directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/docs/libdbusmenu-glib'
+Making all in reference
+make[4]: Entering directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/docs/libdbusmenu-glib/reference'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/docs/libdbusmenu-glib/reference'
+make[4]: Entering directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/docs/libdbusmenu-glib'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/docs/libdbusmenu-glib'
+make[3]: Leaving directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/docs/libdbusmenu-glib'
+Making all in libdbusmenu-gtk
+make[3]: Entering directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/docs/libdbusmenu-gtk'
+Making all in reference
+make[4]: Entering directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/docs/libdbusmenu-gtk/reference'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/docs/libdbusmenu-gtk/reference'
+make[4]: Entering directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/docs/libdbusmenu-gtk'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/docs/libdbusmenu-gtk'
+make[3]: Leaving directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/docs/libdbusmenu-gtk'
+make[3]: Entering directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/docs'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/docs'
+make[2]: Leaving directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/docs'
+Making all in po
+make[2]: Entering directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/po'
+make[2]: Entering directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0'
+make[2]: Leaving directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0'
+make[1]: Leaving directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0'
+==> Entering fakeroot environment...
+==> Starting package()...
+make: Entering directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/libdbusmenu-glib'
+make: Circular dbus-menu.xml.c <- dbus-menu.xml dependency dropped.
+make  install-am
+make[1]: Entering directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/libdbusmenu-glib'
+make[1]: Circular dbus-menu.xml.c <- dbus-menu.xml dependency dropped.
+make[2]: Entering directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/libdbusmenu-glib'
+make[2]: Circular dbus-menu.xml.c <- dbus-menu.xml dependency dropped.
+ /usr/sbin/mkdir -p '/workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/lib32'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libdbusmenu-glib.la '/workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/lib32'
+libtool: install: /usr/bin/install -c .libs/libdbusmenu-glib.so.4.0.12 /workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/lib32/libdbusmenu-glib.so.4.0.12
+libtool: install: (cd /workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/lib32 && { ln -s -f libdbusmenu-glib.so.4.0.12 libdbusmenu-glib.so.4 || { rm -f libdbusmenu-glib.so.4 && ln -s libdbusmenu-glib.so.4.0.12 libdbusmenu-glib.so.4; }; })
+libtool: install: (cd /workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/lib32 && { ln -s -f libdbusmenu-glib.so.4.0.12 libdbusmenu-glib.so || { rm -f libdbusmenu-glib.so && ln -s libdbusmenu-glib.so.4.0.12 libdbusmenu-glib.so; }; })
+libtool: install: /usr/bin/install -c .libs/libdbusmenu-glib.lai /workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/lib32/libdbusmenu-glib.la
+libtool: warning: remember to run 'libtool --finish /usr/lib32'
+ /usr/sbin/mkdir -p '/workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/share/gir-1.0'
+ /usr/bin/install -c -m 644 Dbusmenu-0.4.gir '/workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/share/gir-1.0'
+ /usr/sbin/mkdir -p '/workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/include/libdbusmenu-glib-0.4/libdbusmenu-glib/'
+ /usr/bin/install -c -m 644 menuitem.h menuitem-proxy.h server.h client.h enum-types.h dbusmenu-glib.h types.h '/workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/include/libdbusmenu-glib-0.4/libdbusmenu-glib/'
+ /usr/sbin/mkdir -p '/workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/lib32/pkgconfig'
+ /usr/bin/install -c -m 644 dbusmenu-glib-0.4.pc '/workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/lib32/pkgconfig'
+ /usr/sbin/mkdir -p '/workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/lib/girepository-1.0'
+ /usr/bin/install -c -m 644 Dbusmenu-0.4.typelib '/workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/lib/girepository-1.0'
+ /usr/sbin/mkdir -p '/workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/share/vala/vapi'
+ /usr/bin/install -c -m 644 Dbusmenu-0.4.vapi '/workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/share/vala/vapi'
+make[2]: Leaving directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/libdbusmenu-glib'
+make[1]: Leaving directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/libdbusmenu-glib'
+make: Leaving directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/libdbusmenu-glib'
+make: Entering directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/libdbusmenu-gtk'
+make  install-am
+make[1]: Entering directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/libdbusmenu-gtk'
+make[2]: Entering directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/libdbusmenu-gtk'
+ /usr/sbin/mkdir -p '/workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/lib32'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libdbusmenu-gtk.la '/workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/lib32'
+libtool: warning: relinking 'libdbusmenu-gtk.la'
+libtool: install: (cd /workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/libdbusmenu-gtk; /bin/sh "/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/libtool"  --silent --tag CC --mode=relink gcc -m32 -I/usr/include/gtk-2.0 -I/usr/lib32/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libtiff32 -pthread -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/harfbuzz -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/pixman-1 -I/usr/include/atk-1.0 -I/usr/include/glib-2.0 -I/usr/lib32/glib-2.0/include -I.. -Wall -Wno-error=deprecated-declarations -DG_LOG_DOMAIN=\"LIBDBUSMENU-GTK\" -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -flto=auto -version-info 4:12:0 -no-undefined -export-symbols-regex "^[^_].*" -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,pack-relative-relocs -flto=auto -o libdbusmenu-gtk.la -rpath /usr/lib32 libdbusmenu_gtk_la-client.lo libdbusmenu_gtk_la-genericmenuitem.lo libdbusmenu_gtk_la-genericmenuitem-enum-types.lo libdbusmenu_gtk_la-menu.lo libdbusmenu_gtk_la-menuitem.lo libdbusmenu_gtk_la-parser.lo ../libdbusmenu-glib/libdbusmenu-glib.la -L/usr/lib32 -lgtk-x11-2.0 -lgdk-x11-2.0 -lpangocairo-1.0 -lgdk_pixbuf-2.0 -lpangoft2-1.0 -lpango-1.0 -lgio-2.0 -lharfbuzz -lcairo -lfontconfig -lfreetype -latk-1.0 -lgobject-2.0 -lglib-2.0 -inst-prefix-dir /workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2)
+libtool: install: /usr/bin/install -c .libs/libdbusmenu-gtk.so.4.0.12T /workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/lib32/libdbusmenu-gtk.so.4.0.12
+libtool: install: (cd /workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/lib32 && { ln -s -f libdbusmenu-gtk.so.4.0.12 libdbusmenu-gtk.so.4 || { rm -f libdbusmenu-gtk.so.4 && ln -s libdbusmenu-gtk.so.4.0.12 libdbusmenu-gtk.so.4; }; })
+libtool: install: (cd /workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/lib32 && { ln -s -f libdbusmenu-gtk.so.4.0.12 libdbusmenu-gtk.so || { rm -f libdbusmenu-gtk.so && ln -s libdbusmenu-gtk.so.4.0.12 libdbusmenu-gtk.so; }; })
+libtool: install: /usr/bin/install -c .libs/libdbusmenu-gtk.lai /workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/lib32/libdbusmenu-gtk.la
+libtool: warning: remember to run 'libtool --finish /usr/lib32'
+ /usr/sbin/mkdir -p '/workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/share/gir-1.0'
+ /usr/bin/install -c -m 644 DbusmenuGtk-0.4.gir '/workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/share/gir-1.0'
+ /usr/sbin/mkdir -p '/workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/include/libdbusmenu-gtk-0.4/libdbusmenu-gtk/'
+ /usr/bin/install -c -m 644 dbusmenu-gtk.h client.h menu.h menuitem.h parser.h '/workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/include/libdbusmenu-gtk-0.4/libdbusmenu-gtk/'
+ /usr/sbin/mkdir -p '/workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/include/libdbusmenu-gtk-0.4/libdbusmenu-gtk/'
+ /usr/bin/install -c -m 644 dbusmenu-gtk.h client.h menu.h menuitem.h parser.h '/workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/include/libdbusmenu-gtk-0.4/libdbusmenu-gtk/'
+ /usr/sbin/mkdir -p '/workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/lib32/pkgconfig'
+ /usr/bin/install -c -m 644 dbusmenu-gtk-0.4.pc '/workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/lib32/pkgconfig'
+ /usr/sbin/mkdir -p '/workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/lib/girepository-1.0'
+ /usr/bin/install -c -m 644 DbusmenuGtk-0.4.typelib '/workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/lib/girepository-1.0'
+ /usr/sbin/mkdir -p '/workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/share/vala/vapi'
+ /usr/bin/install -c -m 644 DbusmenuGtk-0.4.vapi '/workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/share/vala/vapi'
+make[2]: Leaving directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/libdbusmenu-gtk'
+make[1]: Leaving directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/libdbusmenu-gtk'
+make: Leaving directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/libdbusmenu-gtk'
+make: Entering directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/libdbusmenu-glib'
+ ( cd '/workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/share/gir-1.0' && rm -f Dbusmenu-0.4.gir )
+ /bin/sh ../libtool   --mode=uninstall rm -f '/workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/lib32/libdbusmenu-glib.la'
+libtool: uninstall: rm -f /workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/lib32/libdbusmenu-glib.la /workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/lib32/libdbusmenu-glib.so.4.0.12 /workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/lib32/libdbusmenu-glib.so.4 /workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/lib32/libdbusmenu-glib.so
+ ( cd '/workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/include/libdbusmenu-glib-0.4/libdbusmenu-glib/' && rm -f menuitem.h menuitem-proxy.h server.h client.h enum-types.h dbusmenu-glib.h types.h )
+ ( cd '/workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/lib32/pkgconfig' && rm -f dbusmenu-glib-0.4.pc )
+ ( cd '/workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/lib/girepository-1.0' && rm -f Dbusmenu-0.4.typelib )
+ ( cd '/workspace/build/lib32-libdbusmenu-gtk2/pkg/lib32-libdbusmenu-gtk2/usr/share/vala/vapi' && rm -f Dbusmenu-0.4.vapi )
+make: Leaving directory '/workspace/build/lib32-libdbusmenu-gtk2/src/libdbusmenu-16.04.0/libdbusmenu-glib'
+==> Tidying install...
+  -> Removing empty directories...
+  -> Removing libtool files...
+  -> Purging unwanted files...
+  -> Removing static library files...
+  -> Stripping unneeded symbols from binaries and libraries...
+  -> Compressing man and info pages...
+libfakeroot internal error: payload not recognized!
+==> Checking for packaging issues...
+==> Creating package "lib32-libdbusmenu-gtk2"...
+  -> Generating .PKGINFO file...
+  -> Generating .BUILDINFO file...
+  -> Generating .MTREE file...
+  -> Compressing package...
+==> Leaving fakeroot environment.
+==> Finished making: lib32-libdbusmenu-gtk2 16.04.0-7 (Fri Oct 31 21:24:43 2025)
+==> Installing package lib32-libdbusmenu-gtk2 with pacman -U...
+loading packages...
+resolving dependencies...
+looking for conflicting packages...
+
+Package (1)             New Version  Net Change
+
+lib32-libdbusmenu-gtk2  16.04.0-7      0.06 MiB
+
+Total Installed Size:  0.06 MiB
+
+:: Proceed with installation? [Y/n] 
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+:: Processing package changes...
+installing lib32-libdbusmenu-gtk2...
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
