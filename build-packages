@@ -30,10 +30,10 @@ packages=(
     lib32-libvpx1.3
     lib32-libjpeg6-turbo
     lib32-openssl-1.0
-    steam-native-runtime
 )
 mkdir -p "$(dirname "$0")"/build
 cd "$(dirname "$0")"/build
+packages+=(steam-native-runtime)
 for package in "${packages[@]}"; do
     if [ ! -d "$package" ]; then
         git clone "https://aur.archlinux.org/$package.git"
