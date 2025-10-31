@@ -31,16 +31,25 @@ packages=(
     lib32-libjpeg6-turbo
     lib32-openssl-1.0
 )
-mkdir -p "$(dirname "$0")"/build
-cd "$(dirname "$0")"/build
 packages+=(steam-native-runtime)
+basedir="$(realpath "$(dirname "$0")")"
+[ ! -d build ] && "$basedir"/build
+if [ ! -d logs ]; then
+    mkdir "$basedir"/logs
+else
+    rm "$basedir/logs/"*.log
+fi
+cd "$basedir"/build
 for package in "${packages[@]}"; do
+    echo "Working on «$package»"
     if [ ! -d "$package" ]; then
         git clone "https://aur.archlinux.org/$package.git"
     else
-        (cd "$package" && git pull)
+        cd "$basedir/build/$package"
+        git pull > /dev/null
     fi
-    (cd "$package" && makepkg -si --noconfirm --needed --asdeps) || \
-    echo "[$(date +"%F %T")] Failed to build «$package»" >> ../build.log && \
+    cd "$basedir/build/$package"
+    makepkg -si --noconfirm --needed --asdeps > "$basedir/logs/$package.log" 2>&1 || \
+    echo "[$(date +"%F %T")] Failed to build «$package»" >> "$basedir/build.log" && \
     continue # --rmdeps
 done
