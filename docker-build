@@ -6,15 +6,11 @@ docker run --rm -it \
   -v "$XDG_CONFIG_HOME/pacman/makepkg.conf":/config/pacman/makepkg.conf \
   -v "$(realpath "$(dirname "$0")")":/workspace \
   -w /workspace \
-  archlinux:latest \
+  archlinux:multilib-devel \
   bash -c "
   groupadd -g $(id -g) $(id -gn);
   useradd -m -u $(id -u) -g $(id -g) $(id -un)
-  echo '
-  [multilib]
-  Include = /etc/pacman.d/mirrorlist
-  ' >> /etc/pacman.conf
-  pacman -Syyu --noconfirm base-devel git sudo;
+  pacman -Sy --noconfirm git;
   echo '$(id -un) ALL=(ALL) NOPASSWD: /usr/bin/pacman' > /etc/sudoers.d/$(id -un)
   su -s /bin/bash $(id -un) -c ./build-packages
   "
