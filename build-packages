@@ -17,6 +17,7 @@ packages=(
     libudev0-shim
     libvpx1.3
     openssl-1.0
+    openssl-1.1
     lib32-glew1.10
     lib32-gtk2
     lib32-libgcrypt15
@@ -31,6 +32,7 @@ packages=(
     lib32-libudev0-shim
     lib32-libvpx1.3
     lib32-openssl-1.0
+    lib32-openssl-1.1
 )
 packages+=(steam-native-runtime)
 basedir="$(realpath "$(dirname "$0")")"
