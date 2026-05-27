@@ -14,6 +14,6 @@ podman run --name steam-libs-builder \
   archlinux:multilib-devel \
   bash -c "
   pacman -Sy --noconfirm --needed git archlinux-keyring
-  echo '#1000 ALL=(ALL) NOPASSWD: /usr/bin/pacman' > /etc/sudoers.d/$(id -un)
-  su 1000 ./build-packages
+  echo '#$(id -u) ALL=(ALL) NOPASSWD: /usr/bin/pacman' > /etc/sudoers.d/$(id -un)
+  su $(id -u) ./build-packages
   "
