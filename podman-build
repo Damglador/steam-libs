@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+# This script is for running the build in a rootless podman container
+
+podman run --name steam-libs-builder \
+  --rm -it \
+  --userns=keep-id \
+  --user=0:0 \
+  -e XDG_CONFIG_HOME=/config \
+  -v /var/cache/pacman/pkg:/var/cache/pacman/pkg \
+  -v "$XDG_CONFIG_HOME/pacman/makepkg.conf":/config/pacman/makepkg.conf \
+  -v "$(realpath "$(dirname "$0")")":/workspace \
+  -w /workspace \
+  archlinux:multilib-devel \
+  bash -c "
+  pacman -Sy --noconfirm --needed git archlinux-keyring
+  echo '#1000 ALL=(ALL) NOPASSWD: /usr/bin/pacman' > /etc/sudoers.d/$(id -un)
+  su 1000 ./build-packages
+  "
