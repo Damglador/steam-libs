@@ -61,7 +61,7 @@ for package in "${packages[@]}"; do
         ln -sf "../lib32-libidn11/libidn" "$basedir/build/libidn11/libidn"
     fi
     # shellcheck disable=SC2046
-    gpg --recv-keys $(bash -c "source '$basedir/build/$package/PKGBUILD'; echo \$validpgpkeys") >> "$basedir/logs/$pindx-$package.log" 2>&1
+    gpg --recv-keys $(bash -c "source '$basedir/build/$package/PKGBUILD'; echo \${validpgpkeys[@]}") >> "$basedir/logs/$pindx-$package.log" 2>&1
     makepkg -si --noconfirm --needed --asdeps >> "$basedir/logs/$pindx-$package.log" 2>&1 || \
     echo "[$(date +"%F %T")] Failed to build «$package»" | tee -a "$basedir/failed.log" && \
     continue # --rmdeps
