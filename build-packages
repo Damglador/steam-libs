@@ -36,6 +36,8 @@ packages=(
 )
 packages+=(steam-native-runtime)
 basedir="$(realpath "$(dirname "$0")")"
+export GNUPGHOME=$(mktemp -d)
+
 mkdir -p "$basedir"/build
 if [ ! -d logs ]; then
     mkdir "$basedir"/logs
