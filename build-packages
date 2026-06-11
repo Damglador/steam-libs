@@ -4,6 +4,7 @@ set -euo pipefail
 # makedeps=(git base-devel)
 packages=(
     # steam-runtime libs
+    flac1.3
     glew1.10
     gtk2
     libgcrypt15
