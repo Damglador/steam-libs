@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+packages=(
+    # lib32-libcanberra # Can't build as source has broken SSL
+    lib32-sdl12-compat # explicitly build this first to avoid using lib32-sdl
+)
+packages+=(steam-native-runtime)
+
+basedir="$(realpath "$(dirname "$0")")"
+
+export AURDEST="$basedir/build"
+
+mkdir -p "$basedir/build"
+if [ ! -d "$basedir/build/aurutils" ]; then
+    cd "$basedir/build"
+    git clone "https://aur.archlinux.org/aurutils.git"
+fi
+cd "$basedir/build/aurutils"
+git pull
+makepkg -Csi --noconfirm --needed --asdeps
+
+cd "$basedir"
+
+export PKGEXT='.pkg.tar.zst'
+export SRCEXT='.src.tar.gz'
+
+for package in "${packages[@]}"; do
+    aur sync \
+        -d steam-libs \
+        --noconfirm \
+        --autokeyretrieve \
+        --nocheck \
+        --rebuild \
+        --noview \
+        --pacman-conf=/etc/pacman.conf \
+        --root="$basedir/x86_64" "$package"
+done

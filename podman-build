@@ -1,19 +1,32 @@
 #!/usr/bin/env bash
 
 # This script is for running the build in a rootless podman container
+dir="$(realpath "$(dirname "$0")")"
+
+cache=.local/cache
+data=.local/data
+
+mkdir -p "$dir/$cache"
 
 podman run --name steam-libs-builder \
   --rm -it \
   --userns=keep-id \
   --user=0:0 \
   -e XDG_CONFIG_HOME=/config \
-  -v /var/cache/pacman/pkg:/var/cache/pacman/pkg \
+  -e XDG_DATA_HOME=/workspace/$data \
+  -e XDG_CACHE_HOME=/workspace/$cache \
+  -v "$dir/$cache/pacman/":/var/cache/pacman/pkg/ \
   -v "$XDG_CONFIG_HOME/pacman/makepkg.conf":/config/pacman/makepkg.conf \
-  -v "$(realpath "$(dirname "$0")")":/workspace \
+  -v "$dir":/workspace \
   -w /workspace \
   archlinux:multilib-devel \
   bash -c "
-  pacman -Sy --noconfirm --needed git archlinux-keyring
-  echo '#$(id -u) ALL=(ALL) NOPASSWD: /usr/bin/pacman' > /etc/sudoers.d/$(id -un)
-  su $(id -u) ./build-packages
+  chown $(id -u):$(id -u) /config
+  pacman -Syu --noconfirm --needed git archlinux-keyring
+  echo '#$(id -u) ALL=(ALL) NOPASSWD: ALL' > /etc/sudoers.d/$(id -un)
+  echo '[steam-libs]' >> /etc/pacman.conf
+  echo 'SigLevel = Optional DatabaseOptional' >> /etc/pacman.conf
+  echo 'Server = file:///workspace/x86_64' >> /etc/pacman.conf
+  pacman -Sy
+  su $(id -u) ./aur-build
   "
