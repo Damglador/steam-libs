@@ -5,6 +5,7 @@ packages=(
     # lib32-libcanberra # Can't build as source has broken SSL
     lib32-sdl12-compat # explicitly build this first to avoid using lib32-sdl
     lib32-sdl2-compat # explicitly build this first to avoid using lib32-sdl2
+    gconf
 )
 packages+=(steam-native-runtime)
 
