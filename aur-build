@@ -31,6 +31,7 @@ export SRCEXT='.src.tar.gz'
 for package in "${packages[@]}"; do
     aur sync \
         -d steam-libs \
+        -u --remove \
         --noconfirm \
         --autokeyretrieve \
         --nocheck \
